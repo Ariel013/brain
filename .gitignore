@@ -1,0 +1,10 @@
+# Obsidian — état local de l'espace de travail, propre à chaque machine
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Systèmes
+.DS_Store
+Thumbs.db
+desktop.ini
