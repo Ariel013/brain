@@ -2,7 +2,7 @@
 titre: Projets
 aliases: [Index projets]
 type: index
-maj: 2026-08-26
+maj: 2026-09-05
 ---
 
 # Projets
@@ -18,6 +18,7 @@ rôle de son `README.md` et de son `JOURNAL.md`. Elle répond à trois questions
 | Projet | Domaine | Statut | Fiche |
 |---|---|---|---|
 | Synoé | Médecine du travail | En production, pilote | [[synoe]] |
+| Kalybris | Pharmacie d'officine (CI) | Sprint 0 fait, avant le premier code | [[kalybris]] |
 
 > Un projet entre ici **au moment de l'amorce**, pas à la fin : la fiche se
 > remplit au fil de l'eau, sinon elle ne se remplit jamais.

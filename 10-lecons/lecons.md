@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-08-26
+maj: 2026-09-05
 ---
 
 # Leçons apprises
@@ -35,6 +35,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[ce-que-l-ecran-promet-le-code-le-fait]] — l'écart entre l'affirmation et le calcul
 - [[une-fonctionnalite-invisible-est-absente]] — un état vide muet se lit comme une panne
 - [[une-propriete-de-colonne-ne-survit-pas-a-une-rangee]] — quand un conteneur tourne, relire ses enfants
+- [[une-fonctionnalite-mise-en-scene-est-pire-qu-absente]] — une maquette qui promet ce qu'aucun code ne tient
 
 ## Vérifier
 
@@ -42,6 +43,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[regarder-l-application-fait-partie-de-la-recette]] — 480 tests verts, trois écrans blancs
 - [[mesurer-l-outil-avant-de-conclure]] — un outil se vérifie dans le régime où on l'emploie
 - [[une-sauvegarde-se-verifie-avant-de-detruire]] — la taille d'un fichier ne prouve rien
+- [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle vide avant d'écrire
 
 ## Git, release, agents
 
@@ -52,11 +54,13 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[chercher-avant-d-ecrire]] — grepper le domaine, pas le nom du fichier envisagé
 - [[ecrire-la-decision-avec-le-code]] — un ADR écrit après n'est jamais écrit
 - [[une-conclusion-consignee-devient-consigne]] — corriger le doc fait partie du correctif
+- [[un-rapport-d-agent-est-une-piste-pas-un-fait]] — un constat qui fonde une décision se revérifie à la source
 
 ## Sécurité et résilience
 
 - [[la-cle-d-administration-ne-va-jamais-cote-client]]
 - [[un-garde-fou-local-se-leve-hors-ligne]] — un verrou sur des données locales se lève hors ligne
+- [[un-garde-fou-trop-large-empeche-sa-propre-documentation]] — un filtre décide sur ce qui s'exécute, pas sur ce qui s'écrit
 
 ---
 
