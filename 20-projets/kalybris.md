@@ -39,6 +39,8 @@ Session du 05/09/2026 (Sprint 0, audit d'un prototype livré par un tiers) :
   d'agents corrigées après vérification directe à la source
 - [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle
   vide transforme un principe (« restons légers ») en arbitrage chiffré
+- [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — l'audit
+  qui dénonçait la fuite l'a d'abord recopiée, puis committée
 
 ## Les patrons à reprendre ailleurs
 

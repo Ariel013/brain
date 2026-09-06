@@ -61,6 +61,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[la-cle-d-administration-ne-va-jamais-cote-client]]
 - [[un-garde-fou-local-se-leve-hors-ligne]] — un verrou sur des données locales se lève hors ligne
 - [[un-garde-fou-trop-large-empeche-sa-propre-documentation]] — un filtre décide sur ce qui s'exécute, pas sur ce qui s'écrit
+- [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — le contrôle final se fait sur `git log -p`, pas sur le disque
 
 ---
 
