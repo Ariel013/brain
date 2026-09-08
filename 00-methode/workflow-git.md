@@ -7,6 +7,11 @@ maj: 2026-08-26
 
 # Workflow git
 
+> **Avant d'écrire dans un dépôt partagé** — coffre de méthode, doc commune,
+> monorepo — `git status` d'abord : ce qui y traîne et qui n'est pas de toi se
+> signale et se committe à part, jamais avec ton lot. Et ne jamais `git add` en
+> attendant une validation → [[un-espace-partage-se-verifie-propre-avant-d-y-ecrire]].
+
 ## La règle absolue
 
 **Jamais de `git push` sans confirmation explicite, à chaque fois.** Ce n'est

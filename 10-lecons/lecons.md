@@ -51,6 +51,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 ## Git, release, agents
 
 - [[stager-nommement]] — une commande large ne regarde pas ce qu'elle ramasse
+- [[un-espace-partage-se-verifie-propre-avant-d-y-ecrire]] — ne jamais committer ce qu'on n'a pas écrit
 - [[une-release-se-coupe-sur-un-perimetre]] — pas sur l'état de `dev`
 - [[verifier-chaque-commit-du-decoupage]] — ne jamais affirmer ce qu'on n'a pas mesuré
 - [[nommer-la-copie-visee]] — `git -C <copie>` dès le second worktree
