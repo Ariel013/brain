@@ -4,7 +4,7 @@ type: projet
 domaine: santé au travail
 statut: en production (pilote mono-cabinet)
 depot: ~/PROJETS/synoe
-maj: 2026-08-26
+maj: 2026-09-08
 ---
 
 # Synoé
@@ -30,6 +30,8 @@ les notes de [[lecons]] en viennent. Les plus structurantes :
 - [[stager-nommement]] — des données sensibles committées par une commande large
 - [[ecrire-la-decision-avec-le-code]] — 5 000 lignes livrées sans ADR ni tests
 - [[regarder-l-application-fait-partie-de-la-recette]] — 480 tests verts, trois écrans blancs
+- [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — « typecheck vert » sur un lot qui ne compilait pas
+- [[une-consigne-executable-se-redige-contre-le-code]] — une marche à suivre écrite depuis le journal
 
 ## Les patrons à reprendre ailleurs
 

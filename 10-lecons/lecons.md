@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-09-06
+maj: 2026-09-08
 ---
 
 # Leçons apprises
@@ -36,6 +36,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-fonctionnalite-invisible-est-absente]] — un état vide muet se lit comme une panne
 - [[une-propriete-de-colonne-ne-survit-pas-a-une-rangee]] — quand un conteneur tourne, relire ses enfants
 - [[une-fonctionnalite-mise-en-scene-est-pire-qu-absente]] — une maquette qui promet ce qu'aucun code ne tient
+- [[une-consigne-executable-se-redige-contre-le-code]] — une consigne fausse produit un faux négatif
 
 ## Vérifier
 
@@ -45,6 +46,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-sauvegarde-se-verifie-avant-de-detruire]] — la taille d'un fichier ne prouve rien
 - [[un-tri-sur-une-colonne-castee-trie-sur-le-cast]] — un jeu d'essai à un chiffre ne teste pas un tri
 - [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle vide avant d'écrire
+- [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — un drapeau désarme le contrôle que le script promet
 
 ## Git, release, agents
 

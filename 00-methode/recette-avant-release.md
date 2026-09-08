@@ -2,17 +2,25 @@
 titre: Recette avant release
 aliases: [Recette, Checklist release]
 type: methode
-maj: 2026-08-26
+maj: 2026-09-08
 ---
 
 # Recette avant release
 
 > Des tests verts ne prouvent que ce qu'ils exercent. Trois écrans blancs sont
 > déjà passés à travers 480 tests, un build vert et un typecheck vert.
+>
+> Et une étape **nommée** n'est pas une étape **lancée** : un lot déclaré
+> « typecheck vert » ne compilait pas, les deux scripts de build appelant
+> `tsc --noCheck` → [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]].
 
 ## L'ordre
 
+0. **Lire les scripts de recette du dépôt**, une fois par projet : vérifier
+   qu'aucun drapeau n'y désarme le contrôle que le nom promet (`--noCheck`,
+   `--no-verify`, `--passWithNoTests`, `|| true`, `continue-on-error`).
 1. **Typecheck** — sur chaque niveau de la remontée, pas seulement sur `dev`.
+   Lancé **nommément**, son code de sortie lu : un build vert ne le remplace pas.
 2. **Tests** — rejoués **après chaque fusion**, pas une fois au début.
 3. **Build** — un build qui passe en local ne prouve pas que le bundle servi est
    le bon (voir §5).
@@ -53,3 +61,5 @@ Ces défauts ne se prennent qu'en y pensant explicitement :
   → [[une-fonctionnalite-invisible-est-absente]].
 - **Un test de garde qui passe pour de mauvaises raisons**
   → [[casser-le-test-expres]].
+- **Une consigne remise à l'utilisateur qui décrit l'intention et non l'écran**
+  → [[une-consigne-executable-se-redige-contre-le-code]].
