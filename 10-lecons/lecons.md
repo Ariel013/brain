@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-09-05
+maj: 2026-09-06
 ---
 
 # Leçons apprises
@@ -43,6 +43,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[regarder-l-application-fait-partie-de-la-recette]] — 480 tests verts, trois écrans blancs
 - [[mesurer-l-outil-avant-de-conclure]] — un outil se vérifie dans le régime où on l'emploie
 - [[une-sauvegarde-se-verifie-avant-de-detruire]] — la taille d'un fichier ne prouve rien
+- [[un-tri-sur-une-colonne-castee-trie-sur-le-cast]] — un jeu d'essai à un chiffre ne teste pas un tri
 - [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle vide avant d'écrire
 
 ## Git, release, agents
@@ -62,6 +63,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-garde-fou-local-se-leve-hors-ligne]] — un verrou sur des données locales se lève hors ligne
 - [[un-garde-fou-trop-large-empeche-sa-propre-documentation]] — un filtre décide sur ce qui s'exécute, pas sur ce qui s'écrit
 - [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — le contrôle final se fait sur `git log -p`, pas sur le disque
+- [[un-garde-absolu-n-a-pas-d-exception-il-a-une-autre-porte]] — changer de niveau plutôt qu'affaiblir le garde
 
 ---
 

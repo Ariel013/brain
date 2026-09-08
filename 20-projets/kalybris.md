@@ -2,9 +2,9 @@
 titre: Kalybris
 type: projet
 domaine: pharmacie d'officine (Côte d'Ivoire)
-statut: sprint 0 terminé — audit fait, aucun code applicatif écrit
+statut: sprints 0 et A terminés — socle poste et serveur, 168 tests
 depot: ~/PROJETS/Kalybris
-maj: 2026-09-05
+maj: 2026-09-06
 ---
 
 # Kalybris
@@ -41,6 +41,10 @@ Session du 05/09/2026 (Sprint 0, audit d'un prototype livré par un tiers) :
   vide transforme un principe (« restons légers ») en arbitrage chiffré
 - [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — l'audit
   qui dénonçait la fuite l'a d'abord recopiée, puis committée
+- [[un-tri-sur-une-colonne-castee-trie-sur-le-cast]] — une chaîne d'audit
+  vérifiée dans l'ordre 10, 11, 9 ; le défaut n'apparaît qu'à la dixième ligne
+- [[un-garde-absolu-n-a-pas-d-exception-il-a-une-autre-porte]] — purger un
+  journal append-only sans y percer de porte
 
 ## Les patrons à reprendre ailleurs
 
