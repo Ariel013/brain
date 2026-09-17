@@ -1,7 +1,7 @@
 ---
 titre: Une fonctionnalité invisible est une fonctionnalité absente
 type: lecon
-origine: Synoé — 2026-08-23 · Strongman — 2026-09-17
+origine: Synoé — 2026-08-23 · Strongman — 2026-09-17 (deux fois)
 tags: [front, produit]
 ---
 
@@ -32,5 +32,15 @@ plateau n'affiche que les passages ; et le préchargement sautait toute épreuve
 ayant déjà une file. Trois comportements exacts, un résultat faux, pas un mot à
 l'écran. Un écran qui ne montre que ce qui existe doit **dire ce qui manque**
 — ici, les athlètes sans passage sont listés avec le bouton qui les y met.
+
+**Troisième occurrence — un sélecteur sans options (Strongman, 2026-09-17).**
+Signalé comme « le niveau ne passe pas, le select dit de choisir mais ça ne
+prend pas ». Rien à voir avec l'enregistrement : en base, l'épreuve avait les
+niveaux activés et **aucune liste** de niveaux. Le `<select>` n'offrait que son
+libellé « — Niveau à déclarer — ». Un sélecteur vide est le même blanc muet
+qu'un écran vide, et l'utilisateur le décrit comme une panne de sauvegarde.
+Deux gestes : **lire la donnée avant le code** quand le rapport parle d'un
+effet ; et ne jamais servir un sélecteur sans option — offrir la saisie libre
+et dire où renseigner la liste.
 
 Voir aussi [[ce-que-l-ecran-promet-le-code-le-fait]], [[documents-du-projet]].

@@ -2,7 +2,7 @@
 titre: Strongman
 type: projet
 domaine: arbitrage sportif en direct (FIBDA, Côte d'Ivoire)
-statut: déployé et vérifié en ligne, avant la compétition — 169 tests
+statut: déployé et vérifié en ligne, avant la compétition — 175 tests
 depot: ~/PROJETS/strongmanrepo
 maj: 2026-09-17
 ---
@@ -42,6 +42,8 @@ Sessions des 16 et 17 septembre 2026 (déploiement, premiers retours du terrain)
   athlètes sans passage, invisibles au plateau, lus comme un bug de filtre
 - [[une-enumeration-de-champs-se-teste]] — seconde occurrence : un état
   ajouté, un message qui énumérait les états resté faux
+- [[une-fonctionnalite-invisible-est-absente]] — troisième occurrence : un
+  sélecteur sans option, signalé comme « ça ne prend pas »
 
 Restée dans le `JOURNAL.md` du projet, parce que propre au portage : sur un
 portage, la référence est l'original, pas l'intuition — un test qui échoue se
@@ -57,6 +59,11 @@ vérifie d'abord contre `docs/reference/`.
   du code. Ce qui manquait était une case de saisie, pas une règle. Vérifier
   d'abord ce que le calcul fait, répondre avec l'exemple du client, puis
   n'ajouter que ce qui manque — et consigner l'exemple dans les règles métier.
+- **Un écran de pilotage règle, il n'affiche pas.** La régie a reçu deux fois
+  de l'information « utile » (classement, épreuve en cours) que Kevin a fait
+  retirer : ce qui se lit se lit sur les écrans pilotés, pas sur le pupitre.
+- **Un barème nouveau s'écrit avec sa table** dans les règles métier, sa
+  fonction pure et ses tests — le même jour (clubs : 15 / 10 / 5 / 4 / 3 / 1).
 - **Ce qui se relève tout seul se relève tout seul.** Le temps au chrono se
   pose dans la case à l'arrêt du chronomètre, modifiable ; la table n'a rien
   à recopier depuis l'écran d'à côté.
