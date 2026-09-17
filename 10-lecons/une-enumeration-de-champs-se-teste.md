@@ -1,7 +1,7 @@
 ---
 titre: Une énumération de champs est un piège à retardement
 type: lecon
-origine: Synoé — 2026-08-23
+origine: Synoé — 2026-08-23 · Strongman — 2026-09-17
 tags: [donnees, tests]
 ---
 
@@ -27,4 +27,13 @@ source de vérité. Une seconde copie d'une liste explicite diverge toujours.
 auditer, pas une addition anodine : `?` fait taire le compilateur exactement là
 où on aurait besoin qu'il crie.
 
-Voir aussi [[verifier-le-chemin-d-ecriture]].
+**Seconde occurrence — un message qui énumère des états (Strongman, 2026-09-17).**
+Un passage avait trois états. Un quatrième, « en attente de résultat », a été
+ajouté avec ses tests. Le message de « Reconstruire l'ordre » disait encore
+« tous les passages sont déjà validés » : il énumérait implicitement les états
+finaux, et le nouveau n'y était pas. L'utilisateur l'a lu comme un bug — des
+athlètes manquaient « sans raison ». Même règle : quand on ajoute un état,
+**grepper chaque message et chaque `statut ===` qui raisonne sur la liste**,
+pas seulement les filtres qui ont fait échouer un test.
+
+Voir aussi [[verifier-le-chemin-d-ecriture]], [[une-fonctionnalite-invisible-est-absente]].

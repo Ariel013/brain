@@ -2,7 +2,7 @@
 titre: Strongman
 type: projet
 domaine: arbitrage sportif en direct (FIBDA, Côte d'Ivoire)
-statut: déployé et vérifié en ligne, avant la compétition — 168 tests
+statut: déployé et vérifié en ligne, avant la compétition — 169 tests
 depot: ~/PROJETS/strongmanrepo
 maj: 2026-09-17
 ---
@@ -40,6 +40,8 @@ Sessions des 16 et 17 septembre 2026 (déploiement, premiers retours du terrain)
   production affirmé depuis le poste local, sans l'interroger
 - [[une-fonctionnalite-invisible-est-absente]] — seconde occurrence : deux
   athlètes sans passage, invisibles au plateau, lus comme un bug de filtre
+- [[une-enumeration-de-champs-se-teste]] — seconde occurrence : un état
+  ajouté, un message qui énumérait les états resté faux
 
 Restée dans le `JOURNAL.md` du projet, parce que propre au portage : sur un
 portage, la référence est l'original, pas l'intuition — un test qui échoue se
@@ -50,6 +52,14 @@ vérifie d'abord contre `docs/reference/`.
 - **L'écriture sort de l'action serveur.** Les fonctions qui décident de
   l'état vivent dans un module ordinaire, testable hors requête ; l'action
   n'ajoute que session, trace et rafraîchissement.
+- **La règle de classement se relit avant de coder une demande de départage.**
+  Le client a décrit sa règle avec un exemple chiffré ; elle était déjà celle
+  du code. Ce qui manquait était une case de saisie, pas une règle. Vérifier
+  d'abord ce que le calcul fait, répondre avec l'exemple du client, puis
+  n'ajouter que ce qui manque — et consigner l'exemple dans les règles métier.
+- **Ce qui se relève tout seul se relève tout seul.** Le temps au chrono se
+  pose dans la case à l'arrêt du chronomètre, modifiable ; la table n'a rien
+  à recopier depuis l'écran d'à côté.
 - **Libérer la ressource et saisir le résultat sont deux étapes.** Quand un
   résultat dépend d'un tiers lent (le jury sur un grand terrain), l'état
   bloquant (« au plateau ») ne doit pas avoir la validation pour seule sortie.
