@@ -1,7 +1,7 @@
 ---
 titre: Un découpage en commits se vérifie, il ne se suppose pas
 type: lecon
-origine: Synoé — 2026-08-23 et 2026-08-24
+origine: Synoé — 2026-08-23 et 2026-08-24 · Strongman — 2026-09-16
 tags: [git, agents]
 ---
 
@@ -26,4 +26,11 @@ dépendances en lien symbolique : quelques minutes pour tout le lot, sans touche
 à l'arbre de travail ni au serveur de développement — qu'on ne fait jamais
 changer de branche sous les pieds.
 
-Voir aussi [[nommer-la-copie-visee]], [[ecrire-la-decision-avec-le-code]].
+**Même règle, autre objet (Strongman, 2026-09-16).** Un rapport et le
+`A-FAIRE.md` affirmaient qu'une variable d'environnement malformée bloquait
+toute connexion, « en local comme en ligne ». Faux : la production répondait
+en ordre. Le diagnostic venait du poste local, étendu à la production sans
+l'interroger — alors qu'une requête suffisait. Un état de production s'affirme
+après l'avoir interrogé, et l'affirmation **nomme l'environnement mesuré**.
+
+Voir aussi [[nommer-la-copie-visee]], [[ecrire-la-decision-avec-le-code]], [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]].

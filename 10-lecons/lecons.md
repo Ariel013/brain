@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-09-08
+maj: 2026-09-17
 ---
 
 # Leçons apprises
@@ -23,6 +23,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-seul-etat-derive-le-reste]] — deux états qui doivent s'accorder sont un seul état mal nommé
 - [[un-selecteur-lit-il-ne-calcule-pas]] — un sélecteur qui construit sa valeur fait boucler le rendu
 - [[lire-le-fichier-reel-avant-de-modeliser]] — la structure est dans les répétitions, pas les en-têtes
+- [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]] — 57 pools ouverts pour 3 requêtes
 
 ## Frontières et architecture
 
@@ -47,6 +48,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-tri-sur-une-colonne-castee-trie-sur-le-cast]] — un jeu d'essai à un chiffre ne teste pas un tri
 - [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle vide avant d'écrire
 - [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — un drapeau désarme le contrôle que le script promet
+- [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]] — 82 tests verts, trois écritures qui plantent au deuxième appel
+- [[un-test-se-borne-a-son-propre-jeu-de-donnees]] — une requête sans filtre touche les données réelles en silence
 
 ## Git, release, agents
 

@@ -2,7 +2,7 @@
 titre: Recette avant release
 aliases: [Recette, Checklist release]
 type: methode
-maj: 2026-09-08
+maj: 2026-09-17
 ---
 
 # Recette avant release
@@ -21,7 +21,12 @@ maj: 2026-09-08
    `--no-verify`, `--passWithNoTests`, `|| true`, `continue-on-error`).
 1. **Typecheck** — sur chaque niveau de la remontée, pas seulement sur `dev`.
    Lancé **nommément**, son code de sortie lu : un build vert ne le remplace pas.
-2. **Tests** — rejoués **après chaque fusion**, pas une fois au début.
+2. **Tests** — rejoués **après chaque fusion**, pas une fois au début. Et
+   vérifier qu'ils **écrivent** : une suite qui ne calcule que la logique pure
+   laisse passer une requête SQL invalide
+   → [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]]. Sur
+   une base partagée, chaque requête de test porte l'identifiant de son jeu
+   → [[un-test-se-borne-a-son-propre-jeu-de-donnees]].
 3. **Build** — un build qui passe en local ne prouve pas que le bundle servi est
    le bon (voir §5).
 4. **Passe visuelle** — ouvrir **chaque écran touché**. Automatisable sans rien

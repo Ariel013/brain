@@ -1,7 +1,7 @@
 ---
 titre: Une fonctionnalité invisible est une fonctionnalité absente
 type: lecon
-origine: Synoé — 2026-08-23
+origine: Synoé — 2026-08-23 · Strongman — 2026-09-17
 tags: [front, produit]
 ---
 
@@ -24,5 +24,13 @@ vide muet se lit comme une panne.
 préalable (« le catalogue contient déjà X ») est **intestable** : elle doit
 fabriquer cet état elle-même à l'étape 1. Sinon son échec sera lu comme un
 défaut du logiciel.
+
+**Seconde occurrence (Strongman, 2026-09-17).** Deux athlètes rangés, pesés,
+numérotés n'apparaissaient pas au plateau. Tout ressemblait à un bug de filtre.
+En fait : inscrits **après** le préchargement, ils n'avaient aucun passage ; le
+plateau n'affiche que les passages ; et le préchargement sautait toute épreuve
+ayant déjà une file. Trois comportements exacts, un résultat faux, pas un mot à
+l'écran. Un écran qui ne montre que ce qui existe doit **dire ce qui manque**
+— ici, les athlètes sans passage sont listés avec le bouton qui les y met.
 
 Voir aussi [[ce-que-l-ecran-promet-le-code-le-fait]], [[documents-du-projet]].

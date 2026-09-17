@@ -2,7 +2,7 @@
 titre: Conventions de code
 aliases: [Conventions, Style]
 type: methode
-maj: 2026-08-26
+maj: 2026-09-17
 ---
 
 # Conventions de code
@@ -48,6 +48,11 @@ Ce qui suit est ce qui vaut d'un projet à l'autre.
 - **Une ressource distribuée par une couche se libère dans cette couche**, pas
   chez l'appelant — vaut pour toute ressource à cycle de vie (URL, abonnement,
   verrou, fichier ouvert).
+- **L'écriture sort de l'action** : ce qui décide de l'état vit dans une
+  fonction ordinaire, l'action serveur n'en garde que l'enveloppe (session,
+  audit, rafraîchissement) → [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]].
+- **Un cache de connexion se pose dans tous les environnements**, jamais
+  « seulement en dev » → [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]].
 
 ## Interface
 
