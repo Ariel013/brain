@@ -44,6 +44,8 @@ Sessions des 16 et 17 septembre 2026 (déploiement, premiers retours du terrain)
   ajouté, un message qui énumérait les états resté faux
 - [[une-fonctionnalite-invisible-est-absente]] — troisième occurrence : un
   sélecteur sans option, signalé comme « ça ne prend pas »
+- [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]] — les noms
+  tapés d'une traite perdaient leur fin, seulement en ligne
 
 Restée dans le `JOURNAL.md` du projet, parce que propre au portage : sur un
 portage, la référence est l'original, pas l'intuition — un test qui échoue se

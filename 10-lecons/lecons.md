@@ -38,6 +38,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-propriete-de-colonne-ne-survit-pas-a-une-rangee]] — quand un conteneur tourne, relire ses enfants
 - [[une-fonctionnalite-mise-en-scene-est-pire-qu-absente]] — une maquette qui promet ce qu'aucun code ne tient
 - [[une-consigne-executable-se-redige-contre-le-code]] — une consigne fausse produit un faux négatif
+- [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]] — la valeur du serveur ne reprend la main qu'au repos
 
 ## Vérifier
 

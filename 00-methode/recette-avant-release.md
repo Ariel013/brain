@@ -44,6 +44,11 @@ maj: 2026-09-17
    répondent-elles (pas de 404 au rafraîchissement) ? la nouveauté est-elle
    réellement présente dans le chunk téléchargé ?
 
+7. **Saisir en ligne, pas seulement en local** : taper un texte long d'une
+   traite dans un champ à enregistrement automatique, sur la connexion réelle.
+   Le défaut n'existe pas quand l'aller-retour est instantané
+   → [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]].
+
 ## Avant de taguer
 
 - Le périmètre de la release est **décidé et énoncé** ; le travail s'arrête là
