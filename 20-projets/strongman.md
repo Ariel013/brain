@@ -2,9 +2,9 @@
 titre: Strongman
 type: projet
 domaine: arbitrage sportif en direct (FIBDA, Côte d'Ivoire)
-statut: déployé et vérifié en ligne, avant la compétition — 175 tests
+statut: déployé et vérifié en ligne, avant la compétition — 193 vérifications
 depot: ~/PROJETS/strongmanrepo
-maj: 2026-09-17
+maj: 2026-09-19
 ---
 
 # Strongman
@@ -47,6 +47,13 @@ Sessions des 16 et 17 septembre 2026 (déploiement, premiers retours du terrain)
 - [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]] — les noms
   tapés d'une traite perdaient leur fin, seulement en ligne
 
+Session du 19 septembre 2026 (alertes de pesée) :
+
+- [[une-consigne-executable-se-redige-contre-le-code]] — seconde occurrence :
+  « la validation attribue le dossard », hérité du chapeau de l'original, faux
+- [[verifier-chaque-commit-du-decoupage]] — troisième occurrence : statut de
+  déploiement `pending` alors que la production servait déjà le commit
+
 Restée dans le `JOURNAL.md` du projet, parce que propre au portage : sur un
 portage, la référence est l'original, pas l'intuition — un test qui échoue se
 vérifie d'abord contre `docs/reference/`.
@@ -76,6 +83,14 @@ vérifie d'abord contre `docs/reference/`.
   déjà relevé, ne compte nulle part tant qu'il n'est pas rempli, et la saisie
   différée prend la forme du document qui arrive (le tableau de la feuille
   papier). ADR 0004 du projet.
+- **Alerter n'est pas refuser.** À la pesée, un poids hors catégorie lève une
+  alerte de couleur et laisse l'officiel décider ; le logiciel ne tranche pas
+  à la place de celui qui signe. L'alerte reste après la validation : c'est
+  elle qu'on cherchera en cas de réclamation.
+- **Quand une valeur suit la mesure, garder celle qui dit l'annonce.** La
+  catégorie affectée est recalée sur le poids pesé à la validation ; comparer
+  « pesé » à « affecté » ferait donc disparaître l'alerte au moment où elle
+  compte. C'est le poids déclaré, jamais réécrit, qui garde la mémoire.
 - **Un écart avec l'original se décide et s'écrit** (ADR), il ne s'improvise
   pas — quatre écarts nommés sur tout le portage.
 - **Le papier demande exactement ce que l'écran demandera à la ressaisie, avec

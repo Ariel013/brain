@@ -1,7 +1,7 @@
 ---
 titre: Une consigne exécutable se rédige contre le code, pas contre le journal
 type: lecon
-origine: Synoé — 2026-09-08
+origine: Synoé — 2026-09-08 · Strongman — 2026-09-19
 tags: [documentation, utilisateur, agents]
 ---
 
@@ -30,6 +30,16 @@ une hésitation, elle produit un **faux négatif** : l'utilisateur fait le geste
 n'obtient pas ce qui est annoncé, et conclut que la correction a échoué. On
 rouvre alors un défaut qui n'existe pas — et, la fois suivante, on le croit
 moins quand il existe.
+
+**Seconde occurrence (Strongman, 2026-09-19).** Le mode d'emploi disait que la
+validation de la pesée « attribue le dossard ». Dans le code, le dossard se
+saisit à la main et la validation le **réclame** : sans lui, le bouton reste
+gris. La phrase venait du chapeau de l'écran d'origine, repris tel quel au
+portage — et elle avait survécu à une réécriture du mode d'emploi annoncée
+« contre le code » deux jours plus tôt. Trouvée en ajoutant un paragraphe
+voisin, parce que l'écran était ouvert à côté. Une source de plus qui dit
+l'intention et pas le comportement : **le texte de l'interface elle-même**.
+Un libellé hérité n'est pas une preuve de ce que fait le bouton.
 
 Voir aussi [[ce-que-l-ecran-promet-le-code-le-fait]],
 [[une-conclusion-consignee-devient-consigne]],
