@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-09-17
+maj: 2026-09-20
 ---
 
 # Leçons apprises
@@ -18,7 +18,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 
 - [[verifier-le-chemin-d-ecriture]] — une donnée qui vit à l'écran n'est pas une donnée enregistrée
 - [[une-enumeration-de-champs-se-teste]] — toute liste explicite de champs prend du retard
-- [[refuser-plutot-que-convertir]] — une conversion silencieuse est une donnée fausse
+- [[refuser-plutot-que-convertir]] — une conversion silencieuse est une donnée fausse ; 0 n'est presque jamais une mesure
 - [[normaliser-a-la-lecture]] — deux unités dans un même champ se convertissent à la lecture
 - [[un-seul-etat-derive-le-reste]] — deux états qui doivent s'accorder sont un seul état mal nommé
 - [[un-selecteur-lit-il-ne-calcule-pas]] — un sélecteur qui construit sa valeur fait boucler le rendu
@@ -39,6 +39,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-fonctionnalite-mise-en-scene-est-pire-qu-absente]] — une maquette qui promet ce qu'aucun code ne tient
 - [[une-consigne-executable-se-redige-contre-le-code]] — une consigne fausse produit un faux négatif
 - [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]] — la valeur du serveur ne reprend la main qu'au repos
+- [[un-verrou-se-livre-avec-sa-voie-de-correction]] — retirer un geste dangereux engage à livrer le geste sûr, le même jour
 
 ## Vérifier
 
@@ -51,6 +52,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — un drapeau désarme le contrôle que le script promet
 - [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]] — 82 tests verts, trois écritures qui plantent au deuxième appel
 - [[un-test-se-borne-a-son-propre-jeu-de-donnees]] — une requête sans filtre touche les données réelles en silence
+- [[lire-la-donnee-avant-l-hypothese]] — un rapport donne un effet et une cause : garder l'effet, lire la base
 
 ## Git, release, agents
 

@@ -73,3 +73,8 @@ Ces défauts ne se prennent qu'en y pensant explicitement :
   → [[casser-le-test-expres]].
 - **Une consigne remise à l'utilisateur qui décrit l'intention et non l'écran**
   → [[une-consigne-executable-se-redige-contre-le-code]].
+- **Un verrou livré sans le geste sûr qui le remplace** : « l'erreur est
+  validée, constatée une heure après — que fait l'opérateur, seul ? »
+  → [[un-verrou-se-livre-avec-sa-voie-de-correction]].
+- **Un état dédié à « rien » doublé d'une valeur numérique qui dit pareil**
+  (verdict Zéro et performance 0) → [[refuser-plutot-que-convertir]].

@@ -2,9 +2,9 @@
 titre: Strongman
 type: projet
 domaine: arbitrage sportif en direct (FIBDA, Côte d'Ivoire)
-statut: déployé et vérifié en ligne, avant la compétition — 193 vérifications
+statut: compétition tenue le 2026-09-19, résultats réparés et tracés le 20 — 205 vérifications
 depot: ~/PROJETS/strongmanrepo
-maj: 2026-09-19
+maj: 2026-09-20
 ---
 
 # Strongman
@@ -54,6 +54,16 @@ Session du 19 septembre 2026 (alertes de pesée) :
 - [[verifier-chaque-commit-du-decoupage]] — troisième occurrence : statut de
   déploiement `pending` alors que la production servait déjà le commit
 
+Sessions des 19 et 20 septembre 2026 (le jour de la compétition et le lendemain) :
+
+- [[un-verrou-se-livre-avec-sa-voie-de-correction]] — l'ADR « plus
+  d'annulation depuis le plateau » avait laissé la correction « à venir » ;
+  le besoin est arrivé en pleine épreuve
+- [[lire-la-donnee-avant-l-hypothese]] — « c'est les 90 secondes » : non,
+  21 lignes `ok · valeur 0` en base
+- [[refuser-plutot-que-convertir]] — seconde occurrence : une borne à 0
+  acceptait « rien » comme une performance, à côté du verdict Zéro
+
 Restée dans le `JOURNAL.md` du projet, parce que propre au portage : sur un
 portage, la référence est l'original, pas l'intuition — un test qui échoue se
 vérifie d'abord contre `docs/reference/`.
@@ -91,6 +101,16 @@ vérifie d'abord contre `docs/reference/`.
   catégorie affectée est recalée sur le poids pesé à la validation ; comparer
   « pesé » à « affecté » ferait donc disparaître l'alerte au moment où elle
   compte. C'est le poids déclaré, jamais réécrit, qui garde la mémoire.
+- **Une réparation de données en production est un script versionné, gardé
+  sur sa cible exacte.** Il compte ce qu'il s'attend à trouver (21 + 1) et
+  s'arrête avant la première écriture au moindre écart ; il tourne d'abord à
+  blanc et liste les lignes ; il écrit en une transaction ; il laisse au
+  journal d'audit l'ancien résultat de chaque ligne ; on relit la base après.
+  Relancé, il s'arrête tout seul : sa garde ne trouve plus sa cible.
+- **Avant de coder une demande ambiguë qui touche une règle, poser la question
+  qui la coupe en deux.** « 1 contre 1 » : passage à deux, ou duel qui change
+  le classement ? La réponse a évité de toucher au barème. (Le chantier a été
+  abandonné ensuite, non committé : rien à défaire.)
 - **Un écart avec l'original se décide et s'écrit** (ADR), il ne s'improvise
   pas — quatre écarts nommés sur tout le portage.
 - **Le papier demande exactement ce que l'écran demandera à la ressaisie, avec
