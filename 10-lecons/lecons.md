@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-09-20
+maj: 2026-09-24
 ---
 
 # Leçons apprises
@@ -47,6 +47,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[regarder-l-application-fait-partie-de-la-recette]] — 480 tests verts, trois écrans blancs
 - [[mesurer-l-outil-avant-de-conclure]] — un outil se vérifie dans le régime où on l'emploie
 - [[une-sauvegarde-se-verifie-avant-de-detruire]] — la taille d'un fichier ne prouve rien
+- [[un-test-de-route-emprunte-le-chemin-de-l-ecran]] — 64 tests verts, la restauration impossible depuis l'écran
 - [[un-tri-sur-une-colonne-castee-trie-sur-le-cast]] — un jeu d'essai à un chiffre ne teste pas un tri
 - [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle vide avant d'écrire
 - [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — un drapeau désarme le contrôle que le script promet
@@ -59,6 +60,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[stager-nommement]] — une commande large ne regarde pas ce qu'elle ramasse
 - [[un-espace-partage-se-verifie-propre-avant-d-y-ecrire]] — ne jamais committer ce qu'on n'a pas écrit
 - [[une-release-se-coupe-sur-un-perimetre]] — pas sur l'état de `dev`
+- [[une-fonction-serverless-s-envoie-regroupee-et-se-verifie-au-curl]] — « Aliased » trois fois, l'API morte trois fois
+- [[l-inscription-a-une-offre-gratuite-se-fait-avant-l-adr]] — l'ADR écrit, le fournisseur exige un paiement
 - [[verifier-chaque-commit-du-decoupage]] — ne jamais affirmer ce qu'on n'a pas mesuré
 - [[nommer-la-copie-visee]] — `git -C <copie>` dès le second worktree
 - [[chercher-avant-d-ecrire]] — grepper le domaine, pas le nom du fichier envisagé

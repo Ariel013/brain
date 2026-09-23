@@ -60,6 +60,8 @@ Voir [[modele-adr]].
 
 La règle qui compte : **l'ADR s'écrit dans le même mouvement que le code qui
 l'applique**, jamais après. → [[ecrire-la-decision-avec-le-code]]
+Et pour un ADR d'hébergement : la ressource existe avant la décision
+→ [[l-inscription-a-une-offre-gratuite-se-fait-avant-l-adr]]
 
 ## Tenue à jour
 
