@@ -1,7 +1,7 @@
 ---
 titre: Devant un résultat surprenant, lire la donnée avant le code — et avant l'hypothèse
 type: lecon
-origine: Strongman — 2026-09-17 et 2026-09-20
+origine: Strongman — 2026-09-17 et 2026-09-20 ; FIBDA — 2026-09-26
 tags: [diagnostic, donnees, utilisateur]
 ---
 
@@ -32,6 +32,15 @@ la gardera.
 **Corollaire.** La donnée lue se cite dans la réponse (combien de lignes, quel
 état), et l'environnement lu se nomme. C'est ce qui distingue un diagnostic
 d'une seconde hypothèse.
+
+**Troisième occurrence (FIBDA, 2026-09-26, jour de compétition).** Trois
+demandes en une après-midi, aucune n'était le bug annoncé : « l'import de
+photos ne marche pas » (le journal serveur montrait un envoi réussi ; le
+panneau visé était volontairement inactif), « Code incorrect » chez le chef
+(un espace collé, voir [[un-champ-masque-cache-l-espace-colle]]), « Catégories
+figées » (une règle voulue, devenue gênante). Chaque fois, un journal lu ou
+un message exact demandé a évité une correction à côté. Le journal serveur
+(`vercel logs`) compte comme « la donnée » au même titre que la base.
 
 Voir aussi [[verifier-chaque-commit-du-decoupage]],
 [[un-rapport-d-agent-est-une-piste-pas-un-fait]],

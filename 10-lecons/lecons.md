@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-09-24
+maj: 2026-09-26
 ---
 
 # Leçons apprises
@@ -40,6 +40,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-consigne-executable-se-redige-contre-le-code]] — une consigne fausse produit un faux négatif
 - [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]] — la valeur du serveur ne reprend la main qu'au repos
 - [[un-verrou-se-livre-avec-sa-voie-de-correction]] — retirer un geste dangereux engage à livrer le geste sûr, le même jour
+- [[un-nouvel-onglet-quitte-une-application-installee]] — en PWA installée, `target="_blank"` bascule vers le navigateur sans la session
+- [[un-champ-masque-cache-l-espace-colle]] — « Code incorrect » sur tous les appareils : un espace collé, invisible
 
 ## Vérifier
 

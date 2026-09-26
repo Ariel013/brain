@@ -34,7 +34,9 @@ maj: 2026-09-17
    un autre port pour ne pas déranger celui du dev, puis une capture par route en
    navigateur sans interface. Aucun identifiant, aucune donnée réelle — mais un
    écran mort se voit immédiatement.
-   → [[regarder-l-application-fait-partie-de-la-recette]]
+   → [[regarder-l-application-fait-partie-de-la-recette]] ; sur une PWA
+   installable, aucun `target="_blank"`
+   → [[un-nouvel-onglet-quitte-une-application-installee]]
 5. **Balayer les largeurs** — pas seulement 1440 px. 999, 780, 560, 420. Deux
    défauts de mise en page en deux jours n'ont été vus que comme ça. Et **mesurer
    plutôt que croire l'image** : demander à la page ce qu'elle voit

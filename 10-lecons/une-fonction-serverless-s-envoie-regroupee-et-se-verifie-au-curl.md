@@ -1,7 +1,7 @@
 ---
 titre: Une fonction serverless s'envoie regroupée, et se vérifie au curl avant d'être annoncée
 type: lecon
-origine: FIBDA Bodybuilding — 2026-09-23
+origine: FIBDA Bodybuilding — 2026-09-23 et 2026-09-26
 tags: [vercel, serverless, deploiement, verification]
 ---
 
@@ -30,6 +30,15 @@ deploy --prebuilt`) plutôt que de laisser la plateforme détecter et
 construire. Et un déploiement n'est « en ligne » qu'après un `curl` sur une
 route d'API réelle (`/health`), pas sur la page d'accueil : les statiques
 répondent même quand la fonction est morte.
+
+**Seconde occurrence (FIBDA, 2026-09-26).** `vercel deploy --prebuilt` a rendu
+le code 0, `/health` répondait `ok`… et la page servait **encore l'ancien
+bundle** : la sortie du déploiement s'était arrêtée avant la mise en ligne. Le
+curl de santé ne distingue pas l'ancienne version de la nouvelle. Règle
+complétée : après chaque déploiement, lire dans la page servie le nom du
+fichier `assets/index-<hash>.js` et le **comparer à celui de la construction
+locale**, après quelques dizaines de secondes de propagation. Un code de retour
+et une route qui répond ne sont pas une version en ligne.
 
 Voir [[regarder-l-application-fait-partie-de-la-recette]],
 [[verifier-chaque-commit-du-decoupage]].
