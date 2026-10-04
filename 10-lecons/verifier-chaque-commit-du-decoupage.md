@@ -1,7 +1,7 @@
 ---
 titre: Un découpage en commits se vérifie, il ne se suppose pas
 type: lecon
-origine: Synoé — 2026-08-23 et 2026-08-24 · Strongman — 2026-09-16 et 2026-09-19
+origine: Synoé — 2026-08-23 et 2026-08-24 · Strongman — 2026-09-16 et 2026-09-19 · Synoé — 2026-10-04
 tags: [git, agents]
 ---
 
@@ -42,5 +42,16 @@ de ce que l'adresse publique sert. La preuve directe : chercher sur une page
 publique **une phrase qui n'existe que dans ce commit** — et vérifier que
 l'ancienne a disparu. Quand le changement est derrière une connexion, le dire :
 « déployé, non vu à l'écran ».
+
+**Deux lots dans un même arbre, un fichier en commun (Synoé, 2026-10-04).** Le
+second lot a été codé avant que le commit du premier soit validé, et les deux
+touchaient le même fichier. Ce qui a rendu le découpage possible sans rien
+réécrire : **figer le premier lot dans un patch (`git diff > lot.patch`) avant
+d'écrire la première ligne du second**. Au moment de committer, les fichiers
+propres à un lot se stagent nommément, les fichiers communs par
+`git apply --cached --include=<fichier> lot.patch` — l'index reçoit l'état du
+premier lot, l'arbre garde les deux. Puis le commit se vérifie seul dans un
+worktree détaché, comme toujours. Sans le patch pris **avant**, il aurait fallu
+démêler les deux lots à la main dans le fichier commun.
 
 Voir aussi [[nommer-la-copie-visee]], [[ecrire-la-decision-avec-le-code]], [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]].

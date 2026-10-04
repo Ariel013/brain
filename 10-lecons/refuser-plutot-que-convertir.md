@@ -1,7 +1,7 @@
 ---
 titre: Une conversion silencieuse est une donnée fausse
 type: lecon
-origine: Synoé — 2026-08-23 · Strongman — 2026-09-20
+origine: Synoé — 2026-08-23 · Strongman — 2026-09-20 · Synoé — 2026-10-04
 tags: [donnees, saisie]
 ---
 
@@ -35,6 +35,16 @@ qu'une. **Quand un état dédié existe pour « rien », la valeur numérique qu
 dit la même chose se refuse, avec un message qui nomme l'état à utiliser.**
 « Borner au vraisemblable » inclut la borne basse : 0 n'est presque jamais une
 mesure.
+
+**Troisième occurrence — un défaut qui invente la donnée (Synoé, 2026-10-04).**
+À la création d'un dossier, l'année d'embauche était posée d'office à l'année en
+cours, parce que le type l'exigeait et qu'aucun champ ne la demandait. Tous les
+salariés créés à la main étaient donc « embauchés » l'année de leur première
+visite ; l'utilisatrice l'a signalé comme un champ « impossible à modifier ».
+Même famille : rien n'est converti, mais **une valeur plausible est écrite à la
+place d'une absence**. Un champ obligatoire au type et absent du formulaire est
+le signal : soit on le demande, soit il devient facultatif — jamais on ne le
+remplit avec ce qu'on a sous la main (la date du jour, le premier de la liste).
 
 Voir aussi [[normaliser-a-la-lecture]], [[ce-que-l-ecran-promet-le-code-le-fait]],
 [[un-seul-etat-derive-le-reste]], [[lire-la-donnee-avant-l-hypothese]].

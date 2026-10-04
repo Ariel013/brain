@@ -1,7 +1,7 @@
 ---
 titre: Le calcul ne vit pas dans un composant
 type: lecon
-origine: Synoé — 2026-08-22
+origine: Synoé — 2026-08-22 · 2026-10-04
 tags: [architecture, tests, front]
 ---
 
@@ -21,5 +21,15 @@ que du rendu et de l'état d'affichage.
 
 **Corollaire.** Quand un défaut est trouvé dans un écran, **extraire avant de
 corriger** — sinon le défaut suivant s'y installera au même endroit.
+
+**Seconde occurrence — un filtre d'affichage posé dans l'écran (Synoé,
+2026-10-04).** Une constante (la SpO₂) cessait d'être montrée sans être détruite.
+Les relevés qui ne portaient qu'elle devaient donc disparaître de l'affichage :
+le filtre a été écrit dans le composant de la fiche. Le document imprimable, qui
+lit la même liste par un autre chemin, ne l'avait pas — il aurait imprimé comme
+« dernier relevé » une ligne vide, en masquant le vrai. Deux relectures l'ont vu
+avant le commit. **« Ce qui se montre » est une lecture nommée de la lib, que
+tous les lecteurs appellent** — l'écran, l'export, l'impression. Un filtre dans
+un composant n'est appliqué que par ce composant.
 
 Voir aussi [[ce-que-l-ecran-promet-le-code-le-fait]], [[lire-le-fichier-reel-avant-de-modeliser]].

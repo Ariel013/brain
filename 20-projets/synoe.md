@@ -32,6 +32,9 @@ les notes de [[lecons]] en viennent. Les plus structurantes :
 - [[regarder-l-application-fait-partie-de-la-recette]] — 480 tests verts, trois écrans blancs
 - [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — « typecheck vert » sur un lot qui ne compilait pas
 - [[une-consigne-executable-se-redige-contre-le-code]] — une marche à suivre écrite depuis le journal
+- [[retirer-une-regle-devant-un-repli-fait-tomber-le-cas-dans-le-repli]] — une colonne « retirée » de l'import y revenait en colonne libre
+- [[une-enumeration-de-champs-se-teste]] — une courbe ajoutée naissait masquée (réglage qui listait les courbes cochées)
+- [[refuser-plutot-que-convertir]] — l'année d'embauche posée d'office à l'année en cours
 
 ## Les patrons à reprendre ailleurs
 

@@ -1,7 +1,7 @@
 ---
 titre: Une énumération de champs est un piège à retardement
 type: lecon
-origine: Synoé — 2026-08-23 · Strongman — 2026-09-17
+origine: Synoé — 2026-08-23 · Strongman — 2026-09-17 · Synoé — 2026-10-04
 tags: [donnees, tests]
 ---
 
@@ -35,5 +35,16 @@ finaux, et le nouveau n'y était pas. L'utilisateur l'a lu comme un bug — des
 athlètes manquaient « sans raison ». Même règle : quand on ajoute un état,
 **grepper chaque message et chaque `statut ===` qui raisonne sur la liste**,
 pas seulement les filtres qui ont fait échouer un test.
+
+**Troisième occurrence — une préférence qui énumère ce qui est affiché (Synoé,
+2026-10-04).** Le réglage « quelles courbes afficher » gardait, par dossier, la
+liste des courbes **cochées**. Une cinquième courbe (le pouls) a été ajoutée :
+sur tout dossier déjà réglé, elle naissait décochée — donc invisible, exactement
+le symptôme qu'on venait corriger. Relevé en relecture, avant livraison. Même
+cause : une liste explicite ne connaît que ce qui existait le jour où elle a été
+écrite. **Une préférence stocke l'exception, pas la totalité** : ce que
+l'utilisateur a masqué, pas ce qu'il voit. Le nouveau venu est alors visible par
+défaut, sans migration. Et l'ancien réglage se convertit contre la liste **telle
+qu'elle était quand il a été écrit**, pas contre celle d'aujourd'hui.
 
 Voir aussi [[verifier-le-chemin-d-ecriture]], [[une-fonctionnalite-invisible-est-absente]].
