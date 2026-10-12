@@ -4,7 +4,7 @@ type: projet
 domaine: santé au travail
 statut: en production (pilote mono-cabinet)
 depot: ~/PROJETS/synoe
-maj: 2026-10-08
+maj: 2026-10-12
 ---
 
 # Synoé
@@ -37,6 +37,8 @@ les notes de [[lecons]] en viennent. Les plus structurantes :
 - [[refuser-plutot-que-convertir]] — l'année d'embauche posée d'office à l'année en cours
 - [[un-refus-partage-le-predicat-de-ce-qu-il-protege]] — le verrou d'unité d'une valeur suivie comptait zéro là où la courbe traçait
 - [[une-ecriture-brute-ne-trace-pas-l-action-publique-oui]] — journaliser dans `majSalarie` a doublé six actions qui s'en servaient comme écriture brute
+- [[une-appartenance-s-ecrit-elle-ne-se-derive-pas-ecran-par-ecran]] — rapports à zéro : `entrepriseId` dérivé dans les seuls rapports, puis rattrapage écrit hors journal
+- [[publier-un-detail-en-tout-ou-rien-et-le-tester-en-lecteur-qui-connait-la-regle]] — petits effectifs des rapports remis à l'employeur : trois passes de fuites avant le tout ou rien
 
 ## Les patrons à reprendre ailleurs
 

@@ -38,5 +38,14 @@ constats qu'une lecture seule n'aurait jamais produits, et plusieurs étaient
 démontrés **par exécution** plutôt qu'affirmés. La délégation en parallèle vaut
 largement son coût. C'est la relecture finale qui doit changer, pas la méthode.
 
+**Seconde occurrence — Synoé, 2026-10-12.** Un agent de rédaction (modèle
+léger) chargé du `JOURNAL.md` a reçu une liste de faits exacts et rendu un texte
+propre qui en inventait : un champ `dateEnt` qui n'existe pas, `enterpriseId`
+au lieu d'`entrepriseId`, un écran décrit de travers, et les **causes** de
+quatre leçons sur cinq. Le journal est le document qui fait autorité pour la
+session suivante : relu et corrigé avant commit. Même règle pour un document de
+continuité que pour un constat — **un texte d'agent qui sera relu comme une
+mémoire se relit ligne à ligne contre ce qu'on lui a donné**.
+
 Voir aussi [[mesurer-l-outil-avant-de-conclure]],
 [[une-conclusion-consignee-devient-consigne]].

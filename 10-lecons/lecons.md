@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-08
+maj: 2026-10-12
 ---
 
 # Leçons apprises
@@ -27,6 +27,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[retirer-une-regle-devant-un-repli-fait-tomber-le-cas-dans-le-repli]] — pour exclure un cas, ajouter la règle qui l'écarte
 - [[un-refus-partage-le-predicat-de-ce-qu-il-protege]] — un refus qui compte avec un autre critère que la lecture compte zéro là où elle compte un
 - [[une-ecriture-brute-ne-trace-pas-l-action-publique-oui]] — journaliser dans l'action du magasin, jamais dans l'écran ; l'écriture composée reste muette
+- [[une-appartenance-s-ecrit-elle-ne-se-derive-pas-ecran-par-ecran]] — un rattachement dérivé dans un seul écran : « 0 dossier » ailleurs ; et jamais d'écriture dans un recalcul (hors journal)
 - [[un-test-qui-porte-la-formule-la-protege]] — l'attendu de caisse soustrayait deux fois la monnaie, et le test portait la formule fausse dans son titre
 - [[une-regle-opposable-n-a-pas-de-valeur-par-defaut]] — `ordonnance` absent valait « vente libre » : un champ qui porte une obligation est obligatoire, le défaut est le plus restrictif
 
@@ -91,6 +92,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-garde-fou-trop-large-empeche-sa-propre-documentation]] — un filtre décide sur ce qui s'exécute, pas sur ce qui s'écrit
 - [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — le contrôle final se fait sur `git log -p`, pas sur le disque
 - [[un-garde-absolu-n-a-pas-d-exception-il-a-une-autre-porte]] — changer de niveau plutôt qu'affaiblir le garde
+- [[publier-un-detail-en-tout-ou-rien-et-le-tester-en-lecteur-qui-connait-la-regle]] — chaque cas particulier de masquage était une fuite ; tout ou rien, et énumérer les mondes possibles
 - [[un-garde-fou-qui-compte-zero-par-invisibilite-n-est-pas-un-garde-fou]] — un garde-fou vérifie d'abord qu'il voit ; au moins un fichier de tests sous le rôle de production
 - [[un-mecanisme-de-detection-se-teste-en-continuant-apres-la-detection]] — altérer, détecter, puis laisser tourner le cycle suivant ; « ignoré » n'est jamais un verdict
 

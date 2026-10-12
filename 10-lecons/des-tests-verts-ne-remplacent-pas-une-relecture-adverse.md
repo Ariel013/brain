@@ -28,4 +28,12 @@ qu'un constat manqué — déjà payé le 07/10). Chaque constat se corrige avec
 un test joué avant (échec) et après (succès), et sa règle monte en ADR.
 Coût mesuré : une revue coûte moins qu'une des tranches qu'elle relit.
 
+**Seconde occurrence — Synoé, 2026-10-12.** Quatre lots à `tsc`, tests et
+build verts ont été proposés au commit ; chaque relecture y a trouvé des
+défauts réels (écrans incohérents, écriture de dossiers sans trace, fuites
+de secret médical). L'utilisateur : « C'est fatiguant de revenir plusieurs
+fois sur les fonctionnalités mises en place. » Corollaire : **aucun commit
+avant une relecture sans défaut**, et la relecture se relance **après chaque
+correction** — trois passes ont été nécessaires sur deux des lots.
+
 Voir [[un-rapport-d-agent-est-une-piste-pas-un-fait]], [[casser-le-test-expres]], [[un-garde-fou-qui-compte-zero-par-invisibilite-n-est-pas-un-garde-fou]].

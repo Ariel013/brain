@@ -28,4 +28,11 @@ sur quelle base il a travaillé.
 qui partagent une base se `TRUNCATE` mutuellement, et deux migrations
 `012` ne se fusionnent pas.
 
+**Seconde occurrence — Synoé, 2026-10-12.** Agent lancé en worktree isolé
+« basé sur `dev` » : le worktree était sur `4db5ecb`, le commit de `main`.
+L'agent l'a vu (fichiers cités absents) et s'est arrêté sans rien coder. Remède
+retenu : **créer le worktree soi-même** (`git worktree add <chemin> -b
+<branche> dev`, lien vers `node_modules`) et donner son chemin à l'agent —
+plus aucun faux départ sur les trois lots suivants.
+
 Voir [[nommer-la-copie-visee]], [[un-rapport-d-agent-est-une-piste-pas-un-fait]].
