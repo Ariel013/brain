@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-04
+maj: 2026-10-08
 ---
 
 # Leçons apprises
@@ -25,6 +25,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[lire-le-fichier-reel-avant-de-modeliser]] — la structure est dans les répétitions, pas les en-têtes
 - [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]] — 57 pools ouverts pour 3 requêtes
 - [[retirer-une-regle-devant-un-repli-fait-tomber-le-cas-dans-le-repli]] — pour exclure un cas, ajouter la règle qui l'écarte
+- [[un-test-qui-porte-la-formule-la-protege]] — l'attendu de caisse soustrayait deux fois la monnaie, et le test portait la formule fausse dans son titre
+- [[une-regle-opposable-n-a-pas-de-valeur-par-defaut]] — `ordonnance` absent valait « vente libre » : un champ qui porte une obligation est obligatoire, le défaut est le plus restrictif
 
 ## Frontières et architecture
 
@@ -71,14 +73,24 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[ecrire-la-decision-avec-le-code]] — un ADR écrit après n'est jamais écrit
 - [[une-conclusion-consignee-devient-consigne]] — corriger le doc fait partie du correctif
 - [[un-rapport-d-agent-est-une-piste-pas-un-fait]] — un constat qui fonde une décision se revérifie à la source
+- [[un-worktree-d-agent-part-de-main-pas-de-la-branche-courante]] — nommer le commit de base dans le brief, le faire vérifier en première commande
+- [[avant-de-retirer-un-garde-fou-lister-ce-que-l-operation-ecrit]] — une borne retirée « parce que ce n'est pas le vecteur » rouvrait le registre des stupéfiants
+- [[des-tests-verts-ne-remplacent-pas-une-relecture-adverse]] — 8 constats élevés sur du code à 100 % de tests verts ; chaque constat reproduit, corrigé avec un test avant/après
 
 ## Sécurité et résilience
 
 - [[la-cle-d-administration-ne-va-jamais-cote-client]]
 - [[un-garde-fou-local-se-leve-hors-ligne]] — un verrou sur des données locales se lève hors ligne
+- [[un-acte-porte-son-auteur-pas-son-transporteur]] — hors ligne, celui qui synchronise n'est pas celui qui a agi ; un identifiant de session n'est pas un secret
+- [[le-client-n-est-jamais-une-autorite]] — chaque champ d'une charge utile est une donnée, un calcul ou une autorité ; le serveur recalcule
+- [[un-acte-passe-se-juge-sur-des-faits-dates-jamais-sur-un-etat-courant]] — une vente hors ligne refusée à vie parce que la session avait été purgée depuis
+- [[un-echec-temporaire-ne-consomme-pas-de-tentative]] — une nuit hors ligne faisait abandonner la première vente de la file
+- [[une-cle-un-usage-un-texte-signe-dit-a-quoi-il-sert]] — un registre signé par la clé des jetons meurt à la première rotation
 - [[un-garde-fou-trop-large-empeche-sa-propre-documentation]] — un filtre décide sur ce qui s'exécute, pas sur ce qui s'écrit
 - [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — le contrôle final se fait sur `git log -p`, pas sur le disque
 - [[un-garde-absolu-n-a-pas-d-exception-il-a-une-autre-porte]] — changer de niveau plutôt qu'affaiblir le garde
+- [[un-garde-fou-qui-compte-zero-par-invisibilite-n-est-pas-un-garde-fou]] — un garde-fou vérifie d'abord qu'il voit ; au moins un fichier de tests sous le rôle de production
+- [[un-mecanisme-de-detection-se-teste-en-continuant-apres-la-detection]] — altérer, détecter, puis laisser tourner le cycle suivant ; « ignoré » n'est jamais un verdict
 
 ---
 

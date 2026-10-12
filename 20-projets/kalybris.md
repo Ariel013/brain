@@ -46,6 +46,20 @@ Session du 05/09/2026 (Sprint 0, audit d'un prototype livré par un tiers) :
 - [[un-garde-absolu-n-a-pas-d-exception-il-a-une-autre-porte]] — purger un
   journal append-only sans y percer de porte
 
+Session du 07/10/2026 (recette et revue de sécurité du Sprint A) :
+
+- [[un-garde-fou-qui-compte-zero-par-invisibilite-n-est-pas-un-garde-fou]] —
+  sous le rôle de production, la purge ne voyait rien, concluait que rien ne
+  manquait, et supprimait ; les tests tournaient en superutilisateur
+- [[un-mecanisme-de-detection-se-teste-en-continuant-apres-la-detection]] —
+  les points de contrôle du journal se laissaient recouvrir au redémarrage
+  suivant ; le test s'arrêtait au moment où l'alerte sonne
+- Deux règles plus courtes, gardées dans `DECISIONS_LOG.md` du projet, à
+  promouvoir si elles reviennent ailleurs : *un compteur de sécurité
+  s'incrémente dans la base, en une instruction, et c'est la valeur rendue
+  qui décide* ; *chaque branche de refus d'une connexion coûte le même temps
+  et rend le même corps*.
+
 ## Les patrons à reprendre ailleurs
 
 - **Rendre lisible avant d'auditer.** Le livrable était un HTML
@@ -93,3 +107,27 @@ pointeuse biométrique.
 `docs/brain/DECISIONS_LOG.md` · `docs/AUDIT-PROTOTYPE.md` (ce qu'est vraiment
 le front livré) · `docs/TASKS.md` (backlog + 19 décisions humaines en attente) ·
 `docs/OUTILLAGE-AGENTS.md`.
+
+## Session autonome du 08/10 (nuit) → 09/10
+
+Le chef de projet a laissé la session avancer seule. Résultat : Sprint B
+clos, Sprint C complet (serveur + poste), Sprint D serveur, trois revues de
+sécurité (8 élevés corrigés), une recette QA sur serveur réel, 83 commits
+non poussés, 703 tests, 115 Kio de bundle. Détail : `docs/brain/SESSION_LOG.md`.
+
+**Ce qui a marché :** écrire le contrat (`docs/CONTRAT-SPRINT-C.md`) avant
+de lancer front et serveur en parallèle ; un worktree, une base de test et
+un numéro de migration par agent ; relecture adverse après chaque tranche,
+avec reproduction obligatoire.
+
+**Ce qui a coûté :** les worktrees partent de `main` (quatre reprises) ;
+deux agents tombés sur des timeouts d'API, repris sans perte par message ;
+les conflits de fusion dans `serveur.ts` et `ventes.ts`, résolus à la main.
+
+Leçons montées : [[un-worktree-d-agent-part-de-main-pas-de-la-branche-courante]],
+[[une-regle-opposable-n-a-pas-de-valeur-par-defaut]],
+[[un-acte-passe-se-juge-sur-des-faits-dates-jamais-sur-un-etat-courant]],
+[[le-client-n-est-jamais-une-autorite]],
+[[un-echec-temporaire-ne-consomme-pas-de-tentative]],
+[[une-cle-un-usage-un-texte-signe-dit-a-quoi-il-sert]],
+[[des-tests-verts-ne-remplacent-pas-une-relecture-adverse]].
