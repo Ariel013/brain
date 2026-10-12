@@ -4,7 +4,7 @@ type: projet
 domaine: santé au travail
 statut: en production (pilote mono-cabinet)
 depot: ~/PROJETS/synoe
-maj: 2026-09-08
+maj: 2026-10-08
 ---
 
 # Synoé
@@ -35,6 +35,8 @@ les notes de [[lecons]] en viennent. Les plus structurantes :
 - [[retirer-une-regle-devant-un-repli-fait-tomber-le-cas-dans-le-repli]] — une colonne « retirée » de l'import y revenait en colonne libre
 - [[une-enumeration-de-champs-se-teste]] — une courbe ajoutée naissait masquée (réglage qui listait les courbes cochées)
 - [[refuser-plutot-que-convertir]] — l'année d'embauche posée d'office à l'année en cours
+- [[un-refus-partage-le-predicat-de-ce-qu-il-protege]] — le verrou d'unité d'une valeur suivie comptait zéro là où la courbe traçait
+- [[une-ecriture-brute-ne-trace-pas-l-action-publique-oui]] — journaliser dans `majSalarie` a doublé six actions qui s'en servaient comme écriture brute
 
 ## Les patrons à reprendre ailleurs
 

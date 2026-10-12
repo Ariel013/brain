@@ -25,6 +25,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[lire-le-fichier-reel-avant-de-modeliser]] — la structure est dans les répétitions, pas les en-têtes
 - [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]] — 57 pools ouverts pour 3 requêtes
 - [[retirer-une-regle-devant-un-repli-fait-tomber-le-cas-dans-le-repli]] — pour exclure un cas, ajouter la règle qui l'écarte
+- [[un-refus-partage-le-predicat-de-ce-qu-il-protege]] — un refus qui compte avec un autre critère que la lecture compte zéro là où elle compte un
+- [[une-ecriture-brute-ne-trace-pas-l-action-publique-oui]] — journaliser dans l'action du magasin, jamais dans l'écran ; l'écriture composée reste muette
 - [[un-test-qui-porte-la-formule-la-protege]] — l'attendu de caisse soustrayait deux fois la monnaie, et le test portait la formule fausse dans son titre
 - [[une-regle-opposable-n-a-pas-de-valeur-par-defaut]] — `ordonnance` absent valait « vente libre » : un champ qui porte une obligation est obligatoire, le défaut est le plus restrictif
 
