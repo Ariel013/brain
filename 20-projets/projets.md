@@ -2,7 +2,7 @@
 titre: Projets
 aliases: [Index projets]
 type: index
-maj: 2026-10-07
+maj: 2026-10-13
 ---
 
 # Projets
@@ -23,6 +23,7 @@ rôle de son `README.md` et de son `JOURNAL.md`. Elle répond à trois questions
 | FIBDA Bodybuilding | Jugement de compétition de bodybuilding (FIBDA, CI) | En ligne, compétition le 2026-09-26 | [[fibda-bodybuilding]] |
 | Pilotage financier personnel | Finances personnelles, outil mono-utilisateur | Amorcé le 2026-10-02, code hérité sans test | [[pilotage-financier]] |
 | UKWC | Billetterie et site d'un festival de danse (Bénin), projet client | Repris le 2026-10-07, mode « coming soon » 2027 | [[ukwc]] |
+| Optimisation CV | Outil personnel — CV et candidatures d'alternance | Amorcé le 2026-10-13, générateur de CV livré | [[optimisation-cv]] |
 
 > Un projet entre ici **au moment de l'amorce**, pas à la fin : la fiche se
 > remplit au fil de l'eau, sinon elle ne se remplit jamais.
