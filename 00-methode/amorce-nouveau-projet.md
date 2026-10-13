@@ -49,6 +49,9 @@ perd, pas le *quoi*.
    même s'il n'y a qu'une valeur. → [[poser-l-isolation-des-le-premier-schema]]
 2. **Où vivent les données, et qui peut les lire.** Local, distant, les deux ?
    Derrière quel contrat ? → [[isoler-la-persistance-derriere-un-contrat]]
+   Et **comment une modification voyage** : le delta, pas l'état — chiffré
+   contre le quota du plan d'hébergement (egress, temps réel).
+   → [[une-modification-envoie-ce-qui-a-change-pas-l-etat]]
 3. **Langue du domaine.** Le vocabulaire métier se choisit une fois et ne
    bascule jamais à mi-projet. → [[conventions-de-code]]
 4. **Discipline de migration.** Avant la première donnée réelle, un dossier de

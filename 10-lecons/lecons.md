@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-12
+maj: 2026-10-13
 ---
 
 # Leçons apprises
@@ -30,6 +30,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-appartenance-s-ecrit-elle-ne-se-derive-pas-ecran-par-ecran]] — un rattachement dérivé dans un seul écran : « 0 dossier » ailleurs ; et jamais d'écriture dans un recalcul (hors journal)
 - [[un-test-qui-porte-la-formule-la-protege]] — l'attendu de caisse soustrayait deux fois la monnaie, et le test portait la formule fausse dans son titre
 - [[une-regle-opposable-n-a-pas-de-valeur-par-defaut]] — `ordonnance` absent valait « vente libre » : un champ qui porte une obligation est obligatoire, le défaut est le plus restrictif
+- [[une-modification-envoie-ce-qui-a-change-pas-l-etat]] — 🔴 chaque sauvegarde renvoyait tout le cabinet, chaque appareil relisait tout : quota Supabase sauté ; delta dès la v1, et le coût réseau se chiffre avant
 
 ## Frontières et architecture
 

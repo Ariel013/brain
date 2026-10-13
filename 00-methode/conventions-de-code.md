@@ -39,6 +39,10 @@ Ce qui suit est ce qui vaut d'un projet à l'autre.
 
 - **Isoler la persistance derrière un contrat**, jamais d'appel direct à la base
   depuis un écran → [[isoler-la-persistance-derriere-un-contrat]].
+- **Une modification envoie le delta**, jamais l'objet ni l'état entier ; une
+  notification s'applique ligne à ligne, sans relecture complète. Le coût réseau
+  (taille × fréquence × appareils, contre le quota) se chiffre avant de valider
+  → [[une-modification-envoie-ce-qui-a-change-pas-l-etat]].
 - **Le calcul ne vit pas dans un composant** : dès qu'un écran calcule, le calcul
   sort dans une lib testable → [[le-calcul-sort-de-l-ecran]].
 - **Une action rend l'issue, l'écran rend le message.** La couche métier renvoie
