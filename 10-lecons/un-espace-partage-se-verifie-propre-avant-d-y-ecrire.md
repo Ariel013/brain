@@ -38,5 +38,14 @@ qu'on abandonne dans l'index quand la conversation tourne. Laisser les
 modifications non indexées, et stager **nommément** au moment de committer —
 jamais avant.
 
+**Seconde occurrence — 2026-10-21 (optimisation_cv).** Le dépôt était vérifié
+sur `dev` ; sept minutes plus tard, une autre session Claude l'a basculé sur
+une branche de fonctionnalité en cours. Le commit de documentation est parti sur
+cette branche, sans que rien ne le signale. L'état vérifié d'un espace partagé
+périme : **la branche se relit dans la commande même du commit**
+(`git branch --show-current` juste avant), pas quelques minutes plus tôt. Et un
+commit mal placé sur la branche d'une autre session ne se déplace pas sous
+elle : il se signale, et l'utilisateur décide.
+
 Voir aussi [[stager-nommement]], [[nommer-la-copie-visee]],
 [[une-conclusion-consignee-devient-consigne]].
