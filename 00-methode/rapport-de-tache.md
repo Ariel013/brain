@@ -8,7 +8,10 @@ maj: 2026-10-20
 # Rapport de tâche
 
 À la fin de chaque tâche, **avant tout commit**, l'agent rend compte dans ce
-format — **l'utile seulement** :
+format — **l'utile seulement**. Et ce n'est pas réservé au commit : **tout
+retour** de l'agent, sur tous les projets, suit la même discipline — ce qui a
+été fait, ce qui est remis en cause, ce qui m'attend. Une réponse courte garde
+les rubriques utiles et laisse tomber les autres ; elle n'ajoute rien à côté.
 
 ```
 ## <la tâche en une ligne>
@@ -30,6 +33,13 @@ le détail d'implémentation, le compte rendu brut d'un sous-agent. L'agent les
 connaît et les vérifie ; il ne les remonte que s'ils changent une décision.
 *(Format revu le 2026-10-18 : l'ancien, avec « Fichiers modifiés » et
 « Nature », noyait l'essentiel.)*
+
+Ni chemins de fichiers, ni commandes, ni tableaux de détail, ni récit des
+étapes intermédiaires — même dans un retour hors rapport. Le test : *est-ce que
+j'en ai besoin pour décider ou pour croire le résultat ?* Sinon, ça sort.
+*(Élargi le 2026-10-20 : le format ne valait qu'avant commit ; les autres
+retours d'une session listaient encore fichiers, commandes `git add` et
+tableaux, et il fallait fouiller pour trouver l'information utile.)*
 
 ## Pourquoi ce format
 
