@@ -2,7 +2,7 @@
 titre: Travailler avec les agents
 aliases: [Agents, Claude, Méthode agent]
 type: methode
-maj: 2026-08-26
+maj: 2026-10-20
 ---
 
 # Travailler avec les agents
@@ -65,7 +65,8 @@ Deux valent le coup sur presque tous les projets, définis dans
   proposer le commit : cohérence avec les conventions du dépôt.
 - **`security-reviewer`** — déclenché **proactivement**, même sans demande, dès
   qu'un diff touche l'authentification, les données sensibles, les politiques
-  d'accès, ou l'import/export.
+  d'accès, ou l'import/export. Il s'appuie sur le skill `security-audit` en
+  mode *guidance* → [[revue-securite]].
 
 Un agent de revue lit ; il ne modifie pas. C'est ce qui le rend utilisable sans
 surveillance.
