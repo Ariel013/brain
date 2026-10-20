@@ -2,7 +2,7 @@
 titre: Recette avant release
 aliases: [Recette, Checklist release]
 type: methode
-maj: 2026-09-17
+maj: 2026-10-20
 ---
 
 # Recette avant release
@@ -50,6 +50,10 @@ maj: 2026-09-17
    traite dans un champ à enregistrement automatique, sur la connexion réelle.
    Le défaut n'existe pas quand l'aller-retour est instantané
    → [[un-champ-qui-se-resynchronise-ecrase-la-frappe-en-cours]].
+8. **Audit de sécurité** — skill `security-audit` en mode *full audit*, profil
+   `quick` (`standard` si le périmètre touche auth, argent, santé, registre),
+   sur le diff de la release. Le rapport est **lu** : chaque `confirmed` traité
+   ou reporté par une décision écrite → [[revue-securite]].
 
 ## Avant de taguer
 

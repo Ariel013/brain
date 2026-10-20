@@ -2,7 +2,7 @@
 titre: Rapport de tâche
 aliases: [Rapport, Format de rendu]
 type: methode
-maj: 2026-10-18
+maj: 2026-10-20
 ---
 
 # Rapport de tâche
@@ -14,6 +14,8 @@ format — **l'utile seulement** :
 ## <la tâche en une ligne>
 **Fait** : les actions effectuées et leur résultat **mesuré** — ce qui marche,
 ce qui reste non vérifié (jamais « vu à l'écran » si ça ne l'a pas été).
+**Sécurité** : revue du diff faite → constats (ou « aucun ») ; ou non faite
+→ pourquoi (tâche sans code, par exemple). → [[revue-securite]]
 **Challenge** : ce que je remets en cause dans ce qui était proposé ou reste à
 faire — un risque, un meilleur ordre, une étape inutile — avec ma
 recommandation.
@@ -33,6 +35,8 @@ connaît et les vérifie ; il ne les remonte que s'ils changent une décision.
 
 - **« Fait », mesuré** : c'est ce que je dois pouvoir croire sans relire le
   code. Un résultat non mesuré n'y entre pas.
+- **« Sécurité »** : une revue qui n'apparaît pas dans le rapport n'a pas eu
+  lieu. La ligne oblige à dire laquelle des deux.
 - **« Challenge »** : l'agent ne se contente pas d'exécuter ; il dit ce qu'il
   ferait autrement. C'est là que se rattrapent les mauvaises priorités.
 - **« À toi »** : ce qui m'attend, rien d'autre — sans le chercher dans le texte.

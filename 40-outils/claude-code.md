@@ -2,7 +2,7 @@
 titre: Claude Code — ce que j'en attends
 aliases: [Claude Code]
 type: outil
-maj: 2026-08-26
+maj: 2026-10-20
 ---
 
 # Claude Code — ce que j'en attends
@@ -30,6 +30,17 @@ j'ai décidé pour **mes** projets.
 
 Un agent de revue **lit** ; il ne modifie pas. C'est ce qui le rend utilisable
 sans surveillance.
+
+## Les skills tiers installés
+
+| Skill | Source | Version | Usage |
+|---|---|---|---|
+| `security-audit` | `github.com/cloudflare/security-audit-skill` | commit `c1c8a8c` (2026-09-14), installé le 2026-10-20 | [[revue-securite]] |
+
+Mise à jour : recloner, **lire le diff** avant de recopier dans
+`~/.claude/skills/`, relancer `node --test *.test.cjs` dans le dossier du skill.
+Un skill tiers est du texte qui pilote l'agent : il ne s'installe pas sans
+avoir été lu.
 
 ## Ce que je ne veux pas
 
