@@ -1,7 +1,7 @@
 ---
 titre: Une énumération de champs est un piège à retardement
 type: lecon
-origine: Synoé — 2026-08-23 · Strongman — 2026-09-17 · Synoé — 2026-10-04
+origine: Synoé — 2026-08-23 · Strongman — 2026-09-17 · Synoé — 2026-10-04 · Optimisation CV — 2026-10-20
 tags: [donnees, tests]
 ---
 
@@ -46,5 +46,12 @@ cause : une liste explicite ne connaît que ce qui existait le jour où elle a �
 l'utilisateur a masqué, pas ce qu'il voit. Le nouveau venu est alors visible par
 défaut, sans migration. Et l'ancien réglage se convertit contre la liste **telle
 qu'elle était quand il a été écrit**, pas contre celle d'aujourd'hui.
+
+**Quatrième occurrence — un filtre de statut en liste noire (Optimisation CV,
+2026-10-20).** Un statut « expirée » a été ajouté aux offres. Deux filtres
+excluaient encore `('envoyee', 'ecartee')` : une offre fermée restait validable,
+copiable pour l'envoi, et marquable « envoyée ». Relevé en relecture. Règle
+dérivée : **un filtre de statut s'écrit en liste blanche** (les statuts permis),
+et l'ajout d'un statut fait chercher chaque usage.
 
 Voir aussi [[verifier-le-chemin-d-ecriture]], [[une-fonctionnalite-invisible-est-absente]].

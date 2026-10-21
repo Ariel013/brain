@@ -1,7 +1,7 @@
 ---
 titre: L'inscription à une offre « gratuite » se fait avant d'écrire l'ADR
 type: lecon
-origine: FIBDA Bodybuilding — 2026-09-23
+origine: FIBDA Bodybuilding — 2026-09-23 · Optimisation CV — 2026-10-20
 tags: [hebergement, adr, verification, delai]
 ---
 
@@ -26,5 +26,16 @@ Tant que ce n'est pas fait, la décision reste « proposée » et la procédure 
 s'écrit pas. Corollaire : quand le délai est court, on dit au PO que
 « gratuit et fiable » n'existe peut-être pas, et qu'un petit montant achète la
 certitude — avant de dépenser des heures à contourner.
+
+**Seconde occurrence — une autorisation « sans accord d'administrateur »
+(Optimisation CV, 2026-10-20).** Pour envoyer depuis une adresse d'école
+(Microsoft 365), Azure affichait l'autorisation `Mail.Send` avec « consentement
+de l'administrateur requis : non ». Le code et un amendement d'ADR ont été écrits
+sur cette foi. À la première connexion réelle : « Approbation requise » — l'école
+avait fermé tout consentement des utilisateurs. La colonne d'Azure décrit
+l'autorisation, pas la règle de l'annuaire. Même règle, étendue : **une
+possibilité qui dépend d'un tiers se dit « possible » seulement après l'essai
+réel**, et l'ADR garde une voie de repli disponible tout de suite (ici : Gmail,
+et l'envoi à la main).
 
 Voir [[ecrire-la-decision-avec-le-code]], [[mesurer-l-outil-avant-de-conclure]].

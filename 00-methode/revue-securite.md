@@ -65,4 +65,14 @@ n'atteste rien du reste du dépôt.
 - **Recopier une donnée sensible dans un rapport**
   → [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]].
 
+## Points à chercher dans un diff (ajoutés le 2026-10-21)
+
+- Le code ouvre un lien venu d'une donnée → [[un-lien-venu-d-une-donnee-se-controle-sur-l-adresse-resolue]].
+- Une garde contrôle un texte nettoyé alors que le rendu interprète le balisage
+  → [[une-garde-lit-le-texte-sous-la-forme-ou-il-sera-rendu]].
+- Une action irréversible (envoi, paiement) dit « échec » sur toute erreur
+  → [[une-action-irreversible-a-trois-issues-faite-pas-faite-incertaine]].
+- Une référence ajoutée vers une table qui porte un droit d'effacement
+  → [[une-reference-ajoutee-relance-le-test-de-suppression-de-la-table-visee]].
+
 Voir aussi [[travailler-avec-les-agents]].

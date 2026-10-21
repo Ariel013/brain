@@ -76,3 +76,6 @@ surveillance.
 Le `push`. Le périmètre d'une release. Le choix d'une décision structurante. Et
 la lecture du fichier réel avant de modéliser — un export ne se devine pas
 depuis ses en-têtes → [[lire-le-fichier-reel-avant-de-modeliser]].
+
+Arrêter un serveur lancé par l'agent : par son PID, dans une commande à part,
+jamais `pkill -f` dans une ligne qui continue → [[arreter-un-processus-par-son-pid-pas-par-un-motif]].

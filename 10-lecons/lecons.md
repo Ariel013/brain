@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-13
+maj: 2026-10-21
 ---
 
 # Leçons apprises
@@ -31,6 +31,10 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-test-qui-porte-la-formule-la-protege]] — l'attendu de caisse soustrayait deux fois la monnaie, et le test portait la formule fausse dans son titre
 - [[une-regle-opposable-n-a-pas-de-valeur-par-defaut]] — `ordonnance` absent valait « vente libre » : un champ qui porte une obligation est obligatoire, le défaut est le plus restrictif
 - [[une-modification-envoie-ce-qui-a-change-pas-l-etat]] — 🔴 chaque sauvegarde renvoyait tout le cabinet, chaque appareil relisait tout : quota Supabase sauté ; delta dès la v1, et le coût réseau se chiffre avant
+- [[une-reference-ajoutee-relance-le-test-de-suppression-de-la-table-visee]] — une clé étrangère ajoutée a cassé l'effacement RGPD de la veille ; tester la suppression avec une ligne liée
+- [[une-frontiere-de-mot-en-francais-s-ecrit-avec-les-lettres-accentuees]] — `^r\b` reconnaissait « Rédaction » ; `(?<![\p{L}\d])…(?![\p{L}\d])` avec `u`, et mesurer le dictionnaire sur les vraies données
+- [[un-nom-exact-n-est-pas-une-identite]] — « EDF », « Siemens » : l'unique nom exact d'un annuaire était une coquille homonyme ; une preuve de plus que le nom
+- [[une-sous-requete-qualifie-la-colonne-exterieure]] — Drizzle écrit `"id"` dans un SELECT : la sous-requête le captait, compte faux sans erreur
 
 ## Frontières et architecture
 
@@ -49,6 +53,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-verrou-se-livre-avec-sa-voie-de-correction]] — retirer un geste dangereux engage à livrer le geste sûr, le même jour
 - [[un-nouvel-onglet-quitte-une-application-installee]] — en PWA installée, `target="_blank"` bascule vers le navigateur sans la session
 - [[un-champ-masque-cache-l-espace-colle]] — « Code incorrect » sur tous les appareils : un espace collé, invisible
+- [[une-proposition-s-affiche-elle-ne-se-preselectionne-pas]] — une catégorie présélectionnée faisait entrer au CV ce qu'on voulait seulement apprendre
 
 ## Vérifier
 
@@ -63,6 +68,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]] — 82 tests verts, trois écritures qui plantent au deuxième appel
 - [[un-test-se-borne-a-son-propre-jeu-de-donnees]] — une requête sans filtre touche les données réelles en silence
 - [[lire-la-donnee-avant-l-hypothese]] — un rapport donne un effet et une cause : garder l'effet, lire la base
+- [[une-garde-lit-le-texte-sous-la-forme-ou-il-sera-rendu]] — le contrôle lisait le texte sans balisage : aucun lien jamais vu, alors que le PDF les rendait
 
 ## Git, release, agents
 
@@ -80,6 +86,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-worktree-d-agent-part-de-main-pas-de-la-branche-courante]] — nommer le commit de base dans le brief, le faire vérifier en première commande
 - [[avant-de-retirer-un-garde-fou-lister-ce-que-l-operation-ecrit]] — une borne retirée « parce que ce n'est pas le vecteur » rouvrait le registre des stupéfiants
 - [[des-tests-verts-ne-remplacent-pas-une-relecture-adverse]] — 8 constats élevés sur du code à 100 % de tests verts ; chaque constat reproduit, corrigé avec un test avant/après
+- [[arreter-un-processus-par-son-pid-pas-par-un-motif]] — `pkill -f "next dev"; suite` s'est tué lui-même : la suite n'a jamais eu lieu
 
 ## Sécurité et résilience
 
@@ -96,6 +103,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[publier-un-detail-en-tout-ou-rien-et-le-tester-en-lecteur-qui-connait-la-regle]] — chaque cas particulier de masquage était une fuite ; tout ou rien, et énumérer les mondes possibles
 - [[un-garde-fou-qui-compte-zero-par-invisibilite-n-est-pas-un-garde-fou]] — un garde-fou vérifie d'abord qu'il voit ; au moins un fichier de tests sous le rôle de production
 - [[un-mecanisme-de-detection-se-teste-en-continuant-apres-la-detection]] — altérer, détecter, puis laisser tourner le cycle suivant ; « ignoré » n'est jamais un verdict
+- [[une-action-irreversible-a-trois-issues-faite-pas-faite-incertaine]] — « rien n'est parti » après une coupure ou une erreur de base : un renvoi doublait l'e-mail ; l'incertain bloque la répétition
+- [[un-lien-venu-d-une-donnee-se-controle-sur-l-adresse-resolue]] — `localhost.` et un nom public vers 127.0.0.1 passaient le filtre de texte ; contrôler l'adresse résolue à chaque redirection
 
 ---
 

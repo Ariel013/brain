@@ -74,6 +74,14 @@ Les jeux de démo vivent dans un fichier dédié et **ne se mélangent jamais** 
 logique de production. Un jeu de démo peut masquer une fonctionnalité absente
 pendant des mois → [[verifier-le-chemin-d-ecriture]].
 
+## Pièges relevés
+
+- Frontière de mot en français : `(?<![\p{L}\d])…(?![\p{L}\d])` avec le
+  drapeau `u`, jamais `\b` seul → [[une-frontiere-de-mot-en-francais-s-ecrit-avec-les-lettres-accentuees]].
+- SQL écrit à la main dans un ORM : qualifier la colonne extérieure d'une
+  sous-requête, lire le SQL produit → [[une-sous-requete-qualifie-la-colonne-exterieure]].
+- Un filtre de statut s'écrit en liste blanche → [[une-enumeration-de-champs-se-teste]].
+
 ## Tenue à jour
 
 Si une tâche introduit un patron réutilisable, **l'écrire dans le doc de
