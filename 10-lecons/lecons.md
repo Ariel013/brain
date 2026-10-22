@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-21
+maj: 2026-10-22
 ---
 
 # Leçons apprises
@@ -86,7 +86,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-worktree-d-agent-part-de-main-pas-de-la-branche-courante]] — nommer le commit de base dans le brief, le faire vérifier en première commande
 - [[avant-de-retirer-un-garde-fou-lister-ce-que-l-operation-ecrit]] — une borne retirée « parce que ce n'est pas le vecteur » rouvrait le registre des stupéfiants
 - [[des-tests-verts-ne-remplacent-pas-une-relecture-adverse]] — 8 constats élevés sur du code à 100 % de tests verts ; chaque constat reproduit, corrigé avec un test avant/après
-- [[arreter-un-processus-par-son-pid-pas-par-un-motif]] — `pkill -f "next dev"; suite` s'est tué lui-même : la suite n'a jamais eu lieu
+- [[arreter-un-processus-par-son-pid-pas-par-un-motif]] — `pkill -f "next dev"; suite` s'est tué lui-même : la suite n'a jamais eu lieu (3 occurrences)
 
 ## Sécurité et résilience
 
@@ -105,6 +105,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-mecanisme-de-detection-se-teste-en-continuant-apres-la-detection]] — altérer, détecter, puis laisser tourner le cycle suivant ; « ignoré » n'est jamais un verdict
 - [[une-action-irreversible-a-trois-issues-faite-pas-faite-incertaine]] — « rien n'est parti » après une coupure ou une erreur de base : un renvoi doublait l'e-mail ; l'incertain bloque la répétition
 - [[un-lien-venu-d-une-donnee-se-controle-sur-l-adresse-resolue]] — `localhost.` et un nom public vers 127.0.0.1 passaient le filtre de texte ; contrôler l'adresse résolue à chaque redirection
+- [[un-maintien-en-vie-ne-depend-pas-de-l-activite-qu-il-remplace]] — le ping GitHub de Supabase s'est éteint après 60 jours sans commit : base en pause, migration de compte
 
 ---
 

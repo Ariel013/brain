@@ -27,6 +27,11 @@ même session, malgré la note : `pkill -f "vite preview --port 4799"; rm …`
 voit lui aussi le shell qui porte le motif. Code 144, **le commit n'a pas eu
 lieu** ; seul un `git log` relu juste après l'a montré.
 
+**Troisième occurrence — NearYou, 2026-10-22.** `pkill -f "next dev" ; true`
+en fin de commande de test : code 144. Les `curl` avaient tourné avant, rien
+de perdu cette fois — mais la note existait et n'avait pas été lue avant de
+coder, contrairement à la consigne de lire l'index des leçons d'abord.
+
 **Corollaire.** Remplacer `pkill` par `pgrep | xargs kill` ne change rien tant
 que le motif est dans la ligne. Le plus sûr : garder le PID au lancement
 (`cmd & echo $!`), ou arrêter dans une commande qui ne fait **que** ça, puis

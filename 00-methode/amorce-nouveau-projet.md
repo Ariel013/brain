@@ -52,6 +52,10 @@ perd, pas le *quoi*.
    Et **comment une modification voyage** : le delta, pas l'état — chiffré
    contre le quota du plan d'hébergement (egress, temps réel).
    → [[une-modification-envoie-ce-qui-a-change-pas-l-etat]]
+   Sur un plan gratuit qui **se met en pause à l'inactivité** (Supabase : 7
+   jours), le maintien en vie se pose dès l'amorce, sur une plateforme qui
+   tourne sans activité du dépôt — pas un cron GitHub.
+   → [[un-maintien-en-vie-ne-depend-pas-de-l-activite-qu-il-remplace]]
 3. **Langue du domaine.** Le vocabulaire métier se choisit une fois et ne
    bascule jamais à mi-projet. → [[conventions-de-code]]
 4. **Discipline de migration.** Avant la première donnée réelle, un dossier de
