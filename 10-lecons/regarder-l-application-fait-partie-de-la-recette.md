@@ -24,5 +24,11 @@ interface. Aucun identifiant, aucune donnée réelle, aucune interaction — mai
 
 **Corollaire.** Balayer **plusieurs largeurs**, pas seulement la plus grande.
 
+**Autre occurrence — Portfolio, 2026-10-22.** Retirer une photo d'une grille à
+deux colonnes : build vert, aucune erreur — et la colonne gauche réduite à un
+bandeau de trois chiffres, avec un trou de 400 px sous lui. Seule la capture
+l'a montré, **avant** le commit. **Retirer un élément, c'est relire l'équilibre
+du conteneur qui le portait** : la mise en page se recompose avec le retrait.
+
 Voir aussi [[recette-avant-release]], [[mesurer-l-outil-avant-de-conclure]],
 [[une-propriete-de-colonne-ne-survit-pas-a-une-rangee]].
