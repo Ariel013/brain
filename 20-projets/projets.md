@@ -25,7 +25,7 @@ rôle de son `README.md` et de son `JOURNAL.md`. Elle répond à trois questions
 | UKWC | Billetterie et site d'un festival de danse (Bénin), projet client | Repris le 2026-10-07, mode « coming soon » 2027 | [[ukwc]] |
 | Optimisation CV | Outil personnel — CV et candidatures d'alternance | Amorcé le 2026-10-13, générateur de CV livré | [[optimisation-cv]] |
 | Portfolio | Site vitrine personnel | En ligne, pas encore amorcé | [[portfolio]] |
-| NearYou (GéoService) | Annuaire géolocalisé d'artisans (Afrique de l'Ouest) | En ligne (Vercel + Supabase), pas encore amorcé | [[nearyou]] |
+| NearYou (GéoService) | Annuaire géolocalisé d'artisans (Afrique de l'Ouest) | En ligne sans vrais usagers, amorcé le 2026-10-22 | [[nearyou]] |
 
 > Un projet entre ici **au moment de l'amorce**, pas à la fin : la fiche se
 > remplit au fil de l'eau, sinon elle ne se remplit jamais.

@@ -2,7 +2,7 @@
 titre: NearYou (GéoService)
 type: projet
 domaine: annuaire géolocalisé de prestataires de services locaux (Bénin, Côte d'Ivoire)
-statut: en ligne ; dépôt sans JOURNAL.md (pas amorcé)
+statut: en ligne sans vrais usagers ; amorcé le 2026-10-22
 depot: ~/PROJETS/NearYou
 maj: 2026-10-22
 ---
@@ -16,8 +16,13 @@ distance sur carte Leaflet/OpenStreetMap.
 **Stack.** Next.js 16 sur Vercel, Supabase (PostgreSQL + PostGIS) sur le plan
 gratuit, bot WhatsApp sur Railway (ne touche pas la base).
 
-**À faire.** Le dépôt n'a jamais été amorcé (`/amorce-projet`) : `CLAUDE.md`
-présent, mais pas de `JOURNAL.md` ni de `docs/decisions/`.
+**Amorcé le 2026-10-22.** L'ancien `CLAUDE.md` était une longue spec produit
+devenue en partie fausse (Next 15, Africa's Talking, Prisma) : séparée en
+`docs/architecture.md` + `docs/conventions-code.md`, `CLAUDE.md` réduit aux
+règles. ADR : messagerie avec compte léger (numéro vérifié), maintien en vie
+par cron Vercel, pas de multi-clients. L'amorce a fait apparaître, par simple
+lecture, une autorisation de modification de fiche fondée sur un numéro que
+l'API publique renvoie — devenue la première tâche.
 
 ## Ce que ce projet a appris au coffre
 
