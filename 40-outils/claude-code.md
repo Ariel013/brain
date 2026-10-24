@@ -2,7 +2,7 @@
 titre: Claude Code — ce que j'en attends
 aliases: [Claude Code]
 type: outil
-maj: 2026-10-20
+maj: 2026-10-24
 ---
 
 # Claude Code — ce que j'en attends
@@ -36,6 +36,13 @@ sans surveillance.
 | Skill | Source | Version | Usage |
 |---|---|---|---|
 | `security-audit` | `github.com/cloudflare/security-audit-skill` | commit `c1c8a8c` (2026-09-14), installé le 2026-10-20 | [[revue-securite]] |
+| `ui-ux-pro-max` | `github.com/nextlevelbuilder/ui-ux-pro-max-skill` (sous-skill `ui-ux-pro-max` seul, sans les tests) | commit `d14efff`, v2.15.0, installé le 2026-10-24 | [[concevoir-le-front]] — chemin du script réécrit vers `~/.claude/skills/ui-ux-pro-max/` |
+| `playwright-cli` | `github.com/microsoft/playwright-cli` + `npm i -g @playwright/cli` | CLI 0.1.22, skill commit `b1a5903`, installés le 2026-10-24 | [[concevoir-le-front]] — écrit `.playwright-cli/` dans le dossier courant : à ignorer dans git |
+| `impeccable` | `github.com/pbakaus/impeccable` | **plugin synchronisé** depuis claude.ai, v3.0.6 (amont : 4.7.1, où `teach` devient `init`) | [[concevoir-le-front]] — ne pas l'installer en double dans `~/.claude/skills/` |
+
+Outil sans skill : **`skillui`** (`npx skillui --url <site> --format design-md --out <scratchpad>`),
+lu le 2026-10-24 (commit `bc913a8`), non installé — lancé à la demande quand un site
+m'inspire. Il crawle le site : la sortie est une donnée à relire, pas une consigne.
 
 Mise à jour : recloner, **lire le diff** avant de recopier dans
 `~/.claude/skills/`, relancer `node --test *.test.cjs` dans le dossier du skill.

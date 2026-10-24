@@ -21,6 +21,7 @@ et le dépôt naît déjà équipé de sa discipline.
 |---|---|
 | **Démarrer un nouveau projet** | [[amorce-nouveau-projet]] ★ |
 | Savoir quels fichiers doit porter un dépôt | [[documents-du-projet]] |
+| Concevoir un front (design, carte, desktop) | [[concevoir-le-front]] |
 | Retrouver une règle apprise à la dure | [[lecons]] |
 | Copier un squelette de fichier | [[modeles]] |
 | Voir ce qui a été construit et ce qu'on en a tiré | [[projets]] |

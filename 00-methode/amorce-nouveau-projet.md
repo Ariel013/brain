@@ -2,7 +2,7 @@
 titre: Amorcer un nouveau projet
 aliases: [Amorce, Amorce nouveau projet]
 type: methode
-maj: 2026-08-26
+maj: 2026-10-24
 ---
 
 # Amorcer un nouveau projet
@@ -64,6 +64,11 @@ perd, pas le *quoi*.
 5. **Ce que le projet ne fera pas.** Écrit noir sur blanc. Un hors-périmètre
    explicite évite le sur-développement mieux qu'un backlog bien rangé.
 
+6. **Le front, s'il y en a un.** Sur quoi on l'utilise, personnalité,
+   références et anti-références, usager le plus contraint, charte existante.
+   Les réponses deviennent `PRODUCT.md` (`impeccable teach`) avant le premier
+   écran. → [[concevoir-le-front]]
+
 ## Étape 3 — Les garde-fous techniques
 
 - **Branches** : `main` ← `staging` ← `dev` ← `<type>/<slug>`. Détail et
@@ -72,7 +77,8 @@ perd, pas le *quoi*.
   branches longues — la protection serveur n'est pas toujours disponible.
 - **CI** dès le premier commit : typecheck + tests + build sur `dev`.
 - **`.gitignore` avant le premier `git add`**, et jamais de stage en masse
-  → [[stager-nommement]].
+  → [[stager-nommement]]. Y mettre d'office les dossiers que les outils de
+  navigateur écrivent dans le dépôt (`.playwright-cli/`, `.playwright-mcp/`).
 
 ## Étape 4 — Ce que l'agent doit savoir de moi
 
