@@ -10,9 +10,10 @@ maj: 2026-10-25
 # CV interactif
 
 **Ce que c'est.** Le CV web de Kevin, envoyé par lien dans ses candidatures
-d'alternance fullstack et IA. Une page lisible en 30 secondes, une scène 3D
-signature (le mur LED du Strongman, un écran par projet) et un chat « Demande à
-mon CV ». Remplace `Curriculum`, dérivé d'un modèle open-source, dont le
+d'alternance fullstack et IA. Deux modes au choix : une page lisible en 30
+secondes avec une scène 3D signature (le mur LED du Strongman, un écran par
+projet), et un terminal pour un public tech. Chat IA étudié puis abandonné
+(clé payante). Remplace `Curriculum`, dérivé d'un modèle open-source, dont le
 contenu avait dérivé du CV maître.
 
 **Stack prévue.** Next.js + React Three Fiber sur Vercel. Contenu : copie
