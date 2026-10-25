@@ -40,5 +40,14 @@ fichier `assets/index-<hash>.js` et le **comparer à celui de la construction
 locale**, après quelques dizaines de secondes de propagation. Un code de retour
 et une route qui répond ne sont pas une version en ligne.
 
+**Troisième occurrence (CV interactif, 2026-10-25).** Un site Next.js sans
+API : le déploiement Vercel « réussi », et **toutes les pages en 404**. Le
+projet avait été créé sans framework détecté (« No framework detected ») et
+servait le dossier brut. Correctif : `framework: "nextjs"` déclaré dans
+`vercel.json`. Même règle, élargie : une mise en ligne se prouve par une
+requête sur une page réelle, et non par le statut du déploiement. Le même
+jour, une feuille de style périmée servie malgré un build réussi →
+[[un-cache-de-build-restaure-peut-servir-l-ancienne-feuille-de-style]].
+
 Voir [[regarder-l-application-fait-partie-de-la-recette]],
 [[verifier-chaque-commit-du-decoupage]].

@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-22
+maj: 2026-10-25
 ---
 
 # Leçons apprises
@@ -55,6 +55,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-champ-masque-cache-l-espace-colle]] — « Code incorrect » sur tous les appareils : un espace collé, invisible
 - [[une-proposition-s-affiche-elle-ne-se-preselectionne-pas]] — une catégorie présélectionnée faisait entrer au CV ce qu'on voulait seulement apprendre
 - [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] — un audit appliqué en bloc a repeint le portfolio ; refonte annulée, seules les corrections invisibles gardées
+- [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]] — terminal web : aucun moyen d'envoyer une commande au téléphone ; bouton visible, 16 px, tester au toucher
 
 ## Vérifier
 
@@ -76,7 +77,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[stager-nommement]] — une commande large ne regarde pas ce qu'elle ramasse
 - [[un-espace-partage-se-verifie-propre-avant-d-y-ecrire]] — ne jamais committer ce qu'on n'a pas écrit
 - [[une-release-se-coupe-sur-un-perimetre]] — pas sur l'état de `dev`
-- [[une-fonction-serverless-s-envoie-regroupee-et-se-verifie-au-curl]] — « Aliased » trois fois, l'API morte trois fois
+- [[une-fonction-serverless-s-envoie-regroupee-et-se-verifie-au-curl]] — « Aliased » trois fois, l'API morte trois fois ; un site « déployé » sans framework, toutes pages en 404
+- [[un-cache-de-build-restaure-peut-servir-l-ancienne-feuille-de-style]] — HTML neuf, CSS d'avant : chercher dans le CSS servi une règle du lot
 - [[l-inscription-a-une-offre-gratuite-se-fait-avant-l-adr]] — l'ADR écrit, le fournisseur exige un paiement
 - [[verifier-chaque-commit-du-decoupage]] — ne jamais affirmer ce qu'on n'a pas mesuré
 - [[nommer-la-copie-visee]] — `git -C <copie>` dès le second worktree

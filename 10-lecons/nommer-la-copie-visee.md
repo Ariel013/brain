@@ -23,4 +23,13 @@ par le fait que la commande n'a pas protesté.
 **Corollaire.** Le worktree est justement ce qui permet de faire une release sans
 arrêter le serveur de développement. Le confort a ce prix : nommer la cible.
 
+**Seconde occurrence — CV interactif, 2026-10-25.** Des fusions destinées au
+`dev` d'un autre dépôt (`optimisation_cv`) ont atterri sur la branche d'une
+autre session Claude, qui avait changé de branche dans cette copie entre la
+vérification et la commande. Rattrapé en avançant `dev` par
+`git update-ref <ref> <nouveau> <ancien>`, qui refuse si la référence a bougé.
+Règle complétée : **ne jamais écrire dans la copie de travail d'une autre
+session**. Fusionner dans un worktree dédié à la branche cible
+(`git worktree add <dossier> dev`).
+
 Voir aussi [[workflow-git]], [[verifier-chaque-commit-du-decoupage]].

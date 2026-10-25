@@ -26,7 +26,7 @@ rôle de son `README.md` et de son `JOURNAL.md`. Elle répond à trois questions
 | Optimisation CV | Outil personnel — CV et candidatures d'alternance | Amorcé le 2026-10-13, générateur de CV livré | [[optimisation-cv]] |
 | Portfolio | Site vitrine personnel | En ligne, pas encore amorcé | [[portfolio]] |
 | NearYou (GéoService) | Annuaire géolocalisé d'artisans (Afrique de l'Ouest) | En ligne sans vrais usagers, amorcé le 2026-10-22 | [[nearyou]] |
-| CV interactif | CV web personnel, 3D + chat | Amorcé le 2026-10-25, avant le premier code | [[cv-interactif]] |
+| CV interactif | CV web personnel, île 3D + terminal | En ligne le 2026-10-25 | [[cv-interactif]] |
 
 > Un projet entre ici **au moment de l'amorce**, pas à la fin : la fiche se
 > remplit au fil de l'eau, sinon elle ne se remplit jamais.

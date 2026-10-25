@@ -38,6 +38,14 @@ preview --port 4173"; git status --short` : code 144, l'état du dépôt n'a pas
 session a arrêté le serveur par `kill $(lsof -ti:4173)`, sans incident. Ce
 même projet avait produit la deuxième occurrence trois jours plus tôt.
 
+**Cinquième occurrence — CV interactif, 2026-10-25.** Deux fois `pkill -f
+"next start" ; true` en fin de commande de build : code 144, le build suivant
+n'a pas eu lieu. Autre face du même problème : un serveur lancé en
+arrière-plan, « arrêté » avec sa tâche, a laissé un `next-server` enfant qui
+tenait encore le port. Le serveur relancé échouait (`EADDRINUSE`), et c'est
+l'ancien qui répondait. Seul `ss -ltnp | grep <port>` a montré le PID à
+arrêter.
+
 **Corollaire.** Remplacer `pkill` par `pgrep | xargs kill` ne change rien tant
 que le motif est dans la ligne. Le plus sûr : garder le PID au lancement
 (`cmd & echo $!`), ou arrêter dans une commande qui ne fait **que** ça, puis

@@ -87,6 +87,10 @@ Ces défauts ne se prennent qu'en y pensant explicitement :
 - **Un état dédié à « rien » doublé d'une valeur numérique qui dit pareil**
   (verdict Zéro et performance 0) → [[refuser-plutot-que-convertir]].
 
+- **Une mise en ligne qui touche au style** : chercher dans le CSS servi
+  une règle introduite par le lot
+  → [[un-cache-de-build-restaure-peut-servir-l-ancienne-feuille-de-style]].
+
 Voir aussi [[une-fonction-serverless-s-envoie-regroupee-et-se-verifie-au-curl]] (une
 mise en ligne se prouve par un `curl` sur une route d'API, pas sur la page d'accueil) et
 [[un-test-de-route-emprunte-le-chemin-de-l-ecran]].

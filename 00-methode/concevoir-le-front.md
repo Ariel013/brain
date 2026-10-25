@@ -64,5 +64,9 @@ Versions et installation : [[claude-code]].
 - **Une dépendance visuelle lourde** (carte WebGL, 3D, animation) est un choix
   structurant → ADR, avec son repli.
 
+- **Tout champ qui déclenche une action a son bouton d'envoi**, même
+  dans une interface façon terminal ou chat
+  → [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]].
+
 Voir [[amorce-nouveau-projet]], [[recette-avant-release]],
 [[une-fonctionnalite-invisible-est-absente]].
