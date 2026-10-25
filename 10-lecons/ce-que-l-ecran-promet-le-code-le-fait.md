@@ -24,4 +24,14 @@ est-il ce que le code fait ? »**
 pas être traitée, la refuser **en disant pourquoi**. Charger autre chose à la
 place est toujours pire que de ne rien charger.
 
+**Seconde occurrence — Portfolio, 2026-10-25.** La carte des certifications
+affichait un « ID DE VALIDATION » obtenu en prenant le dernier segment de
+l'URL du certificat. Pour les examens blancs, ce segment était le nom du
+fichier image (`…_CAP-MOCK-EXAM_bugaco.jpg`) : l'écran présentait comme
+identifiant vérifiable ce qui n'en était pas un, juste après un commit qui
+corrigeait la présentation de ces mêmes examens. Correction : champ retiré,
+faute d'un vrai identifiant dans les données. Une étiquette qui affirme une
+nature (« ID », « vérifié », « date d'émission ») exige une donnée de cette
+nature, pas une valeur devinée.
+
 Voir aussi [[le-calcul-sort-de-l-ecran]], [[refuser-plutot-que-convertir]].

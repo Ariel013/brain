@@ -32,6 +32,12 @@ en fin de commande de test : code 144. Les `curl` avaient tourné avant, rien
 de perdu cette fois — mais la note existait et n'avait pas été lue avant de
 coder, contrairement à la consigne de lire l'index des leçons d'abord.
 
+**Quatrième occurrence — Portfolio, 2026-10-25.** `rm -rf …; pkill -f "vite
+preview --port 4173"; git status --short` : code 144, l'état du dépôt n'a pas
+été affiché. Rien de perdu, la commande a été relancée ; la suite de la
+session a arrêté le serveur par `kill $(lsof -ti:4173)`, sans incident. Ce
+même projet avait produit la deuxième occurrence trois jours plus tôt.
+
 **Corollaire.** Remplacer `pkill` par `pgrep | xargs kill` ne change rien tant
 que le motif est dans la ligne. Le plus sûr : garder le PID au lancement
 (`cmd & echo $!`), ou arrêter dans une commande qui ne fait **que** ça, puis

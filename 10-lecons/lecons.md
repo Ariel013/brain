@@ -54,6 +54,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-nouvel-onglet-quitte-une-application-installee]] — en PWA installée, `target="_blank"` bascule vers le navigateur sans la session
 - [[un-champ-masque-cache-l-espace-colle]] — « Code incorrect » sur tous les appareils : un espace collé, invisible
 - [[une-proposition-s-affiche-elle-ne-se-preselectionne-pas]] — une catégorie présélectionnée faisait entrer au CV ce qu'on voulait seulement apprendre
+- [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] — un audit appliqué en bloc a repeint le portfolio ; refonte annulée, seules les corrections invisibles gardées
 
 ## Vérifier
 

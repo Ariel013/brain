@@ -31,7 +31,7 @@ Versions et installation : [[claude-code]].
    tâche) ou `brand` (le design est le produit).
 2. **Dès qu'il y a du code** — `impeccable document` écrit `DESIGN.md` depuis
    les vrais tokens. Une charte existante se **reprend et s'améliore**, elle ne
-   se jette pas.
+   se jette pas → [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]].
 3. **Avant chaque surface** — `impeccable shape` : un brief (scène d'usage,
    mise en page mobile **et** desktop, états vides, mouvement) que je
    **valide** avant la première ligne. Pas de code sans brief validé.
