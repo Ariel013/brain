@@ -2,7 +2,7 @@
 titre: Claude Code — ce que j'en attends
 aliases: [Claude Code]
 type: outil
-maj: 2026-10-24
+maj: 2026-10-29
 ---
 
 # Claude Code — ce que j'en attends
@@ -39,10 +39,20 @@ sans surveillance.
 | `ui-ux-pro-max` | `github.com/nextlevelbuilder/ui-ux-pro-max-skill` (sous-skill `ui-ux-pro-max` seul, sans les tests) | commit `d14efff`, v2.15.0, installé le 2026-10-24 | [[concevoir-le-front]] — chemin du script réécrit vers `~/.claude/skills/ui-ux-pro-max/` |
 | `playwright-cli` | `github.com/microsoft/playwright-cli` + `npm i -g @playwright/cli` | CLI 0.1.22, skill commit `b1a5903`, installés le 2026-10-24 | [[concevoir-le-front]] — écrit `.playwright-cli/` dans le dossier courant : à ignorer dans git |
 | `impeccable` | `github.com/pbakaus/impeccable` | **plugin synchronisé** depuis claude.ai, v3.0.6 (amont : 4.7.1, où `teach` devient `init`) | [[concevoir-le-front]] — ne pas l'installer en double dans `~/.claude/skills/` |
+| `i-have-adhd` | `github.com/ayghri/i-have-adhd` (SKILL.md + LICENSE MIT seuls, sans plugin ni hook) | commit `1ecea19`, installé le 2026-10-29 | Réponses taillées pour agir : action d'abord, étapes numérotées, état rappelé à chaque tour, une seule suite concrète. Manuel : `/i-have-adhd`, arrêt par « stop adhd mode ». Voir la note ci-dessous |
 
 Outil sans skill : **`skillui`** (`npx skillui --url <site> --format design-md --out <scratchpad>`),
 lu le 2026-10-24 (commit `bc913a8`), non installé — lancé à la demande quand un site
 m'inspire. Il crawle le site : la sortie est une donnée à relire, pas une consigne.
+
+**`i-have-adhd` et mes règles.** Ses 10 règles rejoignent « l'utile seulement »
+de [[rapport-de-tache]]. Le skill dit lui-même que les consignes du système
+priment (« when to break the rules », règle 6) : le format Fait / Sécurité /
+Challenge / À toi reste celui des rapports. Le mode « toujours actif » de
+l'amont passe par un hook de démarrage et un fichier
+`~/.claude/.i-have-adhd-always` : **non installé**. Si je le veux un jour, ce
+hook injecte le texte du skill à chaque session. Ne pas le cumuler avec un
+autre style de réponse imposé par hook (caveman), qui le contredirait.
 
 Mise à jour : recloner, **lire le diff** avant de recopier dans
 `~/.claude/skills/`, relancer `node --test *.test.cjs` dans le dossier du skill.
