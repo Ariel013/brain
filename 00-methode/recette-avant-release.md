@@ -39,6 +39,9 @@ maj: 2026-10-20
    → [[un-nouvel-onglet-quitte-une-application-installee]]
    Outils : `playwright-cli` pour les captures, `npx impeccable detect src/`
    pour les motifs d'interface générique → [[concevoir-le-front]]
+   **Provoquer les états**, pas seulement le cas heureux : réseau coupé,
+   réseau ralenti, base vide, saisie fausse, session expirée, adresse
+   inexistante, rôle restreint → [[les-etats-d-un-ecran]]
 5. **Balayer les largeurs** — pas seulement 1440 px. 999, 780, 560, 420. Deux
    défauts de mise en page en deux jours n'ont été vus que comme ça. Et **mesurer
    plutôt que croire l'image** : demander à la page ce qu'elle voit

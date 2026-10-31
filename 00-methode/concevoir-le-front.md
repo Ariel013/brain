@@ -2,7 +2,7 @@
 titre: Concevoir le front sans se casser la tête
 aliases: [Front, Design, UI]
 type: methode
-maj: 2026-10-24
+maj: 2026-10-31
 ---
 
 # Concevoir le front sans se casser la tête
@@ -33,7 +33,8 @@ Versions et installation : [[claude-code]].
    les vrais tokens. Une charte existante se **reprend et s'améliore**, elle ne
    se jette pas → [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]].
 3. **Avant chaque surface** — `impeccable shape` : un brief (scène d'usage,
-   mise en page mobile **et** desktop, états vides, mouvement) que je
+   mise en page mobile **et** desktop, **les onze états**
+   → [[les-etats-d-un-ecran]], mouvement) que je
    **valide** avant la première ligne. Pas de code sans brief validé.
 4. **Pendant** — `ui-ux-pro-max` pour une question précise (« bottom sheet
    accessible », « carte + liste en Next »), une requête par intention.
@@ -59,8 +60,11 @@ Versions et installation : [[claude-code]].
 
 - **Mobile d'abord, desktop pensé** : dès qu'une app vise le téléphone, le
   desktop reçoit sa propre mise en page dans le même lot, pas « plus tard ».
-- **Chaque état a son écran** : vide, chargement, erreur, zéro résultat. Un
-  « 0.0 (0) » est un état vide non conçu.
+- **Chaque état a son écran** : les onze (vide, chargement, erreur, hors
+  ligne, réseau lent, aucun résultat, accès refusé, 404, session expirée,
+  validation de formulaire, succès) se conçoivent avec la surface, dans le
+  même lot, et figurent au brief → [[les-etats-d-un-ecran]]. Un « 0.0 (0) »
+  est un état vide non conçu.
 - **Une dépendance visuelle lourde** (carte WebGL, 3D, animation) est un choix
   structurant → ADR, avec son repli.
 

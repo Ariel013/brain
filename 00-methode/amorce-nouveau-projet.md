@@ -2,7 +2,7 @@
 titre: Amorcer un nouveau projet
 aliases: [Amorce, Amorce nouveau projet]
 type: methode
-maj: 2026-10-24
+maj: 2026-10-31
 ---
 
 # Amorcer un nouveau projet
@@ -68,6 +68,11 @@ perd, pas le *quoi*.
    références et anti-références, usager le plus contraint, charte existante.
    Les réponses deviennent `PRODUCT.md` (`impeccable teach`) avant le premier
    écran. → [[concevoir-le-front]]
+   Et **les onze états d'un écran** (vide, chargement, erreur, hors ligne,
+   réseau lent, aucun résultat, accès refusé, 404, session expirée,
+   validation, succès) entrent dans les conventions du projet dès l'amorce,
+   avec leurs composants partagés posés au premier écran — pas rattrapés
+   écran par écran. → [[les-etats-d-un-ecran]]
 
 ## Étape 3 — Les garde-fous techniques
 
