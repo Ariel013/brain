@@ -24,6 +24,7 @@ publique du CV maître d'[[optimisation-cv]], sans base de données.
 
 - [[un-cache-de-build-restaure-peut-servir-l-ancienne-feuille-de-style]]
 - [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]]
+- [[un-ecran-mobile-se-teste-a-la-hauteur-visible-pas-seulement-a-la-largeur]]
 - Occurrences ajoutées à [[une-fonction-serverless-s-envoie-regroupee-et-se-verifie-au-curl]]
   (Vercel sans framework : pages en 404), [[nommer-la-copie-visee]] (fusion
   dans la copie d'une autre session) et

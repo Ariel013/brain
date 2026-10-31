@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-25
+maj: 2026-10-31
 ---
 
 # Leçons apprises
@@ -71,6 +71,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-test-se-borne-a-son-propre-jeu-de-donnees]] — une requête sans filtre touche les données réelles en silence
 - [[lire-la-donnee-avant-l-hypothese]] — un rapport donne un effet et une cause : garder l'effet, lire la base
 - [[une-garde-lit-le-texte-sous-la-forme-ou-il-sera-rendu]] — le contrôle lisait le texte sans balisage : aucun lien jamais vu, alors que le PDF les rendait
+- [[un-ecran-mobile-se-teste-a-la-hauteur-visible-pas-seulement-a-la-largeur]] — « vérifié à 320, 360, 390 px » : l'écran titre défilait à 320 × 568 ; mesurer à la hauteur sans les barres du navigateur
 
 ## Git, release, agents
 
