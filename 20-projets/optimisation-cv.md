@@ -36,6 +36,11 @@ validation humaine avant tout envoi, suivi des relances.
   à [[une-enumeration-de-champs-se-teste]],
   [[l-inscription-a-une-offre-gratuite-se-fait-avant-l-adr]],
   [[casser-le-test-expres]].
+- Session du 2026-10-30/31 (Opteamis, deux CV par offre) :
+  [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]] ;
+  occurrences ajoutées à [[nommer-la-copie-visee]] (CV lu dans une branche en
+  retard) et [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] (photo mise dans le
+  gabarit commun au lieu de la seule candidature).
 
 ## Ce qui vaudrait d'être repris ailleurs
 

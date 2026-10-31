@@ -41,5 +41,14 @@ corriger d'office. Et quand un changement visible est accepté, annoncer son
 ampleur réelle : ici, un « à peine visible » promis s'est révélé nettement
 visible une fois la norme de contraste appliquée.
 
+**Seconde occurrence — optimisation-cv, 2026-10-31.** « Ajoute ma photo sur le
+CV à deux colonnes », dit à propos d'une candidature précise. Lu comme une
+règle : la photo est entrée dans le gabarit commun, et 17 CV d'autres offres
+ont été refaits avec, alors qu'une décision datée de l'utilisateur interdisait
+la photo dans cette version. Interrompu : « … pour cette offre ». Règle
+complétée : **une demande qui contredit une décision datée s'applique au plus
+petit périmètre** (le document en cours), et l'élargissement se propose à
+part. Le défaire a coûté de refaire tous les CV touchés.
+
 Voir [[concevoir-le-front]], [[ce-que-l-ecran-promet-le-code-le-fait]],
 [[regarder-l-application-fait-partie-de-la-recette]].

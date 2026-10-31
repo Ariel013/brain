@@ -54,7 +54,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-nouvel-onglet-quitte-une-application-installee]] — en PWA installée, `target="_blank"` bascule vers le navigateur sans la session
 - [[un-champ-masque-cache-l-espace-colle]] — « Code incorrect » sur tous les appareils : un espace collé, invisible
 - [[une-proposition-s-affiche-elle-ne-se-preselectionne-pas]] — une catégorie présélectionnée faisait entrer au CV ce qu'on voulait seulement apprendre
-- [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] — un audit appliqué en bloc a repeint le portfolio ; refonte annulée, seules les corrections invisibles gardées
+- [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] — un audit appliqué en bloc a repeint le portfolio ; une demande qui contredit une décision datée vaut pour le plus petit périmètre
 - [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]] — terminal web : aucun moyen d'envoyer une commande au téléphone ; bouton visible, 16 px, tester au toucher
 
 ## Vérifier
@@ -70,6 +70,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]] — 82 tests verts, trois écritures qui plantent au deuxième appel
 - [[un-test-se-borne-a-son-propre-jeu-de-donnees]] — une requête sans filtre touche les données réelles en silence
 - [[lire-la-donnee-avant-l-hypothese]] — un rapport donne un effet et une cause : garder l'effet, lire la base
+- [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]] — 33 fichiers parasites : un nom tronqué par découpage de chaîne, vu sur le premier élément s'il avait été essayé seul
 - [[une-garde-lit-le-texte-sous-la-forme-ou-il-sera-rendu]] — le contrôle lisait le texte sans balisage : aucun lien jamais vu, alors que le PDF les rendait
 - [[un-ecran-mobile-se-teste-a-la-hauteur-visible-pas-seulement-a-la-largeur]] — « vérifié à 320, 360, 390 px » : l'écran titre défilait à 320 × 568 ; mesurer à la hauteur sans les barres du navigateur
 
@@ -82,7 +83,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-cache-de-build-restaure-peut-servir-l-ancienne-feuille-de-style]] — HTML neuf, CSS d'avant : chercher dans le CSS servi une règle du lot
 - [[l-inscription-a-une-offre-gratuite-se-fait-avant-l-adr]] — l'ADR écrit, le fournisseur exige un paiement
 - [[verifier-chaque-commit-du-decoupage]] — ne jamais affirmer ce qu'on n'a pas mesuré
-- [[nommer-la-copie-visee]] — `git -C <copie>` dès le second worktree
+- [[nommer-la-copie-visee]] — `git -C <copie>` dès le second worktree ; une donnée de référence se lit dans la copie à jour
 - [[chercher-avant-d-ecrire]] — grepper le domaine, pas le nom du fichier envisagé
 - [[ecrire-la-decision-avec-le-code]] — un ADR écrit après n'est jamais écrit
 - [[une-conclusion-consignee-devient-consigne]] — corriger le doc fait partie du correctif

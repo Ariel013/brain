@@ -32,4 +32,13 @@ Règle complétée : **ne jamais écrire dans la copie de travail d'une autre
 session**. Fusionner dans un worktree dédié à la branche cible
 (`git worktree add <dossier> dev`).
 
+**Troisième occurrence — optimisation-cv, 2026-10-30.** Pas une écriture, une
+lecture : des brouillons d'e-mail de candidature citaient « en freelance » et
+« plus de 200 personnes », lus dans le `contenu.json` de la branche courante.
+Elle était partie avant toutes les corrections du CV, faites dans le worktree
+de `dev`. L'utilisateur l'a relevé. Règle complétée : **une donnée de
+référence se lit aussi dans la copie à jour**. Avant de la citer ou d'en
+tirer un document, vérifier que la branche courante contient `dev`
+(`git merge-base --is-ancestor dev HEAD`), sinon la remettre à jour d'abord.
+
 Voir aussi [[workflow-git]], [[verifier-chaque-commit-du-decoupage]].

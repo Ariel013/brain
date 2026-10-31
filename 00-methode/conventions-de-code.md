@@ -81,6 +81,7 @@ pendant des mois → [[verifier-le-chemin-d-ecriture]].
 - SQL écrit à la main dans un ORM : qualifier la colonne extérieure d'une
   sous-requête, lire le SQL produit → [[une-sous-requete-qualifie-la-colonne-exterieure]].
 - Un filtre de statut s'écrit en liste blanche → [[une-enumeration-de-champs-se-teste]].
+- Un lot qui écrit sur les vraies données s'essaie sur un élément ; un chemin se découpe par `basename` / `dirname` → [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]].
 
 ## Tenue à jour
 
