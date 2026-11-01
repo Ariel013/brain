@@ -94,6 +94,7 @@ que le modèle → [[un-jeu-de-demonstration-se-teste-comme-une-fixture]].
 - Un filtre de statut s'écrit en liste blanche → [[une-enumeration-de-champs-se-teste]].
 - Les tests qui manipulent des dates tournent avec un fuseau fixé (`TZ=UTC`).
 - Un lot qui écrit sur les vraies données s'essaie sur un élément ; un chemin se découpe par `basename` / `dirname` → [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]].
+- Refaire des sorties pour propager un changement : savoir si le générateur lit la source ou une copie figée, et chercher le changement dans la sortie → [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]].
 
 ## Tenue à jour
 

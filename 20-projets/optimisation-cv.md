@@ -4,7 +4,7 @@ type: projet
 domaine: outil personnel — CV et recherche d'alternance
 statut: chaîne de candidature en service (CV et lettre adaptés, envoi par e-mail, candidatures spontanées), 2026-10-21
 depot: ~/PROJETS/optimisation_cv
-maj: 2026-10-21
+maj: 2026-11-01
 ---
 
 # Optimisation CV & candidatures
@@ -41,6 +41,8 @@ validation humaine avant tout envoi, suivi des relances.
   occurrences ajoutées à [[nommer-la-copie-visee]] (CV lu dans une branche en
   retard) et [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] (photo mise dans le
   gabarit commun au lieu de la seule candidature).
+- Session du 2026-11-01 (puce réseau EPITECH dans le CV deux colonnes) :
+  [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]].
 
 ## Ce qui vaudrait d'être repris ailleurs
 
