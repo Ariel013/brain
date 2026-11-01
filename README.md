@@ -21,6 +21,8 @@ et le dépôt naît déjà équipé de sa discipline.
 |---|---|
 | **Démarrer un nouveau projet** | [[amorce-nouveau-projet]] ★ |
 | Savoir quels fichiers doit porter un dépôt | [[documents-du-projet]] |
+| Laisser l'agent avancer seul sans risque | [[ce-qui-est-reversible-se-tranche-ce-qui-est-irreversible-se-demande]] |
+| Recueillir les retours d'un utilisateur réel | [[recueillir-les-retours-de-l-utilisateur-reel]] |
 | Concevoir un front (design, carte, desktop) | [[concevoir-le-front]] |
 | Concevoir les états d'un écran (vide, erreur, hors ligne…) | [[les-etats-d-un-ecran]] |
 | Retrouver une règle apprise à la dure | [[lecons]] |

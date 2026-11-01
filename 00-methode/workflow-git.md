@@ -48,11 +48,18 @@ main       ← PRODUCTION. Reçoit uniquement staging, et seulement quand on est
   besoin, et vérifier `git diff main dev` **vide** avant de taguer.
 - **Jamais de `reset --hard` sur une branche partagée.** Un reset a déjà fait
   perdre des commits et déplacé un tag. Pour rattraper : `merge --ff-only`.
+  Pour un rembobinage local **prouvé sans perte** : `git branch -f`, seulement
+  après avoir listé ce qu'on perd (`git rev-list A..B --not C` vide).
 - **Taguer chaque release** (`v1.0`, `v1.1`…). Le tag est l'ancre de rollback —
   pas `staging`, qui peut déjà porter la version *suivante*, moins éprouvée.
   `staging` est le filet *avant* la prod ; le tag est le filet *après*.
 - Une release se coupe sur **un périmètre décidé**, pas sur l'état de `dev`
   → [[une-release-se-coupe-sur-un-perimetre]].
+- **Après le push**, vérifier l'alignement par comparaison des SHA, **y compris
+  le tag distant contre le tag local** (`git ls-remote --tags origin`). Pas par
+  supposition.
+- **CI sur PR et sur push des trois branches longues** : typecheck, tests,
+  build. Un niveau non testé est un saut.
 
 ## Séquence d'une tâche
 

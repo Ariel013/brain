@@ -30,7 +30,11 @@ qui reste en attente. Toujours convertir les dates relatives en absolues :
 « hier » ne veut rien dire dans trois semaines.
 
 **📓 Journal des sessions** — une entrée datée par session : ce qui a été fait,
-ce qui a été décidé, ce qui a été découvert.
+ce qui a été décidé, ce qui a été découvert. **La plus récente en haut** :
+l'instance suivante lit le haut du fichier, pas la fin. Le titre de l'entrée dit
+**ce qu'on a appris**, pas ce qu'on a fait (« trois écrans morts, trouvés en
+regardant » plutôt que « corrections diverses »). Et ce qui **n'a pas pu être
+vérifié** s'écrit comme tel, avec la raison.
 
 **🎓 Leçons apprises** — le trésor. Format **symptôme → cause → règle**. On
 décrit le symptôme *tel qu'il s'est présenté* (« trois écrans blancs », pas
@@ -47,6 +51,14 @@ décrit le symptôme *tel qu'il s'est présenté* (« trois écrans blancs », p
 Le test : *est-ce que je voudrais qu'on me le rappelle sur un projet qui n'a
 rien à voir ?* Si oui → `10-lecons/`. Sinon → le journal du projet.
 
+## Un fichier de suivi qui gonfle s'archive
+
+Sur Synoé, `JOURNAL.md` a atteint 74 Ko et `A-FAIRE.md` 32 Ko : le coût de
+lecture d'un début de session montait à chaque session, et le fait accompli se
+mélangeait au reste. Au-delà d'environ **300 lignes**, les sessions anciennes
+partent dans `docs/journal-archive-AAAA-MM.md` ; `A-FAIRE.md` archive ses
+sections terminées de la même façon. Ce qui reste en haut tient en une lecture.
+
 ## Le danger du journal
 
 **Une conclusion consignée devient une consigne pour l'instance suivante.** Un
@@ -61,3 +73,7 @@ Trois gestes, jamais négociables :
 2. Ajouter l'entrée datée au journal des sessions.
 3. Consigner les leçons — puis lancer `/capitaliser` pour faire remonter ici ce
    qui dépasse le projet.
+
+La question à se poser après chaque correction reçue : **« où est-ce que
+j'écris ça pour ne jamais avoir à le redire ? »** Un retour fait en
+conversation est perdu à la session suivante.

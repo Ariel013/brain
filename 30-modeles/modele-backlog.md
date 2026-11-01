@@ -2,7 +2,7 @@
 titre: Modèle — tâche de backlog
 type: modele
 cible: docs/roadmap-backlog.md
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Modèle — tâche de backlog
@@ -27,6 +27,10 @@ fait pas. Renvoyer à l'ADR ou au doc qui l'a fait apparaître.>
 - <Ce qu'on ne fait PAS dans cette tâche, explicitement — c'est ce qui empêche
   le sur-développement, mieux qu'un backlog bien rangé.>
 ```
+
+**Une tâche terminée reste en place**, marquée faite avec sa date et un résumé
+de deux lignes : elle n'est pas supprimée. Le backlog devient ainsi
+l'historique du produit.
 
 **L'en-tête du fichier** rappelle trois choses : lire `CLAUDE.md` avant de
 commencer une tâche, suivre le workflow git pour chacune, et ne pas sauter à la

@@ -2,7 +2,7 @@
 titre: Modèle — A-FAIRE.md
 type: modele
 cible: A-FAIRE.md
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Modèle — `A-FAIRE.md`
@@ -48,13 +48,22 @@ Dernière mise à jour : AAAA-MM-JJ.
 
 ## 4. Décisions en attente
 
+> Posées **en lot** à chaque point d'avancement. Une question vieille de plus
+> de deux sessions est tranchée par défaut (hypothèse écrite) ou déclarée
+> bloquante : elle ne dort pas.
+
 | Question | Qui tranche | Échéance | Impact si non tranché |
 |---|---|---|---|
 
 ## 5. Ops et sauvegardes
 
 - <Ce qui est sauvegardé, à quelle fréquence, et **comment on vérifie**.>
+- <Où est la copie **hors de la machine**, et la date de la dernière
+  restauration testée.>
 - <Ce qui n'est PAS couvert par la sauvegarde.>
+- Hook `pre-push` : à réactiver après chaque clone du dépôt.
 ```
 
-Le point 5 mérite une lecture de [[une-sauvegarde-se-verifie-avant-de-detruire]].
+Le point 4 suit [[recueillir-les-retours-de-l-utilisateur-reel]]. Le point 5
+mérite une lecture de [[une-sauvegarde-se-verifie-avant-de-detruire]] : la
+sauvegarde hors machine s'automatise **le jour de la première donnée réelle**.

@@ -2,7 +2,7 @@
 titre: Travailler avec les agents
 aliases: [Agents, Claude, Méthode agent]
 type: methode
-maj: 2026-10-20
+maj: 2026-11-01
 ---
 
 # Travailler avec les agents
@@ -16,6 +16,7 @@ passe mal.
   projet, sans me soumettre une liste d'options. Une recommandation, pas un menu.
 - **Qu'il s'arrête sur l'ambigu structurant.** Nouvelle table, nouveau flux,
   changement de convention : on expose, on décide, on écrit l'ADR, on continue.
+  La grille complète : [[ce-qui-est-reversible-se-tranche-ce-qui-est-irreversible-se-demande]].
 - **Qu'il exécute git lui-même** — sauf `push`, confirmé à chaque fois.
 - **Qu'il rende compte** dans le format fixe → [[rapport-de-tache]].
 - **Qu'il propose la suite.** Après avoir pris l'état : recommander les
@@ -67,6 +68,15 @@ Deux valent le coup sur presque tous les projets, définis dans
   qu'un diff touche l'authentification, les données sensibles, les politiques
   d'accès, ou l'import/export. Il s'appuie sur le skill `security-audit` en
   mode *guidance* → [[revue-securite]].
+
+Leurs critères viennent **des docs du projet**, jamais d'un référentiel
+générique. Le `code-reviewer` signale aussi tout nouveau patron qui mériterait
+de devenir une convention. Phrase à mettre dans chacun, elle change tout :
+
+> « Ne signale pas de faux positifs par excès de prudence générique : chaque
+> remontée doit être ancrée dans une règle documentée. Si tout est conforme,
+> dis-le clairement et brièvement ; ne cherche pas à justifier ta présence en
+> trouvant un problème mineur. »
 
 Un agent de revue lit ; il ne modifie pas. C'est ce qui le rend utilisable sans
 surveillance.

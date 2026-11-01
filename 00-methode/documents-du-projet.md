@@ -2,7 +2,7 @@
 titre: Les documents d'un projet
 aliases: [Documents du projet, Carte des docs]
 type: methode
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Les documents d'un projet
@@ -26,6 +26,12 @@ toute information recopiée à un second endroit finit par diverger.
 | `docs/commandes.md` | *Comment je lance ça ?* (et **ce qu'il ne faut jamais lancer**) | moi, en usage |
 | `docs/roadmap-backlog.md` | *Que reste-t-il à construire, dans quel ordre ?* | au démarrage de session |
 | `docs/points-avancement.md` | *Qu'est-ce qui change pour l'utilisateur ?* | l'utilisateur final |
+| `docs/<conformite>.md` (si domaine réglementé) | *Quelles règles de code découlent de la réglementation ?* Pas un texte juridique : des règles applicables par un agent | avant toute tâche qui touche les zones qu'il liste |
+
+`docs/architecture.md` porte une section numérotée **« ce qui manque et doit
+être posé avant <l'étape suivante> »** : c'est ce qui empêche une dette connue
+de devenir une dette oubliée. Et chaque contrainte technique assumée y est
+écrite **avec sa raison**, sinon elle passe pour un oubli.
 
 ## Les trois qu'on oublie, et ce que ça coûte
 

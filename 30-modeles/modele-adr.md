@@ -2,7 +2,7 @@
 titre: Modèle — ADR
 type: modele
 cible: docs/decisions/NNNN-<slug>.md
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Modèle — ADR (Architecture Decision Record)
@@ -34,7 +34,17 @@ maj: 2026-08-26
 
 - <Ce que ça oblige à faire désormais, systématiquement.>
 - <Ce que ça ferme, et ce que ça garde ouvert.>
+- <Ce que ça NE résout PAS, dit explicitement.>
+
+## Rapport aux décisions voisines
+
+<Renvois aux ADR liés, et ce qui doit être fait dans le même lot.>
 ```
+
+**Dire ce que l'ADR ne résout pas** évite qu'une instance suivante croie le
+sujet clos. Et quand la décision reformule une demande, **conserver l'énoncé
+d'origine** sous un titre « (conservé) » : la reformulation est un choix,
+l'énoncé est le fait.
 
 **Le titre est la décision.** « 0002 — Contrat `Repo` : local par défaut,
 distant en option » se retrouve dans une liste ; « 0002 — Persistance » non.

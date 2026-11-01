@@ -29,6 +29,13 @@ Ce qui suit est ce qui vaut d'un projet à l'autre.
 - **Un seul endroit pour les types métier.** Étendre les interfaces existantes
   plutôt que créer des types parallèles.
 - **Vocabulaire fermé = `as const` + type dérivé**, jamais des chaînes libres.
+- **Famille fermée + libellé libre** plutôt qu'une énumération qui grossit :
+  chaque valeur ajoutée à une liste fermée est une modification de code.
+  Corollaire : le texte libre ne supprime pas le coût, il le reporte sur la
+  lecture. L'assumer, pas le découvrir.
+- **Donnée + précision** (`date` + `'exacte' | 'annee'`) plutôt qu'une donnée
+  approximative dont on ignore le degré d'approximation. La précision ne fait
+  que monter.
 - **Un format canonique par donnée**, converti à l'entrée. Deux formats qui
   cohabitent sans conversion explicite finissent par se mélanger
   → [[normaliser-a-la-lecture]].
@@ -67,12 +74,16 @@ Ce qui suit est ce qui vaut d'un projet à l'autre.
   un style en ligne : un style en ligne est hors d'atteinte des requêtes média.
 - **Pas de bibliothèque de graphiques** par défaut : CSS/SVG inline. Léger,
   fonctionne hors ligne, et une dépendance de moins à maintenir.
+- **Une contrainte technique assumée s'écrit avec sa raison**, comme
+  ci-dessus. Sans sa raison, l'instance suivante la prend pour un oubli.
 
 ## Données de démonstration
 
 Les jeux de démo vivent dans un fichier dédié et **ne se mélangent jamais** à la
 logique de production. Un jeu de démo peut masquer une fonctionnalité absente
-pendant des mois → [[verifier-le-chemin-d-ecriture]].
+pendant des mois → [[verifier-le-chemin-d-ecriture]]. Un test vérifie qu'il
+exerce chaque fonctionnalité visible, et il se met à jour dans la même tâche
+que le modèle → [[un-jeu-de-demonstration-se-teste-comme-une-fixture]].
 
 ## Pièges relevés
 
@@ -81,6 +92,7 @@ pendant des mois → [[verifier-le-chemin-d-ecriture]].
 - SQL écrit à la main dans un ORM : qualifier la colonne extérieure d'une
   sous-requête, lire le SQL produit → [[une-sous-requete-qualifie-la-colonne-exterieure]].
 - Un filtre de statut s'écrit en liste blanche → [[une-enumeration-de-champs-se-teste]].
+- Les tests qui manipulent des dates tournent avec un fuseau fixé (`TZ=UTC`).
 - Un lot qui écrit sur les vraies données s'essaie sur un élément ; un chemin se découpe par `basename` / `dirname` → [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]].
 
 ## Tenue à jour

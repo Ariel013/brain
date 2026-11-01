@@ -2,7 +2,7 @@
 titre: Recette avant release
 aliases: [Recette, Checklist release]
 type: methode
-maj: 2026-10-20
+maj: 2026-11-01
 ---
 
 # Recette avant release
@@ -26,7 +26,9 @@ maj: 2026-10-20
    laisse passer une requête SQL invalide
    → [[des-tests-qui-n-ecrivent-jamais-ne-protegent-pas-les-ecritures]]. Sur
    une base partagée, chaque requête de test porte l'identifiant de son jeu
-   → [[un-test-se-borne-a-son-propre-jeu-de-donnees]].
+   → [[un-test-se-borne-a-son-propre-jeu-de-donnees]]. Chaque écran a son test
+   de montage, posé avec l'écran. Et **un test dont l'environnement n'a pas
+   répondu n'est pas un test vert** : le dire.
 3. **Build** — un build qui passe en local ne prouve pas que le bundle servi est
    le bon (voir §5).
 4. **Passe visuelle** — ouvrir **chaque écran touché**. Automatisable sans rien
@@ -68,7 +70,9 @@ maj: 2026-10-20
 - Le tag pointe bien le commit voulu — vérifié par `rev-parse`, pas supposé
   → [[nommer-la-copie-visee]].
 - Sauvegarde des données réelles **vérifiée** (déchiffrée, lignes comptées) :
-  la taille d'un fichier ne prouve rien.
+  la taille d'un fichier ne prouve rien. Une copie **hors de la machine**, et
+  une **restauration testée au moins une fois** : une sauvegarde jamais
+  restaurée n'est pas une sauvegarde.
 
 ## Ce qu'une recette ne voit pas
 

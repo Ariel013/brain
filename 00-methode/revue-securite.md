@@ -75,4 +75,19 @@ n'atteste rien du reste du dépôt.
 - Une référence ajoutée vers une table qui porte un droit d'effacement
   → [[une-reference-ajoutee-relance-le-test-de-suppression-de-la-table-visee]].
 
+## Règles de données sensibles (ajoutées le 2026-11-01, issues de Synoé)
+
+- **Un nouveau rôle a ses droits définis avant le code.** Le cloisonnement
+  s'applique aussi en développement → [[poser-l-isolation-des-le-premier-schema]].
+- **Fichiers en stockage privé**, accès par URL signée à durée limitée, jamais
+  d'URL devinable.
+- **Jamais de contenu sensible dans un log**, même de développement.
+- **Journal d'audit** (acteur, action, cible, horodatage) branché avec la
+  première écriture métier → [[un-journal-d-audit-se-pose-avec-la-premiere-ecriture]].
+- **Portabilité et effacement prévus avant les utilisateurs réels.** Un
+  effacement **exporte toujours avant de détruire**, et **renonce si un seul
+  fichier est illisible**.
+- **Les alertes de dépendances se trient par atteignabilité réelle** dans le
+  code, jamais par un `--force` qui impose des montées majeures non testées.
+
 Voir aussi [[travailler-avec-les-agents]].

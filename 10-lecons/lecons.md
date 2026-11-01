@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-10-31
+maj: 2026-11-01
 ---
 
 # Leçons apprises
@@ -64,6 +64,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[mesurer-l-outil-avant-de-conclure]] — un outil se vérifie dans le régime où on l'emploie
 - [[une-sauvegarde-se-verifie-avant-de-detruire]] — la taille d'un fichier ne prouve rien
 - [[un-test-de-route-emprunte-le-chemin-de-l-ecran]] — 64 tests verts, la restauration impossible depuis l'écran
+- [[un-jeu-de-demonstration-se-teste-comme-une-fixture]] — un champ jamais écrit a paru marcher des semaines grâce aux données de démo ; un test vérifie que la démo exerce chaque fonctionnalité visible
 - [[un-tri-sur-une-colonne-castee-trie-sur-le-cast]] — un jeu d'essai à un chiffre ne teste pas un tri
 - [[un-budget-de-poids-est-une-contrainte-de-perimetre]] — mesurer le socle vide avant d'écrire
 - [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] — un drapeau désarme le contrôle que le script promet
@@ -96,6 +97,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 ## Sécurité et résilience
 
 - [[la-cle-d-administration-ne-va-jamais-cote-client]]
+- [[un-journal-d-audit-se-pose-avec-la-premiere-ecriture]] — branché après les premiers dossiers, il ne raconte pas le début : irrattrapable
 - [[un-garde-fou-local-se-leve-hors-ligne]] — un verrou sur des données locales se lève hors ligne
 - [[un-acte-porte-son-auteur-pas-son-transporteur]] — hors ligne, celui qui synchronise n'est pas celui qui a agi ; un identifiant de session n'est pas un secret
 - [[le-client-n-est-jamais-une-autorite]] — chaque champ d'une charge utile est une donnée, un calcul ou une autorité ; le serveur recalcule

@@ -3,7 +3,7 @@ titre: Poser l'isolation dès le premier schéma
 aliases: [Multi-tenant, Cloisonnement]
 type: pattern
 origine: Synoé — ADR 0001
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Poser l'isolation dès le premier schéma
@@ -22,6 +22,15 @@ qu'une seule valeur pendant un an.
 **La règle qui va avec.** Ne jamais écrire une requête, une fonction ou un écran
 qui **suppose implicitement** qu'il n'y a qu'un seul client — même si c'est vrai
 aujourd'hui. C'est cette supposition-là qui coûte cher, pas la colonne.
+
+**Le premier test du projet est un test de cloisonnement**, écrit avec la
+première table et validé par mutation → [[casser-le-test-expres]]. Sur Synoé,
+ces tests sont arrivés après le schéma et ont immédiatement trouvé un trou de
+droits : un mois plus tôt, ils l'auraient trouvé un mois plus tôt.
+
+**Pas d'exception en développement**, même « juste pour un test rapide » : une
+habitude prise en dev finit par fuiter en production. Et les droits d'un
+nouveau rôle se définissent **avant** d'écrire son code.
 
 **Le détail qui mord.** Les politiques d'accès qui doivent consulter une table
 pour s'évaluer créent une récursion. Passer par des fonctions dédiées, évaluées

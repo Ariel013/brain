@@ -19,6 +19,11 @@ les données.
 **regrouper les lignes et chercher ce qui se répète**. La structure est dans les
 répétitions, pas dans les en-têtes.
 
+**Et d'abord l'obtenir.** Exiger le fichier réel avant d'écrire le modèle :
+pas une description, pas une capture. Sur Synoé, deux ADR entiers ont dû être
+réécrits quand il a enfin été ouvert. S'il manque, c'est le premier point
+bloquant du projet → [[recueillir-les-retours-de-l-utilisateur-reel]].
+
 **Plus généralement.** Un export produit par un humain porte sa manière de
 travailler. Le modéliser sans l'avoir regardé, c'est modéliser sa propre
 supposition.

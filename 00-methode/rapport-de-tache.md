@@ -78,4 +78,7 @@ de données, nouvelle dépendance lourde, changement de convention) s'arrête :
 > Une décision prise sans être posée nulle part est une décision perdue pour la
 > suite du projet. → [[ecrire-la-decision-avec-le-code]]
 
+La table complète de ce qui s'arrête et de ce qui se tranche seul :
+[[ce-qui-est-reversible-se-tranche-ce-qui-est-irreversible-se-demande]].
+
 Voir aussi [[travailler-avec-les-agents]].

@@ -2,7 +2,7 @@
 titre: Claude Code — ce que j'en attends
 aliases: [Claude Code]
 type: outil
-maj: 2026-10-29
+maj: 2026-11-01
 ---
 
 # Claude Code — ce que j'en attends
@@ -19,6 +19,12 @@ j'ai décidé pour **mes** projets.
 | `<projet>/.claude/agents/*.md` | sous-agents du projet |
 | `~/.claude/skills/<nom>/SKILL.md` | mes commandes `/<nom>` |
 | `<projet>/.claude/settings.local.json` | permissions locales, non versionnées |
+
+**La liste de permissions** couvre les commandes de lecture courantes (`ls`,
+`grep`, `git status`…), **avec `git push` volontairement absent**. Ne pas
+l'écrire à la main par anticipation : `/fewer-permission-prompts` la propose à
+partir des transcriptions, une fois que l'usage réel l'a remplie
+→ [[ce-qui-est-reversible-se-tranche-ce-qui-est-irreversible-se-demande]].
 
 ## Les sous-agents que je pose sur presque tout
 

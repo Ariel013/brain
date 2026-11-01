@@ -2,7 +2,7 @@
 titre: Modèle — JOURNAL.md
 type: modele
 cible: JOURNAL.md
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Modèle — `JOURNAL.md`
@@ -34,12 +34,15 @@ Carte des documents : <liste courte, avec ce que chacun répond.>
   il a été vérifié : bundle servi, routes, contenu réellement téléchargé>.
 - **État des branches** : <alignées avec origin, vérifié par SHA / divergence
   connue et pourquoi ce n'en est pas une>.
+- **Recette au <date>** : <n tests, typecheck, build, passe visuelle>.
 - **Prochaine action** : <une seule, la plus utile, avec son critère de fin.>
+- **En attente côté utilisateur** (l'agent ne peut pas le faire) : <…>
 
-## 📓 Journal des sessions
+## 📓 Journal des sessions (plus récent en haut)
 
-### AAAA-MM-JJ — <titre de la session>
-<Ce qui a été fait, décidé, découvert. Ce qui reste ouvert.>
+### AAAA-MM-JJ — <titre qui dit ce qu'on a appris, pas ce qu'on a fait>
+<Ce qui a été fait, décidé, découvert. Ce qui reste ouvert. Ce qui n'a pas pu
+être vérifié, et pourquoi.>
 
 ## 🎓 Leçons apprises
 
@@ -51,5 +54,8 @@ cause → règle. Ce qui vaut au-delà de ce projet monte dans le brain.*
 <Cause réelle.>
 Règle : <ce qu'on fait désormais.>
 ```
+
+Au-delà d'environ 300 lignes, les sessions anciennes partent dans
+`docs/journal-archive-AAAA-MM.md` → [[continuite-entre-sessions]].
 
 Voir [[continuite-entre-sessions]], [[lecons]].

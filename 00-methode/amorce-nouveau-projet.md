@@ -2,7 +2,7 @@
 titre: Amorcer un nouveau projet
 aliases: [Amorce, Amorce nouveau projet]
 type: methode
-maj: 2026-10-31
+maj: 2026-11-01
 ---
 
 # Amorcer un nouveau projet
@@ -61,10 +61,14 @@ perd, pas le *quoi*.
 4. **Discipline de migration.** Avant la première donnée réelle, un dossier de
    migrations additives. Un `drop table` ré-exécutable est une bombe à retardement
    dès qu'un utilisateur saisit quelque chose.
+   → [[une-migration-est-additive-numerotee-et-journalisee]]
 5. **Ce que le projet ne fera pas.** Écrit noir sur blanc. Un hors-périmètre
    explicite évite le sur-développement mieux qu'un backlog bien rangé.
+6. **Les données réelles de l'utilisateur.** Le fichier, pas une
+   description : s'il manque, c'est le premier point bloquant du projet
+   → [[recueillir-les-retours-de-l-utilisateur-reel]].
 
-6. **Le front, s'il y en a un.** Sur quoi on l'utilise, personnalité,
+7. **Le front, s'il y en a un.** Sur quoi on l'utilise, personnalité,
    références et anti-références, usager le plus contraint, charte existante.
    Les réponses deviennent `PRODUCT.md` (`impeccable teach`) avant le premier
    écran. → [[concevoir-le-front]]
@@ -80,7 +84,15 @@ perd, pas le *quoi*.
   justification dans [[workflow-git]].
 - **Hook `pre-push` local** qui refuse force-push et suppression sur les
   branches longues — la protection serveur n'est pas toujours disponible.
-- **CI** dès le premier commit : typecheck + tests + build sur `dev`.
+  Il ne survit pas à un clone : le noter dans `A-FAIRE.md` pour le réactiver
+  après chaque clone.
+- **CI** dès le premier commit : typecheck + tests + build, sur PR et sur push
+  des trois branches longues (`dev`, `staging`, `main`) : la remontée est testée
+  à chaque niveau.
+- **Premier test du projet : un test de cloisonnement**, écrit avec la première
+  table et validé par mutation → [[poser-l-isolation-des-le-premier-schema]].
+  **Premier écran : son test de montage** (« l'écran monte sans exception »)
+  → [[regarder-l-application-fait-partie-de-la-recette]].
 - **`.gitignore` avant le premier `git add`**, et jamais de stage en masse
   → [[stager-nommement]]. Y mettre d'office les dossiers que les outils de
   navigateur écrivent dans le dépôt (`.playwright-cli/`, `.playwright-mcp/`).
@@ -103,7 +115,12 @@ Ces préférences sont durables, elles n'ont pas à être redites :
 
 ## Étape 5 — Avant de coder quoi que ce soit
 
-Lire [[lecons]]. Ce n'est pas une formalité : la moitié de ces règles ont été
+- La **table des conditions d'arrêt** est dans `CLAUDE.md`
+  → [[ce-qui-est-reversible-se-tranche-ce-qui-est-irreversible-se-demande]].
+- Le **backlog est rempli assez loin** pour qu'une session entière s'enchaîne
+  sans question.
+
+Puis lire [[lecons]]. Ce n'est pas une formalité : la moitié de ces règles ont été
 payées par un défaut parti en production.
 
 ## Comment cette note s'améliore

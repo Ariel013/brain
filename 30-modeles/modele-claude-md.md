@@ -56,6 +56,18 @@ référence — lis aussi celles qui concernent ta tâche avant de coder.
 4. <La règle métier qui prime sur tout le reste.>
 5. <Les contraintes techniques déjà posées — dépendances interdites, etc.>
 
+## Quand s'arrêter, quand trancher seul
+
+| Je m'arrête et je demande | Je tranche seul et je documente |
+|---|---|
+| `git push` (à chaque fois) | Nom de fichier, de fonction, découpage interne |
+| Nouvelle dépendance externe | Extraction d'un calcul hors d'un composant |
+| Changement de schéma de base | Ajout d'un test, correction d'un test rouge |
+| Nouvelle table, nouveau flux de données | Mise en page dans le style existant |
+| Suppression ou écrasement de données réelles | Refactor local sans changement de comportement |
+| Choix produit visible par l'utilisateur final | Correction d'un défaut trouvé en chemin |
+| Données sensibles, sécurité | Mise à jour des docs que je viens de rendre fausses |
+
 ## Après chaque tâche — format de rapport attendu
 
 Tout retour de l'agent — rapport de fin de tâche ou réponse en cours de
