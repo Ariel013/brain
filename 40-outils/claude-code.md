@@ -74,6 +74,13 @@ avoir été lu.
 - Qu'on affirme un résultat non mesuré
   → [[verifier-chaque-commit-du-decoupage]].
 
+## Ce que le préfixe `!` ne peut pas faire
+
+Une commande lancée avec `!` dans la session n'a pas de terminal : `sudo` y
+échoue (« a terminal is required to read the password »). Toute commande qui
+demande un mot de passe se donne à lancer dans un terminal ordinaire, pas avec
+`!` (constaté le 2026-11-01).
+
 ## Le réflexe de fin de session
 
 `/capitaliser`, puis mise à jour du `JOURNAL.md`.

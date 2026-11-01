@@ -90,6 +90,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-conclusion-consignee-devient-consigne]] — corriger le doc fait partie du correctif
 - [[un-rapport-d-agent-est-une-piste-pas-un-fait]] — un constat qui fonde une décision se revérifie à la source
 - [[un-worktree-d-agent-part-de-main-pas-de-la-branche-courante]] — nommer le commit de base dans le brief, le faire vérifier en première commande
+- [[une-branche-se-dit-fusionnee-apres-avoir-cherche-qui-la-contient]] — 10 worktrees « non fusionnés dans dev » étaient tous contenus dans la branche de sprint : `git branch --contains` avant de conclure
 - [[avant-de-retirer-un-garde-fou-lister-ce-que-l-operation-ecrit]] — une borne retirée « parce que ce n'est pas le vecteur » rouvrait le registre des stupéfiants
 - [[des-tests-verts-ne-remplacent-pas-une-relecture-adverse]] — 8 constats élevés sur du code à 100 % de tests verts ; chaque constat reproduit, corrigé avec un test avant/après
 - [[arreter-un-processus-par-son-pid-pas-par-un-motif]] — `pkill -f "next dev"; suite` s'est tué lui-même : la suite n'a jamais eu lieu (3 occurrences)

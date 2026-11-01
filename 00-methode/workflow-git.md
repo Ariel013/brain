@@ -2,7 +2,7 @@
 titre: Workflow git
 aliases: [Git, Branches, Release]
 type: methode
-maj: 2026-08-26
+maj: 2026-11-01
 ---
 
 # Workflow git
@@ -97,6 +97,10 @@ pas protesté. → [[nommer-la-copie-visee]]
 Le worktree est aussi ce qui permet de découper, vérifier et releaser **sans
 arrêter le serveur de développement** — on ne bascule jamais de branche sous la
 copie qui sert le dev.
+
+Un worktree d'agent se retire **dans la session où son lot est fusionné**. Avant
+de déclarer une branche « non fusionnée », chercher qui la contient
+→ [[une-branche-se-dit-fusionnee-apres-avoir-cherche-qui-la-contient]].
 
 ## Ce qu'on ne fait jamais silencieusement
 

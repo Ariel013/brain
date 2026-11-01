@@ -4,7 +4,7 @@ type: projet
 domaine: pharmacie d'officine (Côte d'Ivoire)
 statut: sprints 0 et A terminés — socle poste et serveur, 168 tests
 depot: ~/PROJETS/Kalybris
-maj: 2026-09-06
+maj: 2026-11-01
 ---
 
 # Kalybris
@@ -123,6 +123,9 @@ avec reproduction obligatoire.
 **Ce qui a coûté :** les worktrees partent de `main` (quatre reprises) ;
 deux agents tombés sur des timeouts d'API, repris sans perte par message ;
 les conflits de fusion dans `serveur.ts` et `ventes.ts`, résolus à la main.
+Le 2026-11-01, 10 worktrees d'agents (3 Go) traînaient encore, tous déjà
+contenus dans `feat/sprintB-catalogue` : retirés avec leurs branches
+→ [[une-branche-se-dit-fusionnee-apres-avoir-cherche-qui-la-contient]].
 
 Leçons montées : [[un-worktree-d-agent-part-de-main-pas-de-la-branche-courante]],
 [[une-regle-opposable-n-a-pas-de-valeur-par-defaut]],
