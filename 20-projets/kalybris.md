@@ -60,6 +60,12 @@ Session du 07/10/2026 (recette et revue de sécurité du Sprint A) :
   qui décide* ; *chaque branche de refus d'une connexion coûte le même temps
   et rend le même corps*.
 
+Session du 01/11/2026 (ADR 0006 et 0008 tranchés, registre des stupéfiants
+en corps scellé v2) :
+
+- [[un-texte-scelle-se-serialise-sans-ambiguite]] — le sceau prouvait que la
+  chaîne jointe n'avait pas changé, pas les champs
+
 ## Les patrons à reprendre ailleurs
 
 - **Rendre lisible avant d'auditer.** Le livrable était un HTML

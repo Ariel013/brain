@@ -106,6 +106,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-acte-passe-se-juge-sur-des-faits-dates-jamais-sur-un-etat-courant]] — une vente hors ligne refusée à vie parce que la session avait été purgée depuis
 - [[un-echec-temporaire-ne-consomme-pas-de-tentative]] — une nuit hors ligne faisait abandonner la première vente de la file
 - [[une-cle-un-usage-un-texte-signe-dit-a-quoi-il-sert]] — un registre signé par la clé des jetons meurt à la première rotation
+- [[un-texte-scelle-se-serialise-sans-ambiguite]] — des champs joints par un séparateur saisissable : une dispensation réattribuée sans casser sceau ni signature
 - [[un-garde-fou-trop-large-empeche-sa-propre-documentation]] — un filtre décide sur ce qui s'exécute, pas sur ce qui s'écrit
 - [[un-rapport-qui-signale-une-donnee-sensible-ne-la-recopie-pas]] — le contrôle final se fait sur `git log -p`, pas sur le disque
 - [[un-garde-absolu-n-a-pas-d-exception-il-a-une-autre-porte]] — changer de niveau plutôt qu'affaiblir le garde
