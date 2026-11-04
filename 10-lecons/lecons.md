@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-11-01
+maj: 2026-11-04
 ---
 
 # Leçons apprises
@@ -75,6 +75,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-garde-lit-le-texte-sous-la-forme-ou-il-sera-rendu]] — le contrôle lisait le texte sans balisage : aucun lien jamais vu, alors que le PDF les rendait
 - [[un-ecran-mobile-se-teste-a-la-hauteur-visible-pas-seulement-a-la-largeur]] — « vérifié à 320, 360, 390 px » : l'écran titre défilait à 320 × 568 ; mesurer à la hauteur sans les barres du navigateur
 - [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]] — 71 CV « refaits et vérifiés », aucun ne portait l'ajout : le script rendait la copie figée ; relire la source, compter l'ajout dans la sortie
+- [[un-tic-de-generation-se-mesure-sur-la-serie-pas-sur-le-texte]] — chaque lettre générée passait ses contrôles, EPITECH était dans 33 sur 35 : un tic interdit en fait naître un autre ; compter sur le lot, facultatif vide par défaut
 
 ## Git, release, agents
 

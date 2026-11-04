@@ -43,6 +43,9 @@ validation humaine avant tout envoi, suivi des relances.
   gabarit commun au lieu de la seule candidature).
 - Session du 2026-11-01 (puce réseau EPITECH dans le CV deux colonnes) :
   [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]].
+- Session du 2026-11-03/04 (qualité rédactionnelle des lettres, Société
+  Générale, Free, emplois étudiants) :
+  [[un-tic-de-generation-se-mesure-sur-la-serie-pas-sur-le-texte]].
 
 ## Ce qui vaudrait d'être repris ailleurs
 
