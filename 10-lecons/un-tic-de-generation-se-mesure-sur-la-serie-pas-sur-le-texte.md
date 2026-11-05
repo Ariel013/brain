@@ -31,4 +31,11 @@ dans 22 lettres sur 35, aucune ouverture répétée plus de deux fois.
 chaque refus déplace le tic. Elle se double d'une mesure de répartition sur
 le lot, refaite à chaque nouvelle série.
 
+**Seconde occurrence (même projet, 2026-11-04).** Nouvelle consigne de style
+(« écrire comme un candidat ») : la première série a aussitôt produit un
+autre moule, « X est en revanche nouveau pour moi » dans 14 lettres sur 18,
+plus des détails inventés pour illustrer un projet. Mesuré sur la série,
+corrigé, refait : 1 sur 18. Confirme la règle : chaque consigne de style se
+paie d'une mesure de la série suivante.
+
 Voir [[mesurer-l-outil-avant-de-conclure]], [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]], [[une-proposition-s-affiche-elle-ne-se-preselectionne-pas]].
