@@ -77,6 +77,10 @@ perd, pas le *quoi*.
    validation, succès) entrent dans les conventions du projet dès l'amorce,
    avec leurs composants partagés posés au premier écran — pas rattrapés
    écran par écran. → [[les-etats-d-un-ecran]]
+   **Vérifier que la maquette reçue contient bien l'écran prioritaire** avant de
+   planifier sa « reprise » : sur FIBDA CONNECT (2026-11-10), aucune des deux
+   maquettes ne contenait le formulaire à livrer, alors que tout le plan
+   supposait de le reprendre.
 
 ## Étape 3 — Les garde-fous techniques
 
@@ -94,7 +98,10 @@ perd, pas le *quoi*.
   **Premier écran : son test de montage** (« l'écran monte sans exception »)
   → [[regarder-l-application-fait-partie-de-la-recette]].
 - **`.gitignore` avant le premier `git add`**, et jamais de stage en masse
-  → [[stager-nommement]]. Y mettre d'office les dossiers que les outils de
+  → [[stager-nommement]]. Les fichiers reçus d'un tiers (maquettes autonomes,
+  exports, PDF de cadrage) se lisent avant d'entrer dans Git : une maquette
+  FIBDA contenait 20 fiches nominatives de provenance inconnue (2026-11-10).
+  Par défaut, ils restent hors du dépôt, avec une sauvegarde séparée. Y mettre d'office les dossiers que les outils de
   navigateur écrivent dans le dépôt (`.playwright-cli/`, `.playwright-mcp/`).
 
 ## Étape 4 — Ce que l'agent doit savoir de moi

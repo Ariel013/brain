@@ -37,6 +37,8 @@ en intégration continue. Le nom d'un script n'est pas son contenu.
 mesuré », prise par l'autre bout : ici l'affirmation était de bonne foi, et
 l'outil censé la fonder ne la fondait pas.
 
+**Seconde occurrence (FIBDA CONNECT, 2026-11-10).** Contrôle des données sensibles avant commit : `git diff --cached | grep -c …` suivi de `git commit` dans la même commande, séparés par un retour à la ligne. Le contrôle a compté 4 occurrences, et le commit est parti quand même : rien ne reliait le résultat au geste. Les 4 étaient des exemples fictifs de format de téléphone, vérifiés après coup. C'est la famille du `|| true` : un contrôle dont le résultat n'arrête rien n'est qu'un affichage. **Un contrôle qui protège un geste s'enchaîne avec `&&` et un code de sortie, ou se lance seul, avec lecture du résultat avant le geste.**
+
 Voir aussi [[regarder-l-application-fait-partie-de-la-recette]],
 [[verifier-chaque-commit-du-decoupage]], [[mesurer-l-outil-avant-de-conclure]],
 [[recette-avant-release]].

@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-11-04
+maj: 2026-11-10
 ---
 
 # Leçons apprises
@@ -34,6 +34,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-reference-ajoutee-relance-le-test-de-suppression-de-la-table-visee]] — une clé étrangère ajoutée a cassé l'effacement RGPD de la veille ; tester la suppression avec une ligne liée
 - [[une-frontiere-de-mot-en-francais-s-ecrit-avec-les-lettres-accentuees]] — `^r\b` reconnaissait « Rédaction » ; `(?<![\p{L}\d])…(?![\p{L}\d])` avec `u`, et mesurer le dictionnaire sur les vraies données
 - [[un-nom-exact-n-est-pas-une-identite]] — « EDF », « Siemens » : l'unique nom exact d'un annuaire était une coquille homonyme ; une preuve de plus que le nom
+- [[un-champ-conditionnel-masque-se-purge-il-ne-se-cache-pas]] — retirer la nationalité ivoirienne masquait région et commune, le récapitulatif les envoyait encore ; chaque règle d'affichage a sa purge
 - [[une-sous-requete-qualifie-la-colonne-exterieure]] — Drizzle écrit `"id"` dans un SELECT : la sous-requête le captait, compte faux sans erreur
 
 ## Frontières et architecture
@@ -55,6 +56,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-champ-masque-cache-l-espace-colle]] — « Code incorrect » sur tous les appareils : un espace collé, invisible
 - [[une-proposition-s-affiche-elle-ne-se-preselectionne-pas]] — une catégorie présélectionnée faisait entrer au CV ce qu'on voulait seulement apprendre
 - [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] — un audit appliqué en bloc a repeint le portfolio ; une demande qui contredit une décision datée vaut pour le plus petit périmètre
+- [[un-bouton-qui-apparait-sous-le-doigt-recoit-le-second-appui]] — à 375 px seulement, le double appui sur « Enregistrer » déclenchait « Recommencer » apparu à sa place
+- [[un-select-qui-agit-au-changement-agit-a-chaque-fleche]] — trois flèches au clavier ajoutaient trois nationalités ; un `<select>` porte une valeur, pas une action
 - [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]] — terminal web : aucun moyen d'envoyer une commande au téléphone ; bouton visible, 16 px, tester au toucher
 
 ## Vérifier

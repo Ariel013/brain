@@ -30,5 +30,7 @@ correspondante et lui emprunter son prédicat, jamais le réécrire. Une
 relecture utile pose la question : « ce que le refus compte est-il ce que
 l'écran montre ? »
 
+**Seconde occurrence (FIBDA CONNECT, 2026-11-10).** Un formulaire effaçait l'erreur d'un champ quand le chemin modifié valait exactement celui de l'erreur (`documents.files`). Mais les erreurs portaient des sous-chemins (`documents.files.PORTRAIT`). Résultat : remplacer un fichier refusé par un fichier valide laissait « Format refusé » à côté du nouveau fichier ; décocher une discipline laissait son erreur. Deux définitions de « ce champ est en faute ». La correction recalcule la validation de l'étape et garde seulement les erreurs encore vraies : l'effacement emprunte le prédicat de la validation, il ne le réécrit pas.
+
 Voir aussi [[un-garde-fou-qui-compte-zero-par-invisibilite-n-est-pas-un-garde-fou]],
 [[un-seul-etat-derive-le-reste]].

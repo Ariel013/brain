@@ -2,7 +2,7 @@
 titre: Projets
 aliases: [Index projets]
 type: index
-maj: 2026-10-22
+maj: 2026-11-10
 ---
 
 # Projets
@@ -27,6 +27,7 @@ rôle de son `README.md` et de son `JOURNAL.md`. Elle répond à trois questions
 | Portfolio | Site vitrine personnel | En ligne, pas encore amorcé | [[portfolio]] |
 | NearYou (GéoService) | Annuaire géolocalisé d'artisans (Afrique de l'Ouest) | En ligne sans vrais usagers, amorcé le 2026-10-22 | [[nearyou]] |
 | CV interactif | CV web personnel, île 3D + terminal | En ligne le 2026-10-25 | [[cv-interactif]] |
+| FIBDA CONNECT | Plateforme fédérale : inscriptions, paiements, compétitions (FIBDA, CI) | Prototype en ligne, présentation le 2026-11-13 | [[fibda-connect]] |
 
 > Un projet entre ici **au moment de l'amorce**, pas à la fin : la fiche se
 > remplit au fil de l'eau, sinon elle ne se remplit jamais.

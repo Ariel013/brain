@@ -74,3 +74,5 @@ Versions et installation : [[claude-code]].
 
 Voir [[amorce-nouveau-projet]], [[recette-avant-release]],
 [[une-fonctionnalite-invisible-est-absente]].
+
+Pièges de formulaire payés en recette (FIBDA CONNECT, 2026-11-10) : [[un-champ-conditionnel-masque-se-purge-il-ne-se-cache-pas]], [[un-select-qui-agit-au-changement-agit-a-chaque-fleche]], [[un-bouton-qui-apparait-sous-le-doigt-recoit-le-second-appui]].
