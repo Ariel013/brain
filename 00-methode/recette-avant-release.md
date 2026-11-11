@@ -39,6 +39,10 @@ maj: 2026-11-01
    → [[regarder-l-application-fait-partie-de-la-recette]] ; sur une PWA
    installable, aucun `target="_blank"`
    → [[un-nouvel-onglet-quitte-une-application-installee]]
+   Un formulaire se capture **chaque champ rempli**, et un champ téléphone se
+   teste avec l'autoremplissage du vrai téléphone
+   → [[un-champ-se-verifie-rempli-pas-vide]],
+   [[un-indicatif-prerempli-dans-un-champ-telephone-est-ecrase-par-l-autoremplissage]]
    Outils : `playwright-cli` pour les captures, `npx impeccable detect src/`
    pour les motifs d'interface générique → [[concevoir-le-front]]
    **Provoquer les états**, pas seulement le cas heureux : réseau coupé,

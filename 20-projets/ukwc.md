@@ -29,6 +29,10 @@ les dépôts.
 
 *(À remplir au fil des sessions.)*
 
+- 2026-11-11 (page d'inscription Sunset) : [[un-indicatif-prerempli-dans-un-champ-telephone-est-ecrase-par-l-autoremplissage]],
+  [[un-champ-se-verifie-rempli-pas-vide]], [[une-limite-de-debit-anonyme-se-nomme]],
+  sixième occurrence de [[arreter-un-processus-par-son-pid-pas-par-un-motif]].
+
 - Deux leçons locales candidates, pas encore montées : un `sed` global
   réécrit ses propres commentaires explicatifs ; un Chrome headless à 390 px
   n'est pas un mobile (largeur minimale de fenêtre).
@@ -42,3 +46,8 @@ les dépôts.
   niveaux (règles statiques et middleware client), avec un ADR qui dit comment
   rouvrir.
 - **Audit de reprise** comme premier livrable, avant tout code.
+- **Déployer un Laravel sur mutualisé sans SSH** (2026-11-11) : inventaire FTP
+  qui compare quelques fichiers non secrets à l'historique git pour dater la
+  version en ligne, envoi des seuls fichiers modifiés depuis ce commit (routes
+  et config en dernier), retrait par FTP des caches `config.php`/`routes-*.php`,
+  migration en SQL collé dans phpMyAdmin (rejouable, inscrite dans `migrations`).

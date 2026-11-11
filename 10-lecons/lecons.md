@@ -58,6 +58,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-vas-y-sur-un-audit-ne-vaut-pas-refonte]] — un audit appliqué en bloc a repeint le portfolio ; une demande qui contredit une décision datée vaut pour le plus petit périmètre
 - [[un-bouton-qui-apparait-sous-le-doigt-recoit-le-second-appui]] — à 375 px seulement, le double appui sur « Enregistrer » déclenchait « Recommencer » apparu à sa place
 - [[un-select-qui-agit-au-changement-agit-a-chaque-fleche]] — trois flèches au clavier ajoutaient trois nationalités ; un `<select>` porte une valeur, pas une action
+- [[un-indicatif-prerempli-dans-un-champ-telephone-est-ecrase-par-l-autoremplissage]] — « +229 » prérempli remplacé par le numéro proposé au clavier : inscrit sans indicatif ; liste séparée, `tel-national`, normalisation serveur
 - [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]] — terminal web : aucun moyen d'envoyer une commande au téléphone ; bouton visible, 16 px, tester au toucher
 
 ## Vérifier
@@ -81,6 +82,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-tic-de-generation-se-mesure-sur-la-serie-pas-sur-le-texte]] — chaque lettre générée passait ses contrôles, EPITECH était dans 33 sur 35 : un tic interdit en fait naître un autre ; compter sur le lot, facultatif vide par défaut
 - [[un-test-de-concurrence-verifie-la-borne-pas-le-compte]] — `expected 4 to be 5` sous charge : la règle était « au plus 5 », le test exigeait 5 ; vérifier borne, invariant et somme des issues
 - [[un-peripherique-simule-par-les-tests-ne-voit-pas-l-en-tete-qui-l-interdit]] — selfie vert en e2e (fausse caméra), bloqué en ligne par `Permissions-Policy: camera=()`
+- [[un-champ-se-verifie-rempli-pas-vide]] — captures conformes, mais le texte saisi passait sous le « @ » décoratif : capturer chaque champ rempli, préfixe dans un groupe flex
 - [[un-en-tete-ajoute-par-les-tests-part-aussi-vers-les-tiers]] — `cf-connecting-ip` des e2e envoyé aussi à Cloudflare : le vrai widget échouait
 
 ## Git, release, agents
@@ -101,7 +103,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-branche-se-dit-fusionnee-apres-avoir-cherche-qui-la-contient]] — 10 worktrees « non fusionnés dans dev » étaient tous contenus dans la branche de sprint : `git branch --contains` avant de conclure
 - [[avant-de-retirer-un-garde-fou-lister-ce-que-l-operation-ecrit]] — une borne retirée « parce que ce n'est pas le vecteur » rouvrait le registre des stupéfiants
 - [[des-tests-verts-ne-remplacent-pas-une-relecture-adverse]] — 8 constats élevés sur du code à 100 % de tests verts ; chaque constat reproduit, corrigé avec un test avant/après
-- [[arreter-un-processus-par-son-pid-pas-par-un-motif]] — `pkill -f "next dev"; suite` s'est tué lui-même : la suite n'a jamais eu lieu (3 occurrences)
+- [[arreter-un-processus-par-son-pid-pas-par-un-motif]] — `pkill -f "next dev"; suite` s'est tué lui-même : la suite n'a jamais eu lieu (6 occurrences)
 
 ## Sécurité et résilience
 
@@ -124,6 +126,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-lien-venu-d-une-donnee-se-controle-sur-l-adresse-resolue]] — `localhost.` et un nom public vers 127.0.0.1 passaient le filtre de texte ; contrôler l'adresse résolue à chaque redirection
 - [[un-maintien-en-vie-ne-depend-pas-de-l-activite-qu-il-remplace]] — le ping GitHub de Supabase s'est éteint après 60 jours sans commit : base en pause, migration de compte
 - [[une-csp-du-premier-chargement-vaut-pour-toute-la-navigation-cote-client]] — source ouverte sur la seule page du widget : refusée quand on y arrive par un lien
+- [[une-limite-de-debit-anonyme-se-nomme]] — Laravel `throttle:N,M` compte par domaine + IP, toutes routes confondues ; derrière un CGNAT, un plafond par opérateur
 - [[une-mise-a-jour-atomique-porte-sa-condition-d-arret]] — 30 échecs simultanés posaient 3 verrous : l'incrément était atomique, la condition d'arrêt était lue avant
 
 ---

@@ -90,6 +90,9 @@ n'atteste rien du reste du dépôt.
 - **Une CSP qui ouvre une source tierce page par page** se relit contre la
   navigation côté client : c'est la politique du premier chargement qui
   s'applique → [[une-csp-du-premier-chargement-vaut-pour-toute-la-navigation-cote-client]].
+- **Chaque formulaire public a son limiteur de débit nommé**, clé route + IP,
+  plafonds minute et jour pensés pour une IP partagée (CGNAT) ; un `throttle:N,M`
+  anonyme partage son compteur entre routes → [[une-limite-de-debit-anonyme-se-nomme]].
 - **Les alertes de dépendances se trient par atteignabilité réelle** dans le
   code, jamais par un `--force` qui impose des montées majeures non testées.
 

@@ -46,6 +46,15 @@ tenait encore le port. Le serveur relancé échouait (`EADDRINUSE`), et c'est
 l'ancien qui répondait. Seul `ss -ltnp | grep <port>` a montré le PID à
 arrêter.
 
+**Sixième occurrence — UKWC, 2026-11-11.** Deux fois dans la même session :
+`sed … && pkill -f "nuxt dev" ; rm -rf public/_essai && npm run generate`
+(code 144, ni nettoyage ni build), puis le « correctif »
+`for p in $(pgrep -f "node.*nuxt.*dev"); do kill $p; done; rm …` — même chute,
+le motif était dans la ligne. La note n'avait pas été relue avant de coder.
+Ce qui a marché ensuite : `ps -eo pid,args | grep … | grep -v grep | awk
+'{print $1}' > fichier` dans une commande, `xargs kill < fichier` dans une
+autre.
+
 **Corollaire.** Remplacer `pkill` par `pgrep | xargs kill` ne change rien tant
 que le motif est dans la ligne. Le plus sûr : garder le PID au lancement
 (`cmd & echo $!`), ou arrêter dans une commande qui ne fait **que** ça, puis
