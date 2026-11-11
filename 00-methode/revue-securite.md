@@ -87,6 +87,9 @@ n'atteste rien du reste du dépôt.
 - **Portabilité et effacement prévus avant les utilisateurs réels.** Un
   effacement **exporte toujours avant de détruire**, et **renonce si un seul
   fichier est illisible**.
+- **Une CSP qui ouvre une source tierce page par page** se relit contre la
+  navigation côté client : c'est la politique du premier chargement qui
+  s'applique → [[une-csp-du-premier-chargement-vaut-pour-toute-la-navigation-cote-client]].
 - **Les alertes de dépendances se trient par atteignabilité réelle** dans le
   code, jamais par un `--force` qui impose des montées majeures non testées.
 

@@ -97,6 +97,15 @@ Ces défauts ne se prennent qu'en y pensant explicitement :
 - **Une mise en ligne qui touche au style** : chercher dans le CSS servi
   une règle introduite par le lot
   → [[un-cache-de-build-restaure-peut-servir-l-ancienne-feuille-de-style]].
+- **Une fonctionnalité qui dépend d'une permission du navigateur** (caméra,
+  micro, position) et que les tests simulent : lire l'en-tête servi
+  → [[un-peripherique-simule-par-les-tests-ne-voit-pas-l-en-tete-qui-l-interdit]].
+- **Un test de concurrence qui échoue une fois sous charge** : lire le chemin,
+  ne pas relancer jusqu'au vert
+  → [[un-test-de-concurrence-verifie-la-borne-pas-le-compte]].
+- **Une suite qui parle à un service tiers réel** : ce que le navigateur de
+  test ajoute part aussi chez lui
+  → [[un-en-tete-ajoute-par-les-tests-part-aussi-vers-les-tiers]].
 
 Voir aussi [[une-fonction-serverless-s-envoie-regroupee-et-se-verifie-au-curl]] (une
 mise en ligne se prouve par un `curl` sur une route d'API, pas sur la page d'accueil) et

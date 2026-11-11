@@ -4,7 +4,7 @@ type: projet
 domaine: plateforme fédérale (FIBDA, Côte d'Ivoire) — registre, inscriptions en ligne, paiements, puis conduite des compétitions
 statut: prototype d'inscription en ligne sur Vercel, présentation à la fédération le 2026-11-13
 depot: ~/PROJETS/Fibda-connect
-maj: 2026-11-10
+maj: 2026-11-11
 ---
 
 # FIBDA CONNECT
@@ -26,8 +26,17 @@ Session du 2026-11-10 (lecture du kit, audit des maquettes, modèle, prototype, 
 - seconde occurrence de [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]] (contrôle enchaîné au commit sans le bloquer)
 - deux prérequis ajoutés à [[amorce-nouveau-projet]] : vérifier que la maquette contient l'écran prioritaire ; lire les fichiers reçus d'un tiers avant tout `git add`
 
+Sessions du 2026-11-10 au 2026-11-11 (API, auth, Turnstile, nuits autonomes, intégration de l'ensemble) :
+
+- [[un-test-de-concurrence-verifie-la-borne-pas-le-compte]]
+- [[un-peripherique-simule-par-les-tests-ne-voit-pas-l-en-tete-qui-l-interdit]]
+- [[un-en-tete-ajoute-par-les-tests-part-aussi-vers-les-tiers]]
+- [[une-csp-du-premier-chargement-vaut-pour-toute-la-navigation-cote-client]]
+- [[une-mise-a-jour-atomique-porte-sa-condition-d-arret]]
+
 ## Ce qui vaudrait d'être repris ailleurs
 
 - **Carte de décision interactive** pour un commanditaire : phases → points à trancher → options avec avantages, inconvénients et conséquences sur les autres phases. Chaque point est étiqueté « fixé par le cahier », « à décider » ou « proposition ». Synthèse imprimable, choix gardés dans l'appareil.
 - **Prototype sans persistance mais pas jetable** : schémas et règles partagés, stockage derrière un contrat, en mémoire d'abord.
+- **Revue des coutures après intégration** : chaque branche revue seule, puis une revue de sécurité dédiée aux points de contact entre branches (idempotence × routes publiques, proxy × IP cliente, CSP × script tiers). Elle a trouvé deux constats importants que les revues par branche n'avaient pas vus.
 - **Revue en deux agents indépendants** (design, QA adverse) sur un serveur figé : 20 constats que les tests verts n'avaient pas vus.

@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-11-10
+maj: 2026-11-11
 ---
 
 # Leçons apprises
@@ -79,6 +79,9 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-ecran-mobile-se-teste-a-la-hauteur-visible-pas-seulement-a-la-largeur]] — « vérifié à 320, 360, 390 px » : l'écran titre défilait à 320 × 568 ; mesurer à la hauteur sans les barres du navigateur
 - [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]] — 71 CV « refaits et vérifiés », aucun ne portait l'ajout : le script rendait la copie figée ; relire la source, compter l'ajout dans la sortie
 - [[un-tic-de-generation-se-mesure-sur-la-serie-pas-sur-le-texte]] — chaque lettre générée passait ses contrôles, EPITECH était dans 33 sur 35 : un tic interdit en fait naître un autre ; compter sur le lot, facultatif vide par défaut
+- [[un-test-de-concurrence-verifie-la-borne-pas-le-compte]] — `expected 4 to be 5` sous charge : la règle était « au plus 5 », le test exigeait 5 ; vérifier borne, invariant et somme des issues
+- [[un-peripherique-simule-par-les-tests-ne-voit-pas-l-en-tete-qui-l-interdit]] — selfie vert en e2e (fausse caméra), bloqué en ligne par `Permissions-Policy: camera=()`
+- [[un-en-tete-ajoute-par-les-tests-part-aussi-vers-les-tiers]] — `cf-connecting-ip` des e2e envoyé aussi à Cloudflare : le vrai widget échouait
 
 ## Git, release, agents
 
@@ -120,6 +123,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-action-irreversible-a-trois-issues-faite-pas-faite-incertaine]] — « rien n'est parti » après une coupure ou une erreur de base : un renvoi doublait l'e-mail ; l'incertain bloque la répétition
 - [[un-lien-venu-d-une-donnee-se-controle-sur-l-adresse-resolue]] — `localhost.` et un nom public vers 127.0.0.1 passaient le filtre de texte ; contrôler l'adresse résolue à chaque redirection
 - [[un-maintien-en-vie-ne-depend-pas-de-l-activite-qu-il-remplace]] — le ping GitHub de Supabase s'est éteint après 60 jours sans commit : base en pause, migration de compte
+- [[une-csp-du-premier-chargement-vaut-pour-toute-la-navigation-cote-client]] — source ouverte sur la seule page du widget : refusée quand on y arrive par un lien
+- [[une-mise-a-jour-atomique-porte-sa-condition-d-arret]] — 30 échecs simultanés posaient 3 verrous : l'incrément était atomique, la condition d'arrêt était lue avant
 
 ---
 
