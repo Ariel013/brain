@@ -33,6 +33,10 @@ les dépôts.
   [[un-champ-se-verifie-rempli-pas-vide]], [[une-limite-de-debit-anonyme-se-nomme]],
   sixième occurrence de [[arreter-un-processus-par-son-pid-pas-par-un-motif]].
 
+- 2026-11-14 (fermeture des inscriptions Sunset) :
+  [[une-demande-de-fermeture-se-lit-du-cote-du-public]], septième occurrence de
+  [[arreter-un-processus-par-son-pid-pas-par-un-motif]].
+
 - Deux leçons locales candidates, pas encore montées : un `sed` global
   réécrit ses propres commentaires explicatifs ; un Chrome headless à 390 px
   n'est pas un mobile (largeur minimale de fenêtre).

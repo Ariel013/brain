@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-11-12
+maj: 2026-11-14
 ---
 
 # Leçons apprises
@@ -61,6 +61,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-select-qui-agit-au-changement-agit-a-chaque-fleche]] — trois flèches au clavier ajoutaient trois nationalités ; un `<select>` porte une valeur, pas une action
 - [[un-indicatif-prerempli-dans-un-champ-telephone-est-ecrase-par-l-autoremplissage]] — « +229 » prérempli remplacé par le numéro proposé au clavier : inscrit sans indicatif ; liste séparée, `tel-national`, normalisation serveur
 - [[un-champ-qui-ne-s-envoie-qu-avec-entree-est-bloque-sur-telephone]] — terminal web : aucun moyen d'envoyer une commande au téléphone ; bouton visible, 16 px, tester au toucher
+- [[une-demande-de-fermeture-se-lit-du-cote-du-public]] — « fermer les inscriptions » : l'agent coupait l'API, le visiteur aurait encore vu le formulaire ; livrer l'écran d'abord
 
 ## Vérifier
 

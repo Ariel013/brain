@@ -55,6 +55,12 @@ Ce qui a marché ensuite : `ps -eo pid,args | grep … | grep -v grep | awk
 '{print $1}' > fichier` dans une commande, `xargs kill < fichier` dans une
 autre.
 
+**Septième occurrence — UKWC, 2026-11-14.** Pour arrêter un serveur statique
+de vérification : `pkill -f "serve .output/public -l 4317"; cd … && git status`.
+Code 144, `git status` jamais affiché. Rien de perdu (relancé), mais la note
+existait et l'index n'avait pas été relu avant de coder, pour la troisième fois
+sur ce même motif.
+
 **Corollaire.** Remplacer `pkill` par `pgrep | xargs kill` ne change rien tant
 que le motif est dans la ligne. Le plus sûr : garder le PID au lancement
 (`cmd & echo $!`), ou arrêter dans une commande qui ne fait **que** ça, puis
