@@ -4,7 +4,7 @@ type: projet
 domaine: outil personnel — CV et recherche d'alternance
 statut: chaîne de candidature en service (CV et lettre adaptés, envoi par e-mail, candidatures spontanées), 2026-10-21
 depot: ~/PROJETS/optimisation_cv
-maj: 2026-11-01
+maj: 2026-11-12
 ---
 
 # Optimisation CV & candidatures
@@ -47,7 +47,22 @@ validation humaine avant tout envoi, suivi des relances.
   Générale, Free, emplois étudiants) :
   [[un-tic-de-generation-se-mesure-sur-la-serie-pas-sur-le-texte]].
 
+- Session du 2026-11-11/12 (CV avec photo, collecte quotidienne, alertes
+  e-mail, report sur les candidatures en cours) :
+  [[une-sortie-verifiee-ne-se-remplace-que-par-une-sortie-verifiee]],
+  [[un-texte-extrait-n-est-pas-un-texte-visible]],
+  [[une-collecte-se-propose-apres-avoir-lu-le-robots-txt]],
+  [[un-env-ne-se-source-pas-dans-le-shell]] ; occurrences ajoutées à
+  [[refaire-depuis-une-copie-figee-ne-reprend-pas-la-source]] (copie « à
+  envoyer » restée ancienne) et [[verifier-chaque-commit-du-decoupage]]
+  (chiffre donné de mémoire).
+
 ## Ce qui vaudrait d'être repris ailleurs
+
+- La lecture des alertes e-mail des sites d'emploi dans la boîte de
+  l'utilisateur (IMAP en lecture seule, expéditeur authentifié par DKIM/DMARC,
+  liens bornés au domaine du site) : une collecte permise là où le site
+  interdit les robots.
 
 - L'envoi d'e-mails « brouillon exact relu, puis envoi » avec trois issues
   (fait / pas fait / incertain), réservation atomique et plafond par jour.

@@ -95,5 +95,10 @@ n'atteste rien du reste du dépôt.
   anonyme partage son compteur entre routes → [[une-limite-de-debit-anonyme-se-nomme]].
 - **Les alertes de dépendances se trient par atteignabilité réelle** dans le
   code, jamais par un `--force` qui impose des montées majeures non testées.
+- **Secrets dans le shell** : un `.env` se donne au programme (`--env-file`),
+  jamais sourcé — une valeur à espaces s'exécute et s'affiche
+  → [[un-env-ne-se-source-pas-dans-le-shell]].
+- **Collecte sur un site tiers** : `robots.txt` et conditions lus avant de
+  proposer → [[une-collecte-se-propose-apres-avoir-lu-le-robots-txt]].
 
 Voir aussi [[travailler-avec-les-agents]].

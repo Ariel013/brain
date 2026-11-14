@@ -51,7 +51,9 @@ maj: 2026-11-01
 5. **Balayer les largeurs** — pas seulement 1440 px. 999, 780, 560, 420. Deux
    défauts de mise en page en deux jours n'ont été vus que comme ça. Et **mesurer
    plutôt que croire l'image** : demander à la page ce qu'elle voit
-   (`innerWidth`, `scrollWidth`) → [[mesurer-l-outil-avant-de-conclure]].
+   (`innerWidth`, `scrollWidth`) → [[mesurer-l-outil-avant-de-conclure]]. Un
+   document à hauteur fixe (PDF, carte) se mesure de même : le texte extrait
+   n'est pas le texte visible → [[un-texte-extrait-n-est-pas-un-texte-visible]].
 6. **Vérifier le déploiement par ce qui est servi**, pas par le fait d'avoir
    poussé : le bundle servi est-il celui du build de `main` ? les routes internes
    répondent-elles (pas de 404 au rafraîchissement) ? la nouveauté est-elle

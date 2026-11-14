@@ -1,7 +1,7 @@
 ---
 titre: Un découpage en commits se vérifie, il ne se suppose pas
 type: lecon
-origine: Synoé — 2026-08-23 et 2026-08-24 · Strongman — 2026-09-16 et 2026-09-19 · Synoé — 2026-10-04
+origine: Synoé — 2026-08-23 et 2026-08-24 · Strongman — 2026-09-16 et 2026-09-19 · Synoé — 2026-10-04 · Optimisation CV — 2026-11-12
 tags: [git, agents]
 ---
 
@@ -53,5 +53,10 @@ propres à un lot se stagent nommément, les fichiers communs par
 premier lot, l'arbre garde les deux. Puis le commit se vérifie seul dans un
 worktree détaché, comme toujours. Sans le patch pris **avant**, il aurait fallu
 démêler les deux lots à la main dans le fichier commun.
+
+**Un chiffre se recompte au moment où on le donne (Optimisation CV,
+2026-11-12).** « 40 candidatures envoyées » annoncé en additionnant de
+mémoire les envois de la journée ; la base en comptait 46. Tout nombre donné
+à l'utilisateur sort d'une requête faite au moment de l'écrire.
 
 Voir aussi [[nommer-la-copie-visee]], [[ecrire-la-decision-avec-le-code]], [[un-cache-seulement-en-developpement-est-absent-la-ou-il-compte]].

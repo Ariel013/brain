@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-11-11
+maj: 2026-11-12
 ---
 
 # Leçons apprises
@@ -36,6 +36,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-nom-exact-n-est-pas-une-identite]] — « EDF », « Siemens » : l'unique nom exact d'un annuaire était une coquille homonyme ; une preuve de plus que le nom
 - [[un-champ-conditionnel-masque-se-purge-il-ne-se-cache-pas]] — retirer la nationalité ivoirienne masquait région et commune, le récapitulatif les envoyait encore ; chaque règle d'affichage a sa purge
 - [[une-sous-requete-qualifie-la-colonne-exterieure]] — Drizzle écrit `"id"` dans un SELECT : la sous-requête le captait, compte faux sans erreur
+- [[une-sortie-verifiee-ne-se-remplace-que-par-une-sortie-verifiee]] — des PDF refusés sous charge avaient déjà écrasé les bons : nom d'essai, renommer si vérifié
 
 ## Frontières et architecture
 
@@ -84,6 +85,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-peripherique-simule-par-les-tests-ne-voit-pas-l-en-tete-qui-l-interdit]] — selfie vert en e2e (fausse caméra), bloqué en ligne par `Permissions-Policy: camera=()`
 - [[un-champ-se-verifie-rempli-pas-vide]] — captures conformes, mais le texte saisi passait sous le « @ » décoratif : capturer chaque champ rempli, préfixe dans un groupe flex
 - [[un-en-tete-ajoute-par-les-tests-part-aussi-vers-les-tiers]] — `cf-connecting-ip` des e2e envoyé aussi à Cloudflare : le vrai widget échouait
+- [[un-texte-extrait-n-est-pas-un-texte-visible]] — CV « une page, textes présents », bas de colonne coupé par `overflow: hidden` : mesurer la hauteur dans le moteur de rendu
 
 ## Git, release, agents
 
@@ -127,6 +129,8 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[un-maintien-en-vie-ne-depend-pas-de-l-activite-qu-il-remplace]] — le ping GitHub de Supabase s'est éteint après 60 jours sans commit : base en pause, migration de compte
 - [[une-csp-du-premier-chargement-vaut-pour-toute-la-navigation-cote-client]] — source ouverte sur la seule page du widget : refusée quand on y arrive par un lien
 - [[une-limite-de-debit-anonyme-se-nomme]] — Laravel `throttle:N,M` compte par domaine + IP, toutes routes confondues ; derrière un CGNAT, un plafond par opérateur
+- [[un-env-ne-se-source-pas-dans-le-shell]] — `. ./.env` a exécuté un mot de passe à espaces et l'a recopié dans l'erreur : `--env-file`, jamais le shell
+- [[une-collecte-se-propose-apres-avoir-lu-le-robots-txt]] — lecture d'un site proposée, interdite par son `robots.txt` : lire robots et conditions, préférer ce que le site envoie (alertes e-mail)
 - [[une-mise-a-jour-atomique-porte-sa-condition-d-arret]] — 30 échecs simultanés posaient 3 verrous : l'incrément était atomique, la condition d'arrêt était lue avant
 
 ---

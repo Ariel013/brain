@@ -1,7 +1,7 @@
 ---
 titre: Refaire depuis une copie figée ne reprend pas la source — et « vérifié » ne dit pas que l'ajout y est
 type: lecon
-origine: Optimisation CV — 2026-11-01
+origine: Optimisation CV — 2026-11-01 et 2026-11-12
 tags: [donnees, regeneration, verification]
 ---
 
@@ -30,4 +30,11 @@ pas seulement que la sortie passe ses contrôles habituels.
 les copies déjà faites (même projet, 2026-10-27 : 13 CV adaptés gardaient
 l'ancienne stack) : chercher le terme corrigé dans les copies et les refaire.
 
-Voir [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]], [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]], [[mesurer-l-outil-avant-de-conclure]].
+**Dans l'autre sens (même projet, 2026-11-12).** Une copie faite **en aval**
+ne suit pas davantage : le CV validé avait été recopié dans un dossier
+« à envoyer » au moment de la validation ; le CV refait avec le nouveau
+contact n'y est jamais arrivé, et l'utilisateur allait envoyer l'ancien. Toute
+régénération refait aussi les copies qu'on en a tirées — sauf celles déjà
+parties, qui gardent ce qui a été envoyé.
+
+Voir [[une-sortie-verifiee-ne-se-remplace-que-par-une-sortie-verifiee]], [[une-etape-de-recette-nommee-n-est-pas-une-etape-lancee]], [[un-lot-qui-ecrit-sur-les-vraies-donnees-s-essaie-sur-un-seul-element]], [[mesurer-l-outil-avant-de-conclure]].
