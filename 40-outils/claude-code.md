@@ -73,6 +73,12 @@ après lecture. Elle porte le plugin **`lot-quotidien`** (8 skills, appelés
 | `apprendre` | apprentissage multi-sessions (data / IA, entretien) — manuel |
 | `ecrire-humain` | retirer les tics d'IA d'un texte français |
 
+Un plugin **synchronisé depuis claude.ai** se coupe aussi en local, avec son
+identifiant complet : `claude plugin disable <nom>@synced` (fait le 2026-11-20
+pour `bio-research`, `product-management`, `cowork-plugin-management`). Les
+**skills** synchronisés, eux, ne se coupent que depuis claude.ai.
+→ [[un-refus-qui-dit-comment-reussir-se-relit-avant-de-conclure-a-l-impossible]]
+
 Couper ou rallumer le lot : `claude plugin disable|enable lot-quotidien@banque-skills`.
 Après modification d'un skill : `claude plugin marketplace update banque-skills`.
 Un skill qui n'a servi à rien en deux mois sort du lot.

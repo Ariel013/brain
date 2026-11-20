@@ -2,7 +2,7 @@
 titre: Leçons apprises
 aliases: [Leçons, MOC Leçons]
 type: index
-maj: 2026-11-14
+maj: 2026-11-20
 ---
 
 # Leçons apprises
@@ -68,6 +68,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[casser-le-test-expres]] — un test de garde se prouve en le faisant échouer
 - [[regarder-l-application-fait-partie-de-la-recette]] — 480 tests verts, trois écrans blancs
 - [[mesurer-l-outil-avant-de-conclure]] — un outil se vérifie dans le régime où on l'emploie
+- [[un-refus-qui-dit-comment-reussir-se-relit-avant-de-conclure-a-l-impossible]] — « Use plugin@marketplace format » lu comme un mur : l'impossibilité affirmée s'était propagée dans trois documents
 - [[une-sauvegarde-se-verifie-avant-de-detruire]] — la taille d'un fichier ne prouve rien
 - [[un-test-de-route-emprunte-le-chemin-de-l-ecran]] — 64 tests verts, la restauration impossible depuis l'écran
 - [[un-jeu-de-demonstration-se-teste-comme-une-fixture]] — un champ jamais écrit a paru marcher des semaines grâce aux données de démo ; un test vérifie que la démo exerce chaque fonctionnalité visible
@@ -135,6 +136,7 @@ la moitié de ces règles ont été payées par un défaut parti en production.
 - [[une-mise-a-jour-atomique-porte-sa-condition-d-arret]] — 30 échecs simultanés posaient 3 verrous : l'incrément était atomique, la condition d'arrêt était lue avant
 
 ---
+- [[un-secret-se-masque-par-sa-valeur-pas-par-le-nom-de-sa-cle]] — un filtre sur `x-api-key` a laissé passer `env.API_KEY` : afficher la structure, pas les valeurs
 
 ## Comment en ajouter une
 
