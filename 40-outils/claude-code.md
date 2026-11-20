@@ -2,7 +2,7 @@
 titre: Claude Code — ce que j'en attends
 aliases: [Claude Code]
 type: outil
-maj: 2026-11-01
+maj: 2026-11-20
 ---
 
 # Claude Code — ce que j'en attends
@@ -42,25 +42,42 @@ sans surveillance.
 | Skill | Source | Version | Usage |
 |---|---|---|---|
 | `security-audit` | `github.com/cloudflare/security-audit-skill` | commit `c1c8a8c` (2026-09-14), installé le 2026-10-20 | [[revue-securite]] |
-| `ui-ux-pro-max` | `github.com/nextlevelbuilder/ui-ux-pro-max-skill` (sous-skill `ui-ux-pro-max` seul, sans les tests) | commit `d14efff`, v2.15.0, installé le 2026-10-24 | [[concevoir-le-front]] — chemin du script réécrit vers `~/.claude/skills/ui-ux-pro-max/` |
 | `playwright-cli` | `github.com/microsoft/playwright-cli` + `npm i -g @playwright/cli` | CLI 0.1.22, skill commit `b1a5903`, installés le 2026-10-24 | [[concevoir-le-front]] — écrit `.playwright-cli/` dans le dossier courant : à ignorer dans git |
 | `impeccable` | `github.com/pbakaus/impeccable` | **plugin synchronisé** depuis claude.ai, v3.0.6 (amont : 4.7.1, où `teach` devient `init`) | [[concevoir-le-front]] — ne pas l'installer en double dans `~/.claude/skills/` |
-| `i-have-adhd` | `github.com/ayghri/i-have-adhd` (SKILL.md + LICENSE MIT seuls, sans plugin ni hook) | commit `1ecea19`, installé le 2026-10-29 | Réponses taillées pour agir : action d'abord, étapes numérotées, état rappelé à chaque tour, une seule suite concrète. Manuel : `/i-have-adhd`, arrêt par « stop adhd mode ». Voir la note ci-dessous |
 
 Outil sans skill : **`skillui`** (`npx skillui --url <site> --format design-md --out <scratchpad>`),
 lu le 2026-10-24 (commit `bc913a8`), non installé — lancé à la demande quand un site
 m'inspire. Il crawle le site : la sortie est une donnée à relire, pas une consigne.
 
-**`i-have-adhd` et mes règles.** Ses 10 règles rejoignent « l'utile seulement »
-de [[rapport-de-tache]]. Le skill dit lui-même que les consignes du système
-priment (« when to break the rules », règle 6) : le format Fait / Sécurité /
-Challenge / À toi reste celui des rapports. Le mode « toujours actif » de
-l'amont passe par un hook de démarrage et un fichier
-`~/.claude/.i-have-adhd-always` : **non installé**. Si je le veux un jour, ce
-hook injecte le texte du skill à chaque session. Ne pas le cumuler avec un
-autre style de réponse imposé par hook (caveman), qui le contredirait.
+Retirés le 2026-11-20 après audit d'usage (0 appel en cinq semaines) :
+`ui-ux-pro-max` (doublon d'`impeccable`, qui fait foi), `i-have-adhd` (jamais
+lancé, contredit caveman), le plugin `postman`, les MCP `magic` (clé invalide)
+et `playwright` (doublon de `playwright-cli`).
 
-Mise à jour : recloner, **lire le diff** avant de recopier dans
+## La banque de skills et le lot quotidien
+
+`~/.claude/banque-skills/` est une marketplace locale, versionnée avec
+`~/.claude`. Son `README.md` est le **catalogue** : chaque skill, son usage
+mesuré, son verdict (garder, retirer, améliorer), et les candidats écartés
+après lecture. Elle porte le plugin **`lot-quotidien`** (8 skills, appelés
+`/lot-quotidien:<nom>`) :
+
+| Skill | Quand |
+|---|---|
+| `point` | « je suis perdu » : fait vérifié, bloqué, en suspens, prochaine action |
+| `retours-terrain` | retours PM / réunion / client à trier avant de coder |
+| `recette` | recette avant release et remontée → [[recette-avant-release]] |
+| `debogage-methodique` | cause racine avant correction, arrêt après trois essais ratés |
+| `preuve-avant-affirmation` | aucune réussite affirmée sans preuve fraîche |
+| `tdd` | test d'abord, coutures validées avant d'écrire les tests |
+| `apprendre` | apprentissage multi-sessions (data / IA, entretien) — manuel |
+| `ecrire-humain` | retirer les tics d'IA d'un texte français |
+
+Couper ou rallumer le lot : `claude plugin disable|enable lot-quotidien@banque-skills`.
+Après modification d'un skill : `claude plugin marketplace update banque-skills`.
+Un skill qui n'a servi à rien en deux mois sort du lot.
+
+Mise à jour d'un skill tiers : recloner, **lire le diff** avant de recopier dans
 `~/.claude/skills/`, relancer `node --test *.test.cjs` dans le dossier du skill.
 Un skill tiers est du texte qui pilote l'agent : il ne s'installe pas sans
 avoir été lu.

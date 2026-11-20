@@ -17,7 +17,6 @@ maj: 2026-10-31
 | Outil | Rôle | Autorité |
 |---|---|---|
 | **impeccable** (skill) | Méthode de design : `teach` → `shape` → `craft`, puis `critique`, `audit`, `polish`, `adapt`… Lois anti-« fait par une IA ». | **Fait foi.** En cas de désaccord, impeccable tranche. |
-| **ui-ux-pro-max** (skill) | Base de données consultable : 119 règles UX, recommandations par stack (Next, shadcn, Three…), polices, types de graphiques. | **Référence à consulter**, jamais une consigne. Son générateur de design system propose des palettes en hex génériques : ne pas l'appliquer tel quel. |
 | **skillui** (CLI `npx skillui`) | Extrait le design system d'un site existant (couleurs, typo, espacements) en `DESIGN.md`. | Seulement quand j'ai **un site qui m'inspire**. Sortie dans le scratchpad, relue, puis fondue dans le `DESIGN.md` du projet. |
 | **playwright-cli** (skill + CLI) | Ouvrir l'app, capturer, cliquer, à 375 / 768 / 1440 px. Plus sobre en contexte que le MCP Playwright. | Preuve visuelle de la recette → [[regarder-l-application-fait-partie-de-la-recette]] |
 
@@ -26,7 +25,7 @@ Versions et installation : [[claude-code]].
 ## Le déroulé
 
 1. **À l'amorce** — répondre aux questions front (ci-dessous), puis
-   `impeccable teach` écrit `PRODUCT.md` : qui, pour quoi, personnalité,
+   `impeccable teach` (`init` à partir d'impeccable 4) écrit `PRODUCT.md` : qui, pour quoi, personnalité,
    anti-références, accessibilité. **Register** : `product` (l'app sert une
    tâche) ou `brand` (le design est le produit).
 2. **Dès qu'il y a du code** — `impeccable document` écrit `DESIGN.md` depuis
@@ -36,8 +35,9 @@ Versions et installation : [[claude-code]].
    mise en page mobile **et** desktop, **les onze états**
    → [[les-etats-d-un-ecran]], mouvement) que je
    **valide** avant la première ligne. Pas de code sans brief validé.
-4. **Pendant** — `ui-ux-pro-max` pour une question précise (« bottom sheet
-   accessible », « carte + liste en Next »), une requête par intention.
+4. **Pendant** — `impeccable` (`craft`, `polish`, `adapt`) ; pour une question
+   précise de stack, la doc officielle du composant. *(`ui-ux-pro-max` retiré le
+   2026-11-20 : jamais appelé, doublon d'impeccable.)*
 5. **Avant le rapport** — capture playwright-cli aux trois largeurs, et
    `npx impeccable detect src/` (62 règles déterministes, sans IA).
 

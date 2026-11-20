@@ -70,7 +70,7 @@ perd, pas le *quoi*.
 
 7. **Le front, s'il y en a un.** Sur quoi on l'utilise, personnalité,
    références et anti-références, usager le plus contraint, charte existante.
-   Les réponses deviennent `PRODUCT.md` (`impeccable teach`) avant le premier
+   Les réponses deviennent `PRODUCT.md` (`impeccable teach`, `init` à partir d'impeccable 4) avant le premier
    écran. → [[concevoir-le-front]]
    Et **les onze états d'un écran** (vide, chargement, erreur, hors ligne,
    réseau lent, aucun résultat, accès refusé, 404, session expirée,
